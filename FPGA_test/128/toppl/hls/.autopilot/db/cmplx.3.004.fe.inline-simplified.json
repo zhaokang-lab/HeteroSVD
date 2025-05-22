@@ -1,0 +1,125 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 4 8 1",
+    "file": "TopPL.cpp",
+    "fileloc": 331,
+    "instructions": 73,
+    "name": "TopPL",
+    "total_instructions": 1861
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "5 7 2",
+    "file": "TopPL.cpp",
+    "fileloc": 207,
+    "instructions": 32,
+    "name": "Receive",
+    "total_instructions": 519
+  },
+  "2": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 26,
+    "instructions": 123,
+    "loads": {
+      "L": 8
+    },
+    "name": "receive4DDR",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 123
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 94,
+    "instructions": 246,
+    "loads": {
+      "L": 2
+    },
+    "name": "send2AIE",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 246
+  },
+  "4": {
+    "basicblocks": 9,
+    "calls": "3 3 3 3",
+    "file": "TopPL.cpp",
+    "fileloc": 159,
+    "instructions": 26,
+    "name": "Send",
+    "total_instructions": 1010
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "9",
+    "file": "TopPL.cpp",
+    "fileloc": 59,
+    "instructions": 130,
+    "loads": {
+      "L": 8
+    },
+    "name": "receive4AIE",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 182
+  },
+  "6": {
+    "basicblocks": 12,
+    "calls": "9 9",
+    "file": "TopPL.cpp",
+    "fileloc": 293,
+    "instructions": 56,
+    "name": "SystemControl",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 160
+  },
+  "7": {
+    "basicblocks": 5,
+    "calls": "9",
+    "file": "TopPL.cpp",
+    "fileloc": 59,
+    "instructions": 130,
+    "loads": {
+      "L": 8
+    },
+    "name": "receive4AIE",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 182
+  },
+  "8": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 239,
+    "instructions": 99,
+    "loads": {
+      "L": 2
+    },
+    "name": "RoundRobin",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 99
+  },
+  "9": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 52,
+    "name": "generic_fmax<double>",
+    "total_instructions": 52
+  }
+}

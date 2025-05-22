@@ -1,0 +1,137 @@
+Modulo scheduling report for loop #1155 in "/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp", line 64: (loop #20)
+=======================================================================================================================================
+
+Initiation interval (II): 2 cycles (minimum II = 2)
+Software pipeline stages: 5 (folded over 4 iterations), minimum: 5
+Total iteration length: 10 cycles
+Aggressively scheduled: 1
+Aggressively folded: 1
+
+Min II:
+-------
+
+ * Critical cycle: b227 -[1,LC]-> b227 , delay: 1, loop degree: 1 => length critical cycle: 1
+
+    details:
+
+       b227  VST wc0, [p2], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp:70:29]
+         |
+         |
+       [1,LC]   flow dep: __ali1.1342/__ali1.831 ; loop carried
+         |
+         v
+       b227  VST wc0, [p2], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp:70:29]
+
+    Total delay: 1, total loop degree: 1 => length critical cycle: 1
+
+ * Lower bound due to resources: 2
+
+    Critical transitories: AcqStRsrc_E1, AcqStRsrc_E2, AcqStRsrc_E3, AcqStRsrc_ID, StRelRsrc_ID, agbsR, agisP, agisRO, agosI, agusPO, agusRO, dmv_wrs, dn_ads, p_rs, p_ws, store_rsrc, te1_agpsM, v_rs, __p_dmv_wrs_hi_r, __p_dmv_wrs_w, __pe1_agusM_w, __pe1_agusPO_w, __pid_agosMO_w, __rsrc_P_wr_p_ws___P_p_ws_wad_E2
+
+ * Minimum control cycles: 0
+
+ => Lower bound for software pipelined schedule: 2 cycles
+
+Schedule:
+---------
+
+ 0:  b226 '0' @  0 (VLDA wc0, [p6], #32)        b225 '4' @  8 (VST wr2, [p1], #32)        
+ 1:  b224 '0' @  1 (VLDA wr2, [p7], #32)        b227 '3' @  7 (VST wc0, [p2], #32)        
+
+Register live ranges:
+---------------------
+
+Accurate access stages (aggressively scheduled)
+
+
+Register live ranges for register VH[8]:
+
+                             00000000001111111111
+                             01234567890123456789 01
+VH[4]: span  1, min_span  1 |:.:.:.:.:.:A:.:.:.:.|.A| A: __tmp.6048 <226> L70:29
+VH[2]: span  1, min_span  1 |:.:.:.:.:.:.B.:.:.:.|B.| B: __tmp.6036 <224> L69:29
+VH[7]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VH[6]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VH[5]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VH[3]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VH[1]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VH[0]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register VL[8]:
+
+                             00000000001111111111
+                             01234567890123456789 01
+VL[4]: span  1, min_span  1 |:.:.:.:.:.:A:.:.:.:.|.A| A: __tmp.6048 <226> L70:29
+VL[2]: span  1, min_span  1 |:.:.:.:.:.:.B.:.:.:.|B.| B: __tmp.6036 <224> L69:29
+VL[7]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VL[6]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VL[5]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VL[3]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VL[1]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+VL[0]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register R[16]:
+
+                             00000000001111111111
+                             01234567890123456789 01
+R[12]: span 20, min_span  0 |aaaaaaaaaaaaaaaaaaaa|aa| A: _cst.6075 <1481> L384:27
+R[15]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[14]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[13]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[11]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[10]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 9]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 8]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 7]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 6]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 5]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 4]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 3]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 2]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 1]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+R[ 0]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register CL[8]:
+
+                             00000000001111111111
+                             01234567890123456789 01
+CL[2]: span 20, min_span  0 |aaaaaaaaaaaaaaaaaaaa|aa| A: _cst.6083 <1571> L384:27
+CL[0]: span 20, min_span  0 |bbbbbbbbbbbbbbbbbbbb|bb| B: _cst.6054
+CL[7]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+CL[6]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+CL[5]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+CL[4]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+CL[3]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+CL[1]: span  0, min_span  0 |:.:.:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register P[8]:
+
+                             00000000001111111111
+                             01234567890123456789 01
+P[6]: span  1, min_span  1  |:.:.:.A.:.:.:.:.:.:.|A.| A: __shv___tmp.6046 <226> L70:29
+P[7]: span  1, min_span  1  |:.:.:.:B:.:.:.:.:.:.|.B| B: __shv___tmp.6034 <224> L69:29
+P[2]: span  1, min_span  1  |:.:.:.:.:.:.:C:.:.:.|.C| C: __shv___tmp.6053 <227> L70:29
+P[1]: span  1, min_span  1  |:.:.:.:.:.:.:.D.:.:.|D.| D: __shv___tmp.6041 <225> L69:29
+P[5]: span  0, min_span  0  |:.:.:.:.:.:.:.:.:.:.|..| 
+P[4]: span  0, min_span  0  |:.:.:.:.:.:.:.:.:.:.|..| 
+P[3]: span  0, min_span  0  |:.:.:.:.:.:.:.:.:.:.|..| 
+P[0]: span  0, min_span  0  |:.:.:.:.:.:.:.:.:.:.|..| 
+
+General info:
+-------------
+
+Tool    : mist version U-2022.12#3eec2545bc#230622 (s2)
+Cmd line: --mist2 -v -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 +Omodo -k110 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +Odisable-spill-instr-class=LR_short_spill +Odisaggr-record-accesses +Oslr=crUPSMode +Oslr=crSRSMode -ggraph
+Work dir: /home/luanxinya/SVD/FPGA_test/128/Work/aie/10_3/Release/chesswork
+SFG in : 10_3-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/10_3/Release/chesswork/10_3-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg)
+SFG out: 10_3-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/10_3/Release/chesswork/10_3-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg)
+Src file: /home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp
+Function: F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI_
+Line    : 64
+Loop    : #20
+Body    : #1155
+# nodes : 4

@@ -1,0 +1,113 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_newFuncRoot_proc_proc13'
+================================================================
+* Date:           Mon May 12 19:57:06 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  0.846 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.84>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %convSet_1, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_p_val = muxlogic i32 %empty"   --->   Operation 3 'muxlogic' 'MuxLogicAddr_to_p_val' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_val = load i32 %empty" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 4 'load' 'p_val' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln225 = muxlogic i32 %p_val"   --->   Operation 5 'muxlogic' 'muxLogicData_to_write_ln225' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.84ns)   --->   "%write_ln225 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %convSet_1, i32 %p_val" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 6 'write' 'write_ln225' <Predicate = true> <Delay = 0.84> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.84> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 4> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln225 = ret" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 7 'ret' 'ret_ln225' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.222ns, clock uncertainty: 0.600ns.
+
+ <State 1>: 0.846ns
+The critical path consists of the following:
+	'muxlogic' operation 32 bit ('MuxLogicAddr_to_p_val') [4]  (0.000 ns)
+	'load' operation 32 bit ('p_val', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225) on local variable 'empty' [5]  (0.000 ns)
+	'muxlogic' operation 0 bit ('muxLogicData_to_write_ln225') [6]  (0.000 ns)
+	fifo write operation ('write_ln225', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225) on port 'convSet_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225) [7]  (0.846 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

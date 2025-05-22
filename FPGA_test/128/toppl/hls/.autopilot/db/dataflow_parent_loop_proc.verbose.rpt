@@ -1,0 +1,813 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_parent_loop_proc'
+================================================================
+* Date:           Mon May 12 19:57:08 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.505 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |    41641|    41641|  92.526 us|  92.526 us|  41641|  41641|       no|
+    +---------+---------+-----------+-----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                                      |                                   |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |               Instance               |               Module              |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |dataflow_in_loop_VITIS_LOOP_172_2_U0  |dataflow_in_loop_VITIS_LOOP_172_2  |      346|      346|  0.769 us|  0.769 us|  347|  347|  dataflow|
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_172_2  |    41640|    41640|       348|          -|          -|   120|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|       87|      38|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        8|     -|     1610|    1026|    0|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      14|    -|
+|Register         |        -|     -|       14|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        8|     0|     1711|    1078|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |       ~0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |               Instance               |               Module              | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |dataflow_in_loop_VITIS_LOOP_172_2_U0  |dataflow_in_loop_VITIS_LOOP_172_2  |        8|   0|  1610|  1026|    0|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |Total                                 |                                   |        8|   0|  1610|  1026|    0|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+----+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF | LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+----+----+------------+------------+
+    |loop_dataflow_input_count   |         +|   0|  32|  13|           7|           1|
+    |loop_dataflow_output_count  |         +|   0|  32|  13|           7|           1|
+    |bound_minus_1               |         -|   0|  23|  12|           5|           1|
+    +----------------------------+----------+----+----+----+------------+------------+
+    |Total                       |          |   0|  87|  38|          19|           3|
+    +----------------------------+----------+----+----+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |loop_dataflow_input_count   |   7|          2|    7|         14|
+    |loop_dataflow_output_count  |   7|          2|    7|         14|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  14|          4|   14|         28|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+---+----+-----+-----------+
+    |            Name            | FF| LUT| Bits| Const Bits|
+    +----------------------------+---+----+-----+-----------+
+    |loop_dataflow_input_count   |  7|   0|    7|          0|
+    |loop_dataflow_output_count  |  7|   0|    7|          0|
+    +----------------------------+---+----+-----+-----------+
+    |Total                       | 14|   0|   14|          0|
+    +----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++---------------------+-----+-----+------------+---------------------------+--------------+
+|send_fifo_0_dout     |   in|  128|     ap_fifo|                send_fifo_0|       pointer|
+|send_fifo_0_empty_n  |   in|    1|     ap_fifo|                send_fifo_0|       pointer|
+|send_fifo_0_read     |  out|    1|     ap_fifo|                send_fifo_0|       pointer|
+|sweep_tx0_0_TDATA    |  out|  128|        axis|       sweep_tx0_0_V_data_V|       pointer|
+|sweep_tx0_0_TKEEP    |  out|   16|        axis|       sweep_tx0_0_V_keep_V|       pointer|
+|sweep_tx0_0_TSTRB    |  out|   16|        axis|       sweep_tx0_0_V_strb_V|       pointer|
+|sweep_tx0_0_TLAST    |  out|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TVALID   |  out|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TREADY   |   in|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|send_fifo_1_dout     |   in|  128|     ap_fifo|                send_fifo_1|       pointer|
+|send_fifo_1_empty_n  |   in|    1|     ap_fifo|                send_fifo_1|       pointer|
+|send_fifo_1_read     |  out|    1|     ap_fifo|                send_fifo_1|       pointer|
+|sweep_tx0_1_TDATA    |  out|  128|        axis|       sweep_tx0_1_V_data_V|       pointer|
+|sweep_tx0_1_TKEEP    |  out|   16|        axis|       sweep_tx0_1_V_keep_V|       pointer|
+|sweep_tx0_1_TSTRB    |  out|   16|        axis|       sweep_tx0_1_V_strb_V|       pointer|
+|sweep_tx0_1_TLAST    |  out|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TVALID   |  out|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TREADY   |   in|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|ap_clk               |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_continue          |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
++---------------------+-----+-----+------------+---------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 2, States = { 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.40>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i128 %sweep_tx0_1_V_data_V, i16 %sweep_tx0_1_V_keep_V, i16 %sweep_tx0_1_V_strb_V, i1 0, i1 %sweep_tx0_1_V_last_V, i1 0, i1 0, void @empty_8"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i128 %sweep_tx0_0_V_data_V, i16 %sweep_tx0_0_V_keep_V, i16 %sweep_tx0_0_V_strb_V, i1 0, i1 %sweep_tx0_0_V_last_V, i1 0, i1 0, void @empty_9"   --->   Operation 5 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %send_fifo_1, i64 666, i64 8, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %send_fifo_0, i64 666, i64 8, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %sweep_tx0_0_V_data_V, i16 %sweep_tx0_0_V_keep_V, i16 %sweep_tx0_0_V_strb_V, i1 %sweep_tx0_0_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %sweep_tx0_1_V_data_V, i16 %sweep_tx0_1_V_keep_V, i16 %sweep_tx0_1_V_strb_V, i1 %sweep_tx0_1_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %send_fifo_0, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %send_fifo_1, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.40ns)   --->   "%br_ln0 = br void %for.cond"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.40>
+
+State 2 <SV = 1> <Delay = 0.71>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%i = phi i7 0, void %newFuncRoot, i7 %add_ln172, void %codeRepl" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 13 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.71ns)   --->   "%add_ln172 = add i7 %i, i7 1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 14 'add' 'add_ln172' <Predicate = true> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.71ns)   --->   "%icmp_ln172 = icmp_eq  i7 %i, i7 120" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 15 'icmp' 'icmp_ln172' <Predicate = true> <Delay = 0.71> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln172 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i7 %i, i7 120, i32 0" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 16 'specdataflowpipeline' 'specdataflowpipeline_ln172' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln172 = br i1 %icmp_ln172, void %codeRepl, void %cleanup.cont.exitStub" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 17 'br' 'br_ln172' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln174 = call void @dataflow_in_loop_VITIS_LOOP_172_2, i128 %send_fifo_0, i128 %sweep_tx0_0_V_data_V, i16 %sweep_tx0_0_V_keep_V, i16 %sweep_tx0_0_V_strb_V, i1 %sweep_tx0_0_V_last_V, i128 %send_fifo_1, i128 %sweep_tx0_1_V_data_V, i16 %sweep_tx0_1_V_keep_V, i16 %sweep_tx0_1_V_strb_V, i1 %sweep_tx0_1_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:174]   --->   Operation 18 'call' 'call_ln174' <Predicate = (!icmp_ln172)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 19 'ret' 'ret_ln0' <Predicate = (icmp_ln172)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%speclooptripcount_ln174 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 120, i64 120, i64 120" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:174]   --->   Operation 20 'speclooptripcount' 'speclooptripcount_ln174' <Predicate = (!icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln172 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 21 'specloopname' 'specloopname_ln172' <Predicate = (!icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln174 = call void @dataflow_in_loop_VITIS_LOOP_172_2, i128 %send_fifo_0, i128 %sweep_tx0_0_V_data_V, i16 %sweep_tx0_0_V_keep_V, i16 %sweep_tx0_0_V_strb_V, i1 %sweep_tx0_0_V_last_V, i128 %send_fifo_1, i128 %sweep_tx0_1_V_data_V, i16 %sweep_tx0_1_V_keep_V, i16 %sweep_tx0_1_V_strb_V, i1 %sweep_tx0_1_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:174]   --->   Operation 22 'call' 'call_ln174' <Predicate = (!icmp_ln172)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln172 = br void %for.cond" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:172]   --->   Operation 23 'br' 'br_ln172' <Predicate = (!icmp_ln172)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ send_fifo_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ sweep_tx0_0_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_0_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_0_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_0_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ send_fifo_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ sweep_tx0_1_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_1_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_1_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ sweep_tx0_1_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specaxissidechannel_ln0    (specaxissidechannel ) [ 0000]
+specaxissidechannel_ln0    (specaxissidechannel ) [ 0000]
+specmemcore_ln0            (specmemcore         ) [ 0000]
+specmemcore_ln0            (specmemcore         ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+specinterface_ln0          (specinterface       ) [ 0000]
+br_ln0                     (br                  ) [ 0111]
+i                          (phi                 ) [ 0010]
+add_ln172                  (add                 ) [ 0111]
+icmp_ln172                 (icmp                ) [ 0011]
+specdataflowpipeline_ln172 (specdataflowpipeline) [ 0000]
+br_ln172                   (br                  ) [ 0000]
+ret_ln0                    (ret                 ) [ 0000]
+speclooptripcount_ln174    (speclooptripcount   ) [ 0000]
+specloopname_ln172         (specloopname        ) [ 0000]
+call_ln174                 (call                ) [ 0000]
+br_ln172                   (br                  ) [ 0111]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="send_fifo_0">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="send_fifo_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="sweep_tx0_0_V_data_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_0_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="sweep_tx0_0_V_keep_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_0_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="sweep_tx0_0_V_strb_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_0_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="sweep_tx0_0_V_last_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_0_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="send_fifo_1">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="send_fifo_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="sweep_tx0_1_V_data_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_1_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="sweep_tx0_1_V_keep_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_1_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="sweep_tx0_1_V_strb_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_1_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="sweep_tx0_1_V_last_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sweep_tx0_1_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecAXISSideChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_26"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dataflow_parent_loop_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dataflow_in_loop_VITIS_LOOP_172_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_20"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1005" name="i_reg_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="7" slack="1"/>
+<pin id="72" dir="1" index="1" bw="7" slack="1"/>
+</pin_list>
+<bind>
+<opset="i (phireg) "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="i_phi_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="1" slack="1"/>
+<pin id="76" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="77" dir="0" index="2" bw="7" slack="0"/>
+<pin id="78" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="79" dir="1" index="4" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="i/2 "/>
+</bind>
+</comp>
+
+<comp id="81" class="1004" name="grp_dataflow_in_loop_VITIS_LOOP_172_2_fu_81">
+<pin_list>
+<pin id="82" dir="0" index="0" bw="0" slack="0"/>
+<pin id="83" dir="0" index="1" bw="128" slack="0"/>
+<pin id="84" dir="0" index="2" bw="128" slack="0"/>
+<pin id="85" dir="0" index="3" bw="16" slack="0"/>
+<pin id="86" dir="0" index="4" bw="16" slack="0"/>
+<pin id="87" dir="0" index="5" bw="1" slack="0"/>
+<pin id="88" dir="0" index="6" bw="128" slack="0"/>
+<pin id="89" dir="0" index="7" bw="128" slack="0"/>
+<pin id="90" dir="0" index="8" bw="16" slack="0"/>
+<pin id="91" dir="0" index="9" bw="16" slack="0"/>
+<pin id="92" dir="0" index="10" bw="1" slack="0"/>
+<pin id="93" dir="1" index="11" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln174/2 "/>
+</bind>
+</comp>
+
+<comp id="105" class="1004" name="add_ln172_fu_105">
+<pin_list>
+<pin id="106" dir="0" index="0" bw="7" slack="0"/>
+<pin id="107" dir="0" index="1" bw="1" slack="0"/>
+<pin id="108" dir="1" index="2" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln172/2 "/>
+</bind>
+</comp>
+
+<comp id="111" class="1004" name="icmp_ln172_fu_111">
+<pin_list>
+<pin id="112" dir="0" index="0" bw="7" slack="0"/>
+<pin id="113" dir="0" index="1" bw="4" slack="0"/>
+<pin id="114" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln172/2 "/>
+</bind>
+</comp>
+
+<comp id="117" class="1005" name="add_ln172_reg_117">
+<pin_list>
+<pin id="118" dir="0" index="0" bw="7" slack="0"/>
+<pin id="119" dir="1" index="1" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opset="add_ln172 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1005" name="icmp_ln172_reg_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="1" slack="1"/>
+<pin id="124" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln172 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="73"><net_src comp="50" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="80"><net_src comp="70" pin="1"/><net_sink comp="74" pin=0"/></net>
+
+<net id="94"><net_src comp="60" pin="0"/><net_sink comp="81" pin=0"/></net>
+
+<net id="95"><net_src comp="0" pin="0"/><net_sink comp="81" pin=1"/></net>
+
+<net id="96"><net_src comp="2" pin="0"/><net_sink comp="81" pin=2"/></net>
+
+<net id="97"><net_src comp="4" pin="0"/><net_sink comp="81" pin=3"/></net>
+
+<net id="98"><net_src comp="6" pin="0"/><net_sink comp="81" pin=4"/></net>
+
+<net id="99"><net_src comp="8" pin="0"/><net_sink comp="81" pin=5"/></net>
+
+<net id="100"><net_src comp="10" pin="0"/><net_sink comp="81" pin=6"/></net>
+
+<net id="101"><net_src comp="12" pin="0"/><net_sink comp="81" pin=7"/></net>
+
+<net id="102"><net_src comp="14" pin="0"/><net_sink comp="81" pin=8"/></net>
+
+<net id="103"><net_src comp="16" pin="0"/><net_sink comp="81" pin=9"/></net>
+
+<net id="104"><net_src comp="18" pin="0"/><net_sink comp="81" pin=10"/></net>
+
+<net id="109"><net_src comp="74" pin="4"/><net_sink comp="105" pin=0"/></net>
+
+<net id="110"><net_src comp="52" pin="0"/><net_sink comp="105" pin=1"/></net>
+
+<net id="115"><net_src comp="74" pin="4"/><net_sink comp="111" pin=0"/></net>
+
+<net id="116"><net_src comp="54" pin="0"/><net_sink comp="111" pin=1"/></net>
+
+<net id="120"><net_src comp="105" pin="2"/><net_sink comp="117" pin=0"/></net>
+
+<net id="121"><net_src comp="117" pin="1"/><net_sink comp="74" pin=2"/></net>
+
+<net id="125"><net_src comp="111" pin="2"/><net_sink comp="122" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: send_fifo_0 | {}
+	Port: sweep_tx0_0_V_data_V | {2 3 }
+	Port: sweep_tx0_0_V_keep_V | {2 3 }
+	Port: sweep_tx0_0_V_strb_V | {2 3 }
+	Port: sweep_tx0_0_V_last_V | {2 3 }
+	Port: send_fifo_1 | {}
+	Port: sweep_tx0_1_V_data_V | {2 3 }
+	Port: sweep_tx0_1_V_keep_V | {2 3 }
+	Port: sweep_tx0_1_V_strb_V | {2 3 }
+	Port: sweep_tx0_1_V_last_V | {2 3 }
+ - Input state : 
+	Port: dataflow_parent_loop_proc : send_fifo_0 | {2 3 }
+	Port: dataflow_parent_loop_proc : sweep_tx0_0_V_data_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_0_V_keep_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_0_V_strb_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_0_V_last_V | {}
+	Port: dataflow_parent_loop_proc : send_fifo_1 | {2 3 }
+	Port: dataflow_parent_loop_proc : sweep_tx0_1_V_data_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_1_V_keep_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_1_V_strb_V | {}
+	Port: dataflow_parent_loop_proc : sweep_tx0_1_V_last_V | {}
+  - Chain level:
+	State 1
+	State 2
+		add_ln172 : 1
+		icmp_ln172 : 1
+		specdataflowpipeline_ln172 : 1
+		br_ln172 : 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+| Operation|               Functional Unit               |   BRAM  |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+|   call   | grp_dataflow_in_loop_VITIS_LOOP_172_2_fu_81 |    8    |   3.89  |   1062  |   310   |    0    |
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+|    add   |               add_ln172_fu_105              |    0    |    0    |    0    |    7    |    0    |
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+|   icmp   |              icmp_ln172_fu_111              |    0    |    0    |    0    |    7    |    0    |
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                             |    8    |   3.89  |   1062  |   324   |    0    |
+|----------|---------------------------------------------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++------------------+--------+
+|                  |   FF   |
++------------------+--------+
+| add_ln172_reg_117|    7   |
+|     i_reg_70     |    7   |
+|icmp_ln172_reg_122|    1   |
++------------------+--------+
+|       Total      |   15   |
++------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    8   |    3   |  1062  |   324  |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |   15   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    8   |    3   |  1077  |   324  |    0   |
++-----------+--------+--------+--------+--------+--------+

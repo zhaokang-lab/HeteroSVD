@@ -1,0 +1,176 @@
+Modulo scheduling report for loop #1231 in "/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp", line 36: (loop #3)
+======================================================================================================================================
+
+Initiation interval (II): 3 cycles (minimum II = 3)
+Software pipeline stages: 3 (folded over 2 iterations), minimum: 2
+Total iteration length: 9 cycles
+Aggressively scheduled: 1
+Aggressively folded: 1
+
+Min II:
+-------
+
+ * Critical cycle: b695 -[1]-> b251 -[A:0]-> b686 -[1]-> b253 -[A:-6]-> b249 -[7,LC]-> b695 , delay: 3, loop degree: 1 => length critical cycle: 3
+
+    details:
+
+       b695  VMOV wc1, wr0 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+        [1]     flow dep: __tmp.4548 in WC[1] 
+         |
+         v
+       b251  VFPMAC wd1, r6, wd1, ya, r12, cl1, wc1, #0, cl1, #0, cl0 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+        [0]     anti dep: __tmp.4533 in WR0[0] -> __tmp.4518 in WR0[0] 
+         |
+         v
+       b686  VMOV wr0, wc0 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+        [1]     flow dep: __tmp.4518 in WR0[0] 
+         |
+         v
+       b253  VFPMAC wd0, r5, wd0, ya, r12, cl1, wc0, #0, cl1, #0, cl0 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+        [-6]    anti dep: __tmp.4518 in WR0[0] -> vec1.4536 in WR0[0] 
+         |
+         v
+       b249  VLDA wr0, [p0], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp:45:15]
+         |
+         |
+       [7,LC]   flow dep: vec1.4536 in WR0[0] , vec1.4536/__tmp.4533 in WR0[0] ; loop carried
+         |
+         v
+       b695  VMOV wc1, wr0 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+
+    Total delay: 3, total loop degree: 1 => length critical cycle: 3
+
+ * Lower bound due to resources: 3
+
+    Critical transitories: cfgMaddmode, cfgMfloat, cfgMlconf, cfgMlxoffs, cfgMlzoffs, cfgMlzstart, cfgMxstart, cl_ra, cl_rb, cl_rm, fltAddOvstat, fltMulOstat, fltMulOvstat, fpaccO, fpaccR, idx_xsetw, mcRsrcFPAdd, mcRsrcFPMul, pmcA, pmxAl, r_rx, r_wb, tFpm_a, v_rf, v_rv, v_wv, xa_r, y_r, __fpPaccA_w, __rsrc_RS_wr_r_wb___RS_r_wb_wad_E6
+
+ * Minimum control cycles: 0
+
+ => Lower bound for software pipelined schedule: 3 cycles
+
+Schedule:
+---------
+
+ 0:  b249 '0' @  0 (VLDA wr0, [p0], #32)                                             b250 '0' @  0 (VLDB wc0, [p1], #32)                                             b253 '2' @  6 (VFPMAC wd0, r5, wd0, ya, r12, cl1, wc0, #0, cl1, #0, cl0)       
+ 1:  b252 '1' @  4 (VFPMAC wr2, r7, wr2, ya, r12, cl1, wc0, #0, cl1, #0, cl0)        b695 '1' @  4 (VMOV wc1, wr0)                                                  
+ 2:  b251 '1' @  5 (VFPMAC wd1, r6, wd1, ya, r12, cl1, wc1, #0, cl1, #0, cl0)        b686 '1' @  5 (VMOV wr0, wc0)                                                  
+
+Register live ranges:
+---------------------
+
+Accurate access stages (aggressively scheduled)
+
+
+Register live ranges for register VH[8]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+VH[5]: span  1, min_span  1      |:..:..:..A..:..:..|A..| A: __tmp.4548 <695> L384:27
+VH[0]: span  2, min_span  1      |:..:..:..:BC:..:..|.BC| B: __tmp.4518 <686> L384:27, C: vec1.4536 <249> L45:15
+VH[4]: span  1, min_span  1      |:..:..:..:.D:..:..|..D| D: __tmp.4522 <250> L46:15
+VH[2]: span  1, min_span  1      |:..:..:..:..:.E:..|..E| E: __tmp.4531 <252> L384:27
+VH[7]: span  1, min_span  1      |:..:..:..:..:..F..|F..| F: __tmp.4545 <251> L384:27
+VH[6]: span  1, min_span  1      |:..:..:..:..:..:G.|.G.| G: __tmp.4516 <253> L384:27
+VH[3]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+VH[1]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+
+
+Register live ranges for register VL[8]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+VL[5]: span  1, min_span  1      |:..:..:..A..:..:..|A..| A: __tmp.4548 <695> L384:27
+VL[0]: span  2, min_span  1      |:..:..:..:BC:..:..|.BC| B: __tmp.4518 <686> L384:27, C: vec1.4536 <249> L45:15
+VL[4]: span  1, min_span  1      |:..:..:..:.D:..:..|..D| D: __tmp.4522 <250> L46:15
+VL[2]: span  1, min_span  1      |:..:..:..:..:.E:..|..E| E: __tmp.4531 <252> L384:27
+VL[7]: span  1, min_span  1      |:..:..:..:..:..F..|F..| F: __tmp.4545 <251> L384:27
+VL[6]: span  1, min_span  1      |:..:..:..:..:..:G.|.G.| G: __tmp.4516 <253> L384:27
+VL[3]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+VL[1]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+
+
+Register live ranges for register R[16]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+R[12]: span 18, min_span 18      |AAAAAAAAAAAAAAAAAA|AAA| A: _cst.5683 <1237> L384:27
+R[ 7]: span  1, min_span  1      |:..:..:..:..:.b:..|..b| B: __seff.4538 <252> L384:27
+R[ 6]: span  1, min_span  1      |:..:..:..:..:..c..|c..| C: __seff.4549 <251> L384:27
+R[ 5]: span  1, min_span  1      |:..:..:..:..:..:d.|.d.| D: __seff.4524 <253> L384:27
+R[10]: span 18, min_span  0      |eeeeeeeeeeeeeeeeee|eee| E: _cst.5726 <1255> L73:114
+R[15]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[14]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[13]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[11]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 9]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 8]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 4]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 3]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 2]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 1]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+R[ 0]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+
+
+Register live ranges for register CL[8]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+CL[1]: span 18, min_span 18      |AAAAAAAAAAAAAAAAAA|AAA| A: _cst.6260 <1515>
+CL[0]: span 18, min_span 18      |BBBBBBBBBBBBBBBBBB|BBB| B: __ct_9437184.6274 <1529>
+CL[3]: span 18, min_span  0      |cccccccccccccccccc|ccc| C: _cst.5670 <1236> L384:27
+CL[7]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+CL[6]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+CL[5]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+CL[4]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+CL[2]: span  0, min_span  0      |:..:..:..:..:..:..|...| 
+
+
+Register live ranges for register mcFPMul[1]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+mcFPMul[0]: span  3, min_span  1 |:..:..:..:..abc:..|abc| A: __seff.4539 <252> L384:27, B: __seff.4550 <251> L384:27, C: __seff.4525 <253> L384:27
+
+
+Register live ranges for register mcFPAdd[1]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+mcFPAdd[0]: span  3, min_span  1 |:..:..:..:..:.abc.|bca| A: __seff.4540 <252> L384:27, B: __seff.4551 <251> L384:27, C: __seff.4526 <253> L384:27
+
+
+Register live ranges for register P[8]:
+
+                                  000000000011111111
+                                  012345678901234567 012
+P[0]: span  1, min_span  1       |:..:..A..:..:..:..|A..| A: __shv___tmp.4506 <249> L45:15
+P[1]: span  1, min_span  1       |:..:..B..:..:..:..|B..| B: __shv___tmp.4511 <250> L46:15
+P[7]: span 18, min_span  0       |cccccccccccccccccc|ccc| C: BqIter.5557 <1190> L102:25
+P[6]: span 18, min_span  0       |dddddddddddddddddd|ddd| D: AqIter.7474 <1573> L70:29
+P[2]: span 18, min_span  0       |eeeeeeeeeeeeeeeeee|eee| E: ApIter.7473 <1572>
+P[5]: span  0, min_span  0       |:..:..:..:..:..:..|...| 
+P[4]: span  0, min_span  0       |:..:..:..:..:..:..|...| 
+P[3]: span  0, min_span  0       |:..:..:..:..:..:..|...| 
+
+General info:
+-------------
+
+Tool    : mist version U-2022.12#3eec2545bc#230622 (s2)
+Cmd line: --mist2 -v -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 +Omodo -k110 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +Odisable-spill-instr-class=LR_short_spill +Odisaggr-record-accesses +Oslr=crUPSMode +Oslr=crSRSMode -ggraph
+Work dir: /home/luanxinya/SVD/FPGA_test/128/Work/aie/1_4/Release/chesswork
+SFG in : 1_4-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/1_4/Release/chesswork/1_4-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg)
+SFG out: 1_4-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/1_4/Release/chesswork/1_4-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg)
+Src file: /home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp
+Function: F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI_
+Line    : 36
+Loop    : #3
+Body    : #1231
+# nodes : 7

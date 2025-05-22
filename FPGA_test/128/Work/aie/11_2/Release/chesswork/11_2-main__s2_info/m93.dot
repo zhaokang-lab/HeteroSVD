@@ -1,0 +1,16 @@
+digraph N {
+ b141[color=orange,fontcolor=black,style=filled,label="b141\nREL r10, #1, r1\ninp: R[10] R[1]"];  {rank=same; S3;  b141;}
+ b1000[color=orange,fontcolor=black,style=filled,label="b1000\nMOV.s12 r9, #1\nout: R[9]"];  {rank=same; S0;  b1000;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S3;  end;}
+   start -> b141 [color=maroon,fontcolor=maroon,penwidth=3,label="min len=3",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1_S2 [label="steps [1,2]",shape=box];
+  S0 -> S1_S2[style=invis,weight=9000];
+  S3 [label="step 3",shape=box];
+  S1_S2 -> S3[style=invis,weight=9000];
+  S4 [label="successor",shape=box];
+  S3 -> S4[style=invis,weight=9000];
+}

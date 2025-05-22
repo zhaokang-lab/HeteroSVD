@@ -1,0 +1,29 @@
+sgraph: F_main_m764
+n_nodes: 2
+ms_unfold_len: 4
+ms_RecMII: 2
+ms_ResMII: 1
+ms_MII: 2
+ms_II: 2
+ms_SC: 3
+ms_status: folded
+ms_cost: 20201
+ms_n_back_tracks: 0
+ms_tot_n_back_tracks: 0
+ms_n_nodes_scheduled:     2
+ms_tot_n_nodes_scheduled: 6
+ms_req_budgetRatio: 1
+ms_node_order: s156 #0
+ms_node_order: s155 #1
+ms_cstep s155: 0 0 0
+ms_cstep s156: 1 2 5
+---------- block m764: modulo scheduled: schedule S :
+    length: 2
+    word length: 32
+    word cost: 320
+    side-effect writes: 2
+    instr_prior: 36234
+    bundles per cstep:
+        0:	b155	--> p714	 DELAYED_WRITE = 1
+        1:	b156	--> p716	 DELAYED_WRITE = 1
+    

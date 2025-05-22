@@ -1,0 +1,171 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'Send'" level="0">
+<item name = "Date">Mon May 12 19:57:08 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">toppl</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">versalaicore</item>
+<item name = "Target device">xcvc1902-vsva2197-2MP-e-S</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">2.22 ns, 1.505 ns, 0.60 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dataflow_parent_loop_proc_fu_94">dataflow_parent_loop_proc, 41641, 41641, 92.526 us, 92.526 us, 41641, 41641, no</column>
+<column name="grp_send2AIE_3_fu_118">send2AIE_3, 346, 346, 0.769 us, 0.769 us, 346, 346, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_169_1">?, ?, 41643, -, -, ?, no</column>
+<column name="- VITIS_LOOP_179_3">5568, 5568, 696, -, -, 8, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">12, -, 2514, 1577, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 147, -</column>
+<column name="Register">-, -, 17, -, -</column>
+<specialColumn name="Available">1934, 1968, 1799680, 899840, 463</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_dataflow_parent_loop_proc_fu_94">dataflow_parent_loop_proc, 8, 0, 1711, 1078, 0</column>
+<column name="grp_send2AIE_3_fu_118">send2AIE_3, 4, 0, 803, 499, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_14_fu_153_p2">+, 0, 0, 5, 4, 1</column>
+<column name="grp_dataflow_parent_loop_proc_fu_94_sweep_tx0_0_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_dataflow_parent_loop_proc_fu_94_sweep_tx0_1_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln179_fu_159_p2">icmp, 0, 0, 5, 4, 5</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state8">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_dataflow_parent_loop_proc_fu_94_ap_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_dataflow_parent_loop_proc_fu_94_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="grp_send2AIE_3_fu_118_norm_tx0_TREADY">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">10, 9, 1, 9</column>
+<column name="ap_done">2, 2, 1, 2</column>
+<column name="grp_send2AIE_3_fu_118_send_fifo_0_dout">121, 2, 128, 256</column>
+<column name="grp_send2AIE_3_fu_118_send_fifo_0_empty_n">2, 2, 1, 2</column>
+<column name="i_fu_84">4, 2, 4, 8</column>
+<column name="norm_tx0_TVALID_int_regslice">2, 2, 1, 2</column>
+<column name="send_fifo_0_read">2, 3, 1, 3</column>
+<column name="send_fifo_1_read">2, 3, 1, 3</column>
+<column name="syscontrol_0_blk_n">2, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">8, 0, 8, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_parent_loop_proc_fu_94_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_parent_loop_proc_fu_94_ap_ready">1, 0, 1, 0</column>
+<column name="grp_dataflow_parent_loop_proc_fu_94_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_send2AIE_3_fu_118_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_fu_84">4, 0, 4, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Send, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Send, return value</column>
+<column name="syscontrol_0_dout">in, 1, ap_fifo, syscontrol_0, pointer</column>
+<column name="syscontrol_0_num_data_valid">in, 3, ap_fifo, syscontrol_0, pointer</column>
+<column name="syscontrol_0_fifo_cap">in, 3, ap_fifo, syscontrol_0, pointer</column>
+<column name="syscontrol_0_empty_n">in, 1, ap_fifo, syscontrol_0, pointer</column>
+<column name="syscontrol_0_read">out, 1, ap_fifo, syscontrol_0, pointer</column>
+<column name="send_fifo_0_dout">in, 128, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_num_data_valid">in, 10, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_fifo_cap">in, 10, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_empty_n">in, 1, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_read">out, 1, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_1_dout">in, 128, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_num_data_valid">in, 10, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_fifo_cap">in, 10, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_empty_n">in, 1, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_read">out, 1, ap_fifo, send_fifo_1, pointer</column>
+<column name="sweep_tx0_0_TDATA">out, 128, axis, sweep_tx0_0_V_data_V, pointer</column>
+<column name="sweep_tx0_0_TVALID">out, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="sweep_tx0_0_TREADY">in, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="sweep_tx0_0_TLAST">out, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="sweep_tx0_0_TKEEP">out, 16, axis, sweep_tx0_0_V_keep_V, pointer</column>
+<column name="sweep_tx0_0_TSTRB">out, 16, axis, sweep_tx0_0_V_strb_V, pointer</column>
+<column name="sweep_tx0_1_TDATA">out, 128, axis, sweep_tx0_1_V_data_V, pointer</column>
+<column name="sweep_tx0_1_TVALID">out, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="sweep_tx0_1_TREADY">in, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="sweep_tx0_1_TLAST">out, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="sweep_tx0_1_TKEEP">out, 16, axis, sweep_tx0_1_V_keep_V, pointer</column>
+<column name="sweep_tx0_1_TSTRB">out, 16, axis, sweep_tx0_1_V_strb_V, pointer</column>
+<column name="norm_tx0_TDATA">out, 128, axis, norm_tx0_V_data_V, pointer</column>
+<column name="norm_tx0_TVALID">out, 1, axis, norm_tx0_V_last_V, pointer</column>
+<column name="norm_tx0_TREADY">in, 1, axis, norm_tx0_V_last_V, pointer</column>
+<column name="norm_tx0_TLAST">out, 1, axis, norm_tx0_V_last_V, pointer</column>
+<column name="norm_tx0_TKEEP">out, 16, axis, norm_tx0_V_keep_V, pointer</column>
+<column name="norm_tx0_TSTRB">out, 16, axis, norm_tx0_V_strb_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

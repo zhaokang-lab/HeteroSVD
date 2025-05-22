@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'SystemControl_Pipeline_VITIS_LOOP_315_4'
+================================================================
+* Date:           Mon May 12 19:57:03 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.190 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  11.110 ns|  11.110 ns|    5|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_315_4  |        3|        3|         2|          1|          1|     3|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.19>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i_7 = alloca i32 1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 5 'alloca' 'i_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %syscontrol_0, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %syscontrol_1, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %syscontrol_2, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%muxLogicData_to_store_ln315 = muxlogic i2 0"   --->   Operation 9 'muxlogic' 'muxLogicData_to_store_ln315' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%muxLogicAddr_to_store_ln315 = muxlogic i2 %i_7"   --->   Operation 10 'muxlogic' 'muxLogicAddr_to_store_ln315' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.33ns)   --->   "%store_ln315 = store i2 0, i2 %i_7" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 11 'store' 'store_ln315' <Predicate = true> <Delay = 0.33>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc36"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%MuxLogicAddr_to_i = muxlogic i2 %i_7"   --->   Operation 13 'muxlogic' 'MuxLogicAddr_to_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i = load i2 %i_7" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 14 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.53ns)   --->   "%add_ln315 = add i2 %i, i2 1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 15 'add' 'add_ln315' <Predicate = true> <Delay = 0.53> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.53> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.53ns)   --->   "%icmp_ln315 = icmp_eq  i2 %i, i2 3" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 16 'icmp' 'icmp_ln315' <Predicate = true> <Delay = 0.53> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.53> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln315 = br i1 %icmp_ln315, void %for.inc36.split, void %while.end.exitStub" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 17 'br' 'br_ln315' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln315 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_26" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 18 'specpipeline' 'specpipeline_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln315 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln315 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 20 'specloopname' 'specloopname_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.48ns)   --->   "%switch_ln316 = switch i2 %i, void %V.i3145.case.2, i2 0, void %V.i3145.case.0, i2 1, void %V.i3145.case.1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 21 'switch' 'switch_ln316' <Predicate = (!icmp_ln315)> <Delay = 0.48>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%muxLogicData_to_store_ln315 = muxlogic i2 %add_ln315"   --->   Operation 22 'muxlogic' 'muxLogicData_to_store_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%muxLogicAddr_to_store_ln315 = muxlogic i2 %i_7"   --->   Operation 23 'muxlogic' 'muxLogicAddr_to_store_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.33ns)   --->   "%store_ln315 = store i2 %add_ln315, i2 %i_7" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 24 'store' 'store_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.33>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln315 = br void %for.inc36" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315]   --->   Operation 25 'br' 'br_ln315' <Predicate = (!icmp_ln315)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 35 'ret' 'ret_ln0' <Predicate = (icmp_ln315)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.64>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln316 = muxlogic i1 0"   --->   Operation 26 'muxlogic' 'muxLogicData_to_write_ln316' <Predicate = (i == 1)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.64ns)   --->   "%write_ln316 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %syscontrol_1, i1 0" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 27 'write' 'write_ln316' <Predicate = (i == 1)> <Delay = 0.64> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.64> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln316 = br void %V.i3145.exit" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 28 'br' 'br_ln316' <Predicate = (i == 1)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln316 = muxlogic i1 0"   --->   Operation 29 'muxlogic' 'muxLogicData_to_write_ln316' <Predicate = (i == 0)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.64ns)   --->   "%write_ln316 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %syscontrol_0, i1 0" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 30 'write' 'write_ln316' <Predicate = (i == 0)> <Delay = 0.64> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.64> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln316 = br void %V.i3145.exit" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 31 'br' 'br_ln316' <Predicate = (i == 0)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln316 = muxlogic i1 0"   --->   Operation 32 'muxlogic' 'muxLogicData_to_write_ln316' <Predicate = (i != 0 & i != 1)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.64ns)   --->   "%write_ln316 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %syscontrol_2, i1 0" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 33 'write' 'write_ln316' <Predicate = (i != 0 & i != 1)> <Delay = 0.64> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.64> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln316 = br void %V.i3145.exit" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316]   --->   Operation 34 'br' 'br_ln316' <Predicate = (i != 0 & i != 1)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.222ns, clock uncertainty: 0.600ns.
+
+ <State 1>: 1.190ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln315', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315) of constant 0 on local variable 'i', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315 [10]  (0.330 ns)
+	'load' operation 2 bit ('i', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315) on local variable 'i', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315 [14]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln315', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315) [16]  (0.530 ns)
+	'store' operation 0 bit ('store_ln315', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315) of variable 'add_ln315', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315 on local variable 'i', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315 [38]  (0.330 ns)
+
+ <State 2>: 0.640ns
+The critical path consists of the following:
+	'muxlogic' operation 0 bit ('muxLogicData_to_write_ln316') [24]  (0.000 ns)
+	fifo write operation ('write_ln316', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316) on port 'syscontrol_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:316) [25]  (0.640 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

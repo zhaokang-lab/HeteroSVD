@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+OUT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+EXEC_PATH=$OUT_DIR/generated-objects/cdo_main.out
+ABS_WORKDIR=$(dirname $(dirname "${OUT_DIR}"))
+INITIAL_LD_LIB="$LD_LIBRARY_PATH"
+if [ -z "$XILINX_VITIS_AIETOOLS" ]; then
+	XILINX_VITIS_AIETOOLS=$XILINX_VITIS/aietools
+fi
+export LD_LIBRARY_PATH=$XILINX_VITIS_AIETOOLS/lib/lnx64.o:$LD_LIBRARY_PATH
+$EXEC_PATH --work-dir-path $ABS_WORKDIR  $@ 
+if [ $? -eq 1 ]; then
+	echo "Error executing script" 
+fi
+
+unset LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$INITIAL_LD_LIB

@@ -1,0 +1,28 @@
+digraph N {
+ b140[color=orange,fontcolor=black,style=filled,label="b140\nVLDA wr0, [p2], #32\ninp: P[2]\nout: P[2]"];  {rank=same; S0;  b140;}
+ b141[color=orange,fontcolor=black,style=filled,label="b141\nVFPMUL wd0, r0, ya, r8, cl0, wc0, #0, cl0, #0, cl1\ninp: CL[0] CL[0] R[8] CL[1] XC[0]"];  {rank=same; S7;  b141;}
+ b142[color=orange,fontcolor=black,style=filled,label="b142\nVST wd0, [p3], #32\ninp: P[3]\nout: P[3]"];  {rank=same; S13;  b142;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S13;  end;}
+   b140 -> b141 [color=black,fontcolor=black,penwidth=3,label="len=7\nXA[0]",weight=1000];
+   b141 -> b142 [color=black,fontcolor=black,penwidth=3,label="len=6\nWD[0]",weight=1000];
+   start -> end [color=maroon,fontcolor=maroon,label="min len=0",weight=1000];
+   b140 -> b140 [color=black,fontcolor=black,style=dashed,label="len=1\nP[2]"];
+   b140 -> b141 [color=maroon,fontcolor=maroon,style=dashed,dir=back,label="len=-6\nXA[0]"];
+   b141 -> b141 [color=maroon,fontcolor=maroon,style=dashed,label="len=1\nRS[0], mcFPMul[0], mcFPAdd[0], WD[0]"];
+   b141 -> b142 [color=maroon,fontcolor=maroon,style=dashed,dir=back,label="len=-5\nWD[0]"];
+   b142 -> b142 [color=black,fontcolor=black,style=dashed,label="len=1\nDMb"];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1_S6 [label="steps [1,6]",shape=box];
+  S0 -> S1_S6[style=invis,weight=9000];
+  S7 [label="step 7",shape=box];
+  S1_S6 -> S7[style=invis,weight=9000];
+  S8_S12 [label="steps [8,12]",shape=box];
+  S7 -> S8_S12[style=invis,weight=9000];
+  S13 [label="step 13",shape=box];
+  S8_S12 -> S13[style=invis,weight=9000];
+  S14 [label="successor",shape=box];
+  S13 -> S14[style=invis,weight=9000];
+}

@@ -1,0 +1,1029 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/luanxinya/SVD/FPGA_test/128/toppl/toppl.hlscompile_summary, at Mon May 12 19:56:45 2025
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/luanxinya/SVD/FPGA_test/128/toppl -config /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg -cmdlineconfig /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /usr/xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/usr/xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'luanxinya' on host 'beiyou-SYS-420GP-TNR' (Linux_x86_64 version 6.8.0-52-generic) on Mon May 12 19:56:48 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/luanxinya/SVD/FPGA_test/128'
+INFO: [HLS 200-1909] Reading HLS ini file /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/luanxinya/SVD/FPGA_test/128/toppl 
+INFO: [HLS 200-1510] Running: open_project /home/luanxinya/SVD/FPGA_test/128/toppl -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=TopPL.cpp' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(3)
+INFO: [HLS 200-10] Adding design file '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.cflags=-I.' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(4)
+INFO: [HLS 200-1465] Applying ini 'syn.top=TopPL' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(2)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying ini 'package.ip.name=TopPL' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(6)
+INFO: [HLS 200-1465] Applying ini 'package.output.file=TopPL.xo' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cfg(8)
+INFO: [HLS 200-1510] Running: apply_ini /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline(2)
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+INFO: [HLS 200-1465] Applying ini 'clock=450000000Hz' at /home/luanxinya/SVD/FPGA_test/128/toppl/hls/config.cmdline(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.222ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 289.895 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.36 seconds. CPU system time: 0.61 seconds. Elapsed time: 4.13 seconds; current allocated memory: 293.180 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-1995] There were 23,786 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,165 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,399 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,448 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,861 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,852 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,851 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,851 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,851 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,161 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,181 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,163 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,070 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,980 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,840 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,011 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'generateHeader(unsigned int, unsigned int)' into 'send2AIE(hls::stream<ap_uint<128>, 512>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:103:16)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_704_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:15:30) in function 'send2AIE' completely with a factor of 30 (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:95:0)
+INFO: [HLS 214-367] Instantiating function 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' to 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' by setting 'fromAIEstrm' to 'sweep_rx0_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:223:23)
+INFO: [HLS 214-367] Instantiating function 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' to 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&) (.131)' by setting 'fromAIEstrm' to 'sweep_rx0_0' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:16)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.26.33.39.47)' into 'fp_struct<double>::to_double() const' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const' into 'fp_struct<double>::to_ieee() const' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.26.33.39.47)' into 'fp_struct<double>::to_int() const' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:482:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double generic_fmax<double>(double, double)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double generic_fmax<double>(double, double)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_ieee() const' into 'double generic_fmax<double>(double, double)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_int() const' into 'double generic_fmax<double>(double, double)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0)
+INFO: [HLS 214-178] Inlining function 'fmax' into 'SystemControl(int, ap_uint<32>*, hls::stream<ap_uint<1>, 4>*, hls::stream<float, 4>*)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:293:0)
+INFO: [HLS 214-178] Inlining function 'hls::print(char const*, float)' into 'SystemControl(int, ap_uint<32>*, hls::stream<ap_uint<1>, 4>*, hls::stream<float, 4>*)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:293:0)
+INFO: [HLS 214-178] Inlining function 'DDR2FIFO(ap_uint<128>*, hls::stream<ap_uint<128>, 512>*)' into 'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:241:0)
+INFO: [HLS 214-178] Inlining function 'FIFO2DDR(ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 4096>&)' into 'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:241:0)
+INFO: [HLS 214-178] Inlining function 'fmax' into 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&) (.131)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:60:0)
+INFO: [HLS 214-178] Inlining function 'fmax' into 'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:60:0)
+INFO: [HLS 214-178] Inlining function 'NormReceive(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' into 'Receive(hls::stream<ap_uint<1>, 4>&, hls::stream<float, 4>*, hls::stream<ap_uint<128>, 4096>*, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:210:0)
+INFO: [HLS 214-248] Applying array_partition to 'convSet': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:362:20)
+INFO: [HLS 214-248] Applying array_partition to 'syscontrol': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:363:21)
+INFO: [HLS 214-248] Applying array_partition to 'send_fifo': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:364:21)
+INFO: [HLS 214-248] Applying array_partition to 'receive_fifo': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:365:26)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_295_1> at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:295:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_304_3> at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:304:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_321_5> at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:321:25 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_315_4> at /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315:25 
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'data_temp' due to pipeline pragma (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'data_temp' due to pipeline pragma (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9)
+INFO: [HLS 214-248] Applying array_partition to 'data_temp': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15)
+INFO: [HLS 214-248] Applying array_partition to 'data_temp': Complete partitioning on dimension 1. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23)
+INFO: [HLS 214-115] Multiple burst reads of length 64 and bit width 512 has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:142:25)
+INFO: [HLS 214-115] Multiple burst reads of length 64 and bit width 512 has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:150:25)
+INFO: [HLS 214-115] Multiple burst writes of length 1024 and bit width 512 has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:197:21)
+INFO: [HLS 214-115] Multiple burst writes of length 8 and bit width 512 has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:197:21)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.53 seconds. CPU system time: 0.75 seconds. Elapsed time: 8.07 seconds; current allocated memory: 295.789 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 295.789 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 299.055 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 302.957 MB.
+INFO: [HLS 200-988] Store statement on variable  '' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:16) in a dataflow region ( 'dataflow_in_loop_VITIS_LOOP_220_2.1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:20)) will infer a separate dataflow process. Consider placing this store inside a function.
+INFO: [HLS 200-988] Store statement on variable  '' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:16) in a dataflow region ( 'dataflow_in_loop_VITIS_LOOP_220_2.1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:20)) will infer a separate dataflow process. Consider placing this store inside a function.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_VITIS_LOOP_172_2' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:174:9), detected/extracted 2 process function(s): 
+	 'send2AIE'
+	 'send2AIE.2'.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_VITIS_LOOP_220_2.1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:20), detected/extracted 6 process function(s): 
+	 'receive4AIE.1'
+	 'receive4AIE'
+	 'Block_newFuncRoot_proc_proc'
+	 'Block_newFuncRoot_proc_proc11'
+	 'Block_newFuncRoot_proc_proc12'
+	 'Block_newFuncRoot_proc_proc13'.
+INFO: [XFORM 203-712] Applying dataflow to function 'TopPL' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:331:1), detected/extracted 4 process function(s): 
+	 'SystemControl'
+	 'Send'
+	 'RoundRobin'
+	 'Receive'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:19:18) to (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:42:3) in function 'generic_fmax<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'SystemControl' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp:7->/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:307) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'receive4AIE.1' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp:7->/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:88) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'receive4AIE' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp:7->/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:88) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'send2AIE.3' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:5:25)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'send2AIE.2' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:5:25)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'send2AIE' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:5:25)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'receive4AIE.1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:18:26)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'receive4AIE' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:18:26)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'SystemControl' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:18:25)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.4 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.41 seconds; current allocated memory: 330.246 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_250_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:250:21) in function 'RoundRobin' the outer loop is not a perfect loop because there is nontrivial logic in the loop header.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-657] Generating channel convSet that flows backwards in the dataflow region.
+WARNING: [HLS 200-657] Generating channel convSet_1 that flows backwards in the dataflow region.
+WARNING: [HLS 200-657] Generating channel send_fifo that flows backwards in the dataflow region.
+WARNING: [HLS 200-657] Generating channel send_fifo_1 that flows backwards in the dataflow region.
+WARNING: [HLS 200-657] Generating channel receive_fifo that flows backwards in the dataflow region.
+WARNING: [HLS 200-657] Generating channel receive_fifo_1 that flows backwards in the dataflow region.
+WARNING: [HLS 200-1450] Process SystemControl has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1449] Process RoundRobin has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process Receive has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.43 seconds. CPU system time: 0.12 seconds. Elapsed time: 0.54 seconds; current allocated memory: 675.410 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'TopPL' ...
+WARNING: [SYN 201-103] Legalizing function name 'send2AIE.2_Pipeline_VITIS_LOOP_112_2' to 'send2AIE_2_Pipeline_VITIS_LOOP_112_2'.
+WARNING: [SYN 201-103] Legalizing function name 'send2AIE.2' to 'send2AIE_2'.
+WARNING: [SYN 201-103] Legalizing function name 'send2AIE.3_Pipeline_VITIS_LOOP_112_2' to 'send2AIE_3_Pipeline_VITIS_LOOP_112_2'.
+WARNING: [SYN 201-103] Legalizing function name 'send2AIE.3' to 'send2AIE_3'.
+WARNING: [SYN 201-103] Legalizing function name 'receive4AIE.1_Pipeline_VITIS_LOOP_76_2' to 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2'.
+WARNING: [SYN 201-103] Legalizing function name 'receive4AIE.1' to 'receive4AIE_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_220_2.1' to 'dataflow_in_loop_VITIS_LOOP_220_2_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SystemControl_Pipeline_VITIS_LOOP_295_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_295_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_295_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.18 seconds; current allocated memory: 677.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.04 seconds; current allocated memory: 677.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SystemControl_Pipeline_VITIS_LOOP_304_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_304_3'.
+WARNING: [HLS 200-880] The II Violation in module 'SystemControl_Pipeline_VITIS_LOOP_304_3' (loop 'VITIS_LOOP_304_3'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'fptrunc' operation 32 bit ('maxConv', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309) and 'fpext' operation 64 bit ('x', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'SystemControl_Pipeline_VITIS_LOOP_304_3' (loop 'VITIS_LOOP_304_3'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'fptrunc' operation 32 bit ('maxConv', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309) and 'fpext' operation 64 bit ('x', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'SystemControl_Pipeline_VITIS_LOOP_304_3' (loop 'VITIS_LOOP_304_3'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'fptrunc' operation 32 bit ('maxConv', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309) and 'fpext' operation 64 bit ('x', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'SystemControl_Pipeline_VITIS_LOOP_304_3' (loop 'VITIS_LOOP_304_3'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation 0 bit ('empty_write_ln309', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309) of variable 'maxConv', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309 on local variable 'empty' and 'load' operation 32 bit ('p_load14', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:309) on local variable 'empty'.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 16, loop 'VITIS_LOOP_304_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 678.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 678.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SystemControl_Pipeline_VITIS_LOOP_321_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_321_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_321_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 679.164 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 679.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SystemControl_Pipeline_VITIS_LOOP_315_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_315_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_315_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 679.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 679.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SystemControl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 679.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.07 seconds; current allocated memory: 679.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_112_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_112_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 680.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 680.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 681.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 681.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE_2_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_112_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_112_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 681.539 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 681.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 681.906 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 681.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_VITIS_LOOP_172_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 681.906 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 681.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_parent_loop_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 682.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 682.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE_3_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_112_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_112_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 683.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 683.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'send2AIE_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 683.398 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 683.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Send' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 683.867 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 683.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_150_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_150_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_150_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 684.359 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 684.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_142_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_142_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_142_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 684.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 684.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_256_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_256_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_256_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 685.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 685.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_261_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_261_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_261_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 685.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 685.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_267_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_267_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_267_5'
+WARNING: [HLS 200-871] Estimated clock period (1.788 ns) exceeds the target (target clock period: 2.222 ns, clock uncertainty: 0.600 ns, effective delay budget: 1.622 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'RoundRobin_Pipeline_VITIS_LOOP_267_5' consists of the following:
+	'store' operation 0 bit ('j_9_write_ln267', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267) of constant 0 on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267 [16]  (0.493 ns)
+	'load' operation 11 bit ('j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267) on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267 [20]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln267', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267) [22]  (0.802 ns)
+	'store' operation 0 bit ('j_9_write_ln267', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267) of variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267 on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:267 [38]  (0.493 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 685.867 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 685.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_275_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_275_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_275_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 686.180 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 686.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_280_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_280_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_280_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 686.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 686.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin_Pipeline_VITIS_LOOP_198_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_198_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_198_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 686.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 686.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RoundRobin' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 688.031 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 688.031 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_76_2'
+WARNING: [HLS 200-871] Estimated clock period (2.108 ns) exceeds the target (target clock period: 2.222 ns, clock uncertainty: 0.600 ns, effective delay budget: 1.622 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2' consists of the following:
+	'store' operation 0 bit ('j_02_write_ln76', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) of constant 1 on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76 [28]  (0.397 ns)
+	'load' operation 6 bit ('j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln76', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) [33]  (0.711 ns)
+	axis read operation ('empty', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:78) on port 'sweep_rx0_0_V_data_V' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:78) [46]  (1.000 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 689.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 689.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4AIE_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 690.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 690.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4AIE_Pipeline_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_76_2'
+WARNING: [HLS 200-871] Estimated clock period (2.108 ns) exceeds the target (target clock period: 2.222 ns, clock uncertainty: 0.600 ns, effective delay budget: 1.622 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'receive4AIE_Pipeline_VITIS_LOOP_76_2' consists of the following:
+	'store' operation 0 bit ('j_02_write_ln76', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) of constant 1 on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76 [28]  (0.397 ns)
+	'load' operation 6 bit ('j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln76', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:76) [33]  (0.711 ns)
+	axis read operation ('empty', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:78) on port 'sweep_rx0_1_V_data_V' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:78) [46]  (1.000 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 690.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 690.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4AIE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 691.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 691.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_newFuncRoot_proc_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 692.254 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_newFuncRoot_proc_proc11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.254 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_newFuncRoot_proc_proc12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.633 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_newFuncRoot_proc_proc13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.633 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_VITIS_LOOP_220_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (2.232 ns) exceeds the target (target clock period: 2.222 ns, clock uncertainty: 0.600 ns, effective delay budget: 1.622 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'dataflow_in_loop_VITIS_LOOP_220_2_1' consists of the following:
+	'alloca' operation 32 bit ('conv0_channel') [14]  (0.733 ns)
+	'call' operation 0 bit ('_ln222', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222) to 'receive4AIE.1' [28]  (1.499 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 692.633 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 692.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_parent_loop_proc10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 693.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 693.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4DDR_Pipeline_VITIS_LOOP_39_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_2'
+WARNING: [HLS 200-871] Estimated clock period (2.108 ns) exceeds the target (target clock period: 2.222 ns, clock uncertainty: 0.600 ns, effective delay budget: 1.622 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'receive4DDR_Pipeline_VITIS_LOOP_39_2' consists of the following:
+	'store' operation 0 bit ('j_03_write_ln39', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:39) of constant 1 on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:39 [28]  (0.397 ns)
+	'load' operation 6 bit ('j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:39) on local variable 'j', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:39 [32]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln39', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:39) [33]  (0.711 ns)
+	axis read operation ('empty', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:41) on port 'norm_rx0_V_data_V' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:41) [46]  (1.000 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 693.922 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 693.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'receive4DDR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 694.398 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 694.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Receive' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 694.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 694.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'TopPL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 695.352 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 695.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SystemControl_Pipeline_VITIS_LOOP_295_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SystemControl_Pipeline_VITIS_LOOP_295_1' pipeline 'VITIS_LOOP_295_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SystemControl_Pipeline_VITIS_LOOP_295_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 695.664 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SystemControl_Pipeline_VITIS_LOOP_304_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SystemControl_Pipeline_VITIS_LOOP_304_3' pipeline 'VITIS_LOOP_304_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'printdouble': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SystemControl_Pipeline_VITIS_LOOP_304_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 697.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SystemControl_Pipeline_VITIS_LOOP_321_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SystemControl_Pipeline_VITIS_LOOP_321_5' pipeline 'VITIS_LOOP_321_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SystemControl_Pipeline_VITIS_LOOP_321_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 700.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SystemControl_Pipeline_VITIS_LOOP_315_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'SystemControl_Pipeline_VITIS_LOOP_315_4' pipeline 'VITIS_LOOP_315_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SystemControl_Pipeline_VITIS_LOOP_315_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 701.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SystemControl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'printdouble': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SystemControl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 703.414 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'send2AIE_Pipeline_VITIS_LOOP_112_2' pipeline 'VITIS_LOOP_112_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE_Pipeline_VITIS_LOOP_112_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 705.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE'.
+INFO: [RTMG 210-278] Implementing memory 'TopPL_send2AIE_data_temp_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 706.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE_2_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'send2AIE_2_Pipeline_VITIS_LOOP_112_2' pipeline 'VITIS_LOOP_112_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE_2_Pipeline_VITIS_LOOP_112_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 707.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 708.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_VITIS_LOOP_172_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_VITIS_LOOP_172_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 710.129 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_parent_loop_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 710.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE_3_Pipeline_VITIS_LOOP_112_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'send2AIE_3_Pipeline_VITIS_LOOP_112_2' pipeline 'VITIS_LOOP_112_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE_3_Pipeline_VITIS_LOOP_112_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 711.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'send2AIE_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'send2AIE_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 712.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Send' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Send'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 714.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_150_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_150_3' pipeline 'VITIS_LOOP_150_3' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_150_3/m_axi_gmem0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_150_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 715.836 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_142_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_142_2' pipeline 'VITIS_LOOP_142_2' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_142_2/m_axi_gmem0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_142_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 717.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_256_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_256_3' pipeline 'VITIS_LOOP_256_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_256_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 718.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_261_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_261_4' pipeline 'VITIS_LOOP_261_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_261_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 718.824 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_267_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_267_5' pipeline 'VITIS_LOOP_267_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_267_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 719.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_275_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_275_6' pipeline 'VITIS_LOOP_275_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_275_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 720.430 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_280_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_280_7' pipeline 'VITIS_LOOP_280_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_280_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 721.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin_Pipeline_VITIS_LOOP_198_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'RoundRobin_Pipeline_VITIS_LOOP_198_2' pipeline 'VITIS_LOOP_198_2' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'RoundRobin_Pipeline_VITIS_LOOP_198_2/m_axi_gmem1_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin_Pipeline_VITIS_LOOP_198_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 722.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RoundRobin' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RoundRobin'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 726.484 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2' pipeline 'VITIS_LOOP_76_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4AIE_1_Pipeline_VITIS_LOOP_76_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 729.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4AIE_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4AIE_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 731.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4AIE_Pipeline_VITIS_LOOP_76_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'receive4AIE_Pipeline_VITIS_LOOP_76_2' pipeline 'VITIS_LOOP_76_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4AIE_Pipeline_VITIS_LOOP_76_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 733.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4AIE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4AIE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 735.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_newFuncRoot_proc_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_newFuncRoot_proc_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 737.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_newFuncRoot_proc_proc11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_newFuncRoot_proc_proc11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 738.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_newFuncRoot_proc_proc12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_newFuncRoot_proc_proc12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 738.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_newFuncRoot_proc_proc13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_newFuncRoot_proc_proc13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 738.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_VITIS_LOOP_220_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_VITIS_LOOP_220_2_1'.
+INFO: [RTMG 210-285] Implementing FIFO 'conv0_channel_U(TopPL_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conv1_channel_U(TopPL_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'empty_92_U(TopPL_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'empty_U(TopPL_fifo_w32_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 739.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_parent_loop_proc10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_proc10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 740.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4DDR_Pipeline_VITIS_LOOP_39_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'receive4DDR_Pipeline_VITIS_LOOP_39_2' pipeline 'VITIS_LOOP_39_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4DDR_Pipeline_VITIS_LOOP_39_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 741.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'receive4DDR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'receive4DDR'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 742.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Receive' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Receive'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 744.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'TopPL' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/dataIn' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/U' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/S' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/ConvArray' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/ITER' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_tx0_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/sweep_rx0_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_tx0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_tx0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_tx0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_tx0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_rx0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_rx0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_rx0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'TopPL/norm_rx0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'TopPL' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'dataIn', 'U', 'S', 'ConvArray', 'ITER' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'TopPL'.
+INFO: [RTMG 210-285] Implementing FIFO 'syscontrol_U(TopPL_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'syscontrol_1_U(TopPL_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'syscontrol_2_U(TopPL_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'convSet_U(TopPL_fifo_w32_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'convSet_1_U(TopPL_fifo_w32_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'send_fifo_U(TopPL_fifo_w128_d512_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'send_fifo_1_U(TopPL_fifo_w128_d512_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'receive_fifo_U(TopPL_fifo_w128_d4096_U)' using Ultra RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'receive_fifo_1_U(TopPL_fifo_w128_d4096_U)' using Ultra RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Send_U0_U(TopPL_start_for_Send_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Receive_U0_U(TopPL_start_for_Receive_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 748.141 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.15 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.2 seconds; current allocated memory: 750.793 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.74 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.77 seconds; current allocated memory: 767.402 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for TopPL.
+INFO: [VLOG 209-307] Generating Verilog RTL for TopPL.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 448.03 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 20.24 seconds. CPU system time: 2.05 seconds. Elapsed time: 26.31 seconds; current allocated memory: 477.598 MB.
+INFO: [HLS 200-1510] Running: export_design -flow none -format xo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1382.344 ; gain = 83.836 ; free physical = 107141 ; free virtual = 382737
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fptrunc_64ns_32_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fptrunc_64ns_32_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/xilinx/Vivado/2023.2/data/ip'.
+Running package_xo -xo_path /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.xo -kernel_name TopPL -kernel_xml /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/../kernel/kernel.xml -kernel_files /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp -ip_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/ip_unzip_dir -design_xml /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.design.xml -debug_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.debug -hls_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/hls_files -kernel_json /home/luanxinya/SVD/FPGA_test/128/toppl/hls/hls_data.json
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 19:57:37 2025...
+INFO: [HLS 200-802] Generated output file pl/TopPL.xo
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 21.14 seconds. CPU system time: 1.57 seconds. Elapsed time: 39.7 seconds; current allocated memory: 10.340 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 43.28 seconds. Total CPU system time: 3.98 seconds. Total elapsed time: 68.11 seconds; peak allocated memory: 777.832 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon May 12 19:57:55 2025...
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 13s

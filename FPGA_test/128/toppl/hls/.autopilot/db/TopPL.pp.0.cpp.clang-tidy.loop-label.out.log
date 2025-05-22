@@ -1,0 +1,176 @@
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:7950:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:7950:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8924:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8924:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8938:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8938:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8952:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:8952:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:10581:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:10581:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15469:5: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
+    for(int i = 0;i < BLOCK_SIZE;i ++) {
+    ^~~
+    VITIS_LOOP_32_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15469:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15476:9: warning: Added loop label VITIS_LOOP_39_2:   [xilinx-label-all-loops]
+        for(int j = 1;j < ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_39_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15476:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15506:5: warning: Added loop label VITIS_LOOP_69_1:   [xilinx-label-all-loops]
+    for(int i = 0;i < BLOCK_SIZE;i ++) {
+    ^~~
+    VITIS_LOOP_69_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15506:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15513:9: warning: Added loop label VITIS_LOOP_76_2:   [xilinx-label-all-loops]
+        for(int j = 1;j < ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_76_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15513:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15539:5: warning: Added loop label VITIS_LOOP_102_1:   [xilinx-label-all-loops]
+    for(int i = 0;i < BLOCK_SIZE;i ++) {
+    ^~~
+    VITIS_LOOP_102_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15539:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15549:7: warning: Added loop label VITIS_LOOP_112_2:   [xilinx-label-all-loops]
+      for(int j = 1;j < ROW/ELEM_NUM;j ++) {
+      ^~~
+      VITIS_LOOP_112_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15549:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15577:3: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+  for(int i = 0;i < BLOCK_NUM;i ++) {
+  ^~~
+  VITIS_LOOP_140_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15577:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15579:7: warning: Added loop label VITIS_LOOP_142_2:   [xilinx-label-all-loops]
+      for(int j = 0;j < BLOCK_DATA_SIZE;j ++) {
+      ^~~
+      VITIS_LOOP_142_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15579:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15587:7: warning: Added loop label VITIS_LOOP_150_3:   [xilinx-label-all-loops]
+      for(int j = 0;j < BLOCK_DATA_SIZE;j ++) {
+      ^~~
+      VITIS_LOOP_150_3: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15587:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15600:45: error: Invalid Directive: for current device, fifo + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=fifo type=fifo impl=bram
+                                            ^
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15606:5: warning: Added loop label VITIS_LOOP_169_1:   [xilinx-label-all-loops]
+    while(true) {
+    ^~~~~
+    VITIS_LOOP_169_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15606:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15609:7: warning: Added loop label VITIS_LOOP_172_2:   [xilinx-label-all-loops]
+      for(int i = 0;i < SWEEP_STEP;i ++) {
+      ^~~
+      VITIS_LOOP_172_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15609:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15616:5: warning: Added loop label VITIS_LOOP_179_3:   [xilinx-label-all-loops]
+    for(int i = 0;i < BLOCK_NUM/2;i ++) {
+    ^~~
+    VITIS_LOOP_179_3: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15616:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15625:3: warning: Added loop label VITIS_LOOP_188_1:   [xilinx-label-all-loops]
+  for(int i = 0;i < BLOCK_NUM;i ++) {
+  ^~~
+  VITIS_LOOP_188_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15625:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15634:3: warning: Added loop label VITIS_LOOP_197_1:   [xilinx-label-all-loops]
+  for(int i = 0;i < COL;i ++) {
+  ^~~
+  VITIS_LOOP_197_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15634:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15635:5: warning: Added loop label VITIS_LOOP_198_2:   [xilinx-label-all-loops]
+    for(int j = 0;j < ROW/ELEM_NUM;j ++) {
+    ^~~
+    VITIS_LOOP_198_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15635:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15648:45: error: Invalid Directive: for current device, fifo + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=fifo type=fifo impl=uram
+                                            ^
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15653:5: warning: Added loop label VITIS_LOOP_216_1:   [xilinx-label-all-loops]
+    while(true) {
+    ^~~~~
+    VITIS_LOOP_216_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15653:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15657:7: warning: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+      for(int i = 0;i < SWEEP_STEP;i ++) {
+      ^~~
+      VITIS_LOOP_220_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15657:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15687:3: warning: Added loop label VITIS_LOOP_250_1:   [xilinx-label-all-loops]
+  while(true) {
+  ^~~~~
+  VITIS_LOOP_250_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15687:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15691:5: warning: Added loop label VITIS_LOOP_254_2:   [xilinx-label-all-loops]
+    for(int i = 0;i < SINGLE_SWEEP_TIMES;i ++) {
+    ^~~
+    VITIS_LOOP_254_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15691:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15693:9: warning: Added loop label VITIS_LOOP_256_3:   [xilinx-label-all-loops]
+        for(int j = 0;j < BLOCK_SIZE*ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_256_3: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15693:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15698:9: warning: Added loop label VITIS_LOOP_261_4:   [xilinx-label-all-loops]
+        for(int j = 0;j < BLOCK_SIZE*ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_261_4: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15698:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15704:9: warning: Added loop label VITIS_LOOP_267_5:   [xilinx-label-all-loops]
+        for(int j = 0;j < (BLOCK_NUM/2-2)*BLOCK_SIZE*ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_267_5: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15704:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15712:9: warning: Added loop label VITIS_LOOP_275_6:   [xilinx-label-all-loops]
+        for(int j = 0;j < BLOCK_SIZE*ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_275_6: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15712:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15717:9: warning: Added loop label VITIS_LOOP_280_7:   [xilinx-label-all-loops]
+        for(int j = 0;j < BLOCK_SIZE*ROW/ELEM_NUM;j ++) {
+        ^~~
+        VITIS_LOOP_280_7: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15717:9: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15732:3: warning: Added loop label VITIS_LOOP_295_1:   [xilinx-label-all-loops]
+  for(int i = 0;i < FUNCNUM;i ++) {
+  ^~~
+  VITIS_LOOP_295_1: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15732:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15738:3: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+  while(true) {
+  ^~~~~
+  VITIS_LOOP_301_2: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15738:3: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15741:5: warning: Added loop label VITIS_LOOP_304_3:   [xilinx-label-all-loops]
+    for(int i = 0;i < SWEEP_STEP;i ++) {
+    ^~~
+    VITIS_LOOP_304_3: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15741:5: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15752:7: warning: Added loop label VITIS_LOOP_315_4:   [xilinx-label-all-loops]
+      for(int i = 0;i < FUNCNUM;i ++) {
+      ^~~
+      VITIS_LOOP_315_4: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15752:7: note: FIX-IT applied suggested code changes
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15758:7: warning: Added loop label VITIS_LOOP_321_5:   [xilinx-label-all-loops]
+      for(int i = 0;i < FUNCNUM;i ++) {
+      ^~~
+      VITIS_LOOP_321_5: 
+/home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp:15758:7: note: FIX-IT applied suggested code changes

@@ -1,0 +1,172 @@
+Modulo scheduling report for loop #837 in "/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp", line 28: (loop #30)
+==================================================================================================================================
+
+Initiation interval (II): 1 cycles (minimum II = 1)
+Software pipeline stages: 14 (folded over 13 iterations), minimum: 14
+Total iteration length: 14 cycles
+Aggressively scheduled: 1
+Aggressively folded: 1
+
+Min II:
+-------
+
+ * Critical cycle: b142 -[1,LC]-> b142 , delay: 1, loop degree: 1 => length critical cycle: 1
+
+    details:
+
+       b142  VST wd0, [p3], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp:34:21]
+         |
+         |
+       [1,LC]   flow dep: __ali0.1215/__ali0.533 ; loop carried
+         |
+         v
+       b142  VST wd0, [p3], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp:34:21]
+
+    Total delay: 1, total loop degree: 1 => length critical cycle: 1
+
+ * Lower bound due to resources: 1
+
+    Critical transitories: AcqStRsrc_E1, AcqStRsrc_E2, AcqStRsrc_E3, AcqStRsrc_ID, StRelRsrc_ID, agbsR, agisP, agisRO, agosI, agusPO, agusRO, cfgMaddmode, cfgMfloat, cfgMlconf, cfgMlxoffs, cfgMlzoffs, cfgMlzstart, cfgMxstart, cl_ra, cl_rb, cl_rm, dmv_wrs, dn_ads, fltAddOvstat, fltMulOstat, fltMulOvstat, fpaccO, fpaccR, idx_w_rv_wextx, mcRsrcFPAdd, mcRsrcFPMul, p_rs, p_ws, pmcA, pmxAl, r_rx, r_wb, store_rsrc, te1_agpsM, v_rs, v_rv, v_wv, xa_r, y_r, __cvT1417, __fpPaccA_w, __p_dmv_wrs_hi_r, __p_dmv_wrs_w, __pe1_agusM_w, __pe1_agusPO_w, __pid_agosMO_w, __rsrc_P_wr_p_ws___P_p_ws_wad_E2, __rsrc_RS_wr_r_wb___RS_r_wb_wad_E6, __rsrc_WD_wr_w_wv___WD_w_wv_wad_E6
+    Critical transitory groups: AcqLdaRsrc_ID,AcqLdbRsrc_ID:2
+
+ * Minimum control cycles: 0
+
+ => Lower bound for software pipelined schedule: 1 cycles
+
+Schedule:
+---------
+
+ 0:  b140 '0' @  0 (VLDA wr0, [p2], #32)                                       b141 '7' @  7 (VFPMUL wd0, r7, ya, r8, cl0, wc0, #0, cl0, #0, cl1)        b142 '13' @ 13 (VST wd0, [p3], #32)                                       
+
+Register live ranges:
+---------------------
+
+Accurate access stages (aggressively scheduled)
+
+
+Register live ranges for register VH[8]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+VH[5]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: __tmp.2826 <154> L0:0
+VH[4]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: __tmp.2826 <154> L0:0
+VH[0]: span  1, min_span  1      |:::::::::::B:::::::::::|B| B: __tmp.2790 <140> L384:27
+VH[6]: span  1, min_span  1      |:::::::::::::::::C:::::|C| C: __tmp.2795 <141> L73:114
+VH[7]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VH[3]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VH[2]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VH[1]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+
+
+Register live ranges for register VL[8]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+VL[5]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: __tmp.2826 <154> L0:0
+VL[4]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: __tmp.2826 <154> L0:0
+VL[0]: span  1, min_span  1      |:::::::::::B:::::::::::|B| B: __tmp.2790 <140> L384:27
+VL[6]: span  1, min_span  1      |:::::::::::::::::C:::::|C| C: __tmp.2795 <141> L73:114
+VL[7]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VL[3]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VL[2]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+VL[1]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+
+
+Register live ranges for register R[16]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+R[ 8]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: _cst.3524 <1177> L29:17
+R[ 7]: span  1, min_span  1      |:::::::::::::::::b:::::|b| B: __seff.2791 <141> L73:114
+R[ 9]: span 23, min_span  0      |ccccccccccccccccccccccc|c| C: _cst.3537 <1184> L175:25
+R[ 6]: span 23, min_span  0      |ddddddddddddddddddddddd|d| D: __tmp.2863 <164> L303:18
+R[ 5]: span 23, min_span  0      |eeeeeeeeeeeeeeeeeeeeeee|e| E: __tmp.2854 <168> L175:25
+R[ 4]: span 23, min_span  0      |fffffffffffffffffffffff|f| F: bufId.2844 <167> L42:97
+R[ 3]: span 23, min_span  0      |ggggggggggggggggggggggg|g| G: __tmp.2946
+R[15]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[14]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[13]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[12]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[11]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[10]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[ 2]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[ 1]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+R[ 0]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+
+
+Register live ranges for register LR[1]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+LR[0]: span 23, min_span  0      |aaaaaaaaaaaaaaaaaaaaaaa|a| A: __la.321
+
+
+Register live ranges for register CL[8]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+CL[1]: span 23, min_span 23      |AAAAAAAAAAAAAAAAAAAAAAA|A| A: __ct_9437184.3742 <1300>
+CL[0]: span 23, min_span 23      |BBBBBBBBBBBBBBBBBBBBBBB|B| B: _cst.3740 <1298>
+CL[7]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CL[6]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CL[5]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CL[4]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CL[3]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CL[2]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+
+
+Register live ranges for register CH[8]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+CH[5]: span 23, min_span  0      |aaaaaaaaaaaaaaaaaaaaaaa|a| A: __cal_sav.3484 <1151>
+CH[2]: span 23, min_span  0      |bbbbbbbbbbbbbbbbbbbbbbb|b| B: __tmp.2905 <744> L37:18
+CH[1]: span 23, min_span  0      |ccccccccccccccccccccccc|c| C: __cal_sav.3508 <1167>
+CH[0]: span 23, min_span  0      |ddddddddddddddddddddddd|d| D: __cal_sav.3496 <1159>
+CH[7]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CH[6]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CH[4]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+CH[3]: span  0, min_span  0      |:::::::::::::::::::::::|.| 
+
+
+Register live ranges for register mcFPMul[1]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+mcFPMul[0]: span  1, min_span  1 |:::::::::::::::a:::::::|a| A: __seff.2792 <141> L73:114
+
+
+Register live ranges for register mcFPAdd[1]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+mcFPAdd[0]: span  1, min_span  1 |:::::::::::::::::a:::::|a| A: __seff.2793 <141> L73:114
+
+
+Register live ranges for register P[8]:
+
+                                  00000000001111111111222
+                                  01234567890123456789012 0
+P[2]: span  1, min_span  1       |::::::A::::::::::::::::|A| A: __shv___tmp.2788 <140> L384:27
+P[3]: span  1, min_span  1       |:::::::::::::::::::B:::|B| B: __shv___tmp.2800 <142> L34:21
+P[7]: span 23, min_span  0       |ccccccccccccccccccccccc|c| C: __cal_sav.2147
+P[6]: span 23, min_span  0       |ddddddddddddddddddddddd|d| D: __cal_sav.2149
+P[0]: span 23, min_span  0       |eeeeeeeeeeeeeeeeeeeeeee|e| E: __shv___ptr__ZL11sync_buffer.3299 <172> L36:26
+P[5]: span  0, min_span  0       |:::::::::::::::::::::::|.| 
+P[4]: span  0, min_span  0       |:::::::::::::::::::::::|.| 
+P[1]: span  0, min_span  0       |:::::::::::::::::::::::|.| 
+
+General info:
+-------------
+
+Tool    : mist version U-2022.12#3eec2545bc#230622 (s2)
+Cmd line: --mist2 -v -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 +Omodo -k110 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +Odisable-spill-instr-class=LR_short_spill +Odisaggr-record-accesses +Oslr=crUPSMode +Oslr=crSRSMode -ggraph
+Work dir: /home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork
+SFG in : 0_7-main__ra.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork/0_7-main__ra.sfg)
+SFG out: 0_7-main__s2.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork/0_7-main__s2.sfg)
+Src file: /home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp
+Function: main
+Line    : 28
+Loop    : #30
+Body    : #837
+# nodes : 3

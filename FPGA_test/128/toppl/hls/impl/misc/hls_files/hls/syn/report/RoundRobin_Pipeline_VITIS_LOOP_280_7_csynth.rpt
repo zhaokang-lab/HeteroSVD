@@ -1,0 +1,151 @@
+
+
+================================================================
+== Vitis HLS Report for 'RoundRobin_Pipeline_VITIS_LOOP_280_7'
+================================================================
+* Date:           Mon May 12 19:57:09 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.595 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      259|      259|  0.575 us|  0.575 us|  259|  259|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_280_7  |      257|      257|         3|          1|          1|   256|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|      23|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      24|    -|
+|Register         |        -|     -|      142|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|      142|      47|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |j_11_fu_81_p2              |         +|   0|  0|   9|           9|           1|
+    |icmp_ln280_fu_87_p2        |      icmp|   0|  0|  10|           9|          10|
+    |ap_block_pp0_stage0_01001  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  23|          20|          14|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   2|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   2|          2|    1|          2|
+    |ap_sig_allocacmp_j_10    |   8|          2|    9|         18|
+    |j_fu_46                  |   8|          2|    9|         18|
+    |receive_fifo_1_blk_n     |   2|          2|    1|          2|
+    |send_fifo_1_blk_n        |   2|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  24|         12|   22|         44|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+-----+----+-----+-----------+
+    |               Name               |  FF | LUT| Bits| Const Bits|
+    +----------------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                         |    1|   0|    1|          0|
+    |ap_done_reg                       |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |    1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |    1|   0|    1|          0|
+    |j_fu_46                           |    9|   0|    9|          0|
+    |receive_fifo_1_read_reg_124       |  128|   0|  128|          0|
+    +----------------------------------+-----+----+-----+-----------+
+    |Total                             |  142|   0|  142|          0|
+    +----------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  RoundRobin_Pipeline_VITIS_LOOP_280_7|  return value|
+|receive_fifo_1_dout            |   in|  128|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_num_data_valid  |   in|   13|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_fifo_cap        |   in|   13|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_empty_n         |   in|    1|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_read            |  out|    1|     ap_fifo|                        receive_fifo_1|       pointer|
+|send_fifo_1_din                |  out|  128|     ap_fifo|                           send_fifo_1|       pointer|
+|send_fifo_1_num_data_valid     |   in|   10|     ap_fifo|                           send_fifo_1|       pointer|
+|send_fifo_1_fifo_cap           |   in|   10|     ap_fifo|                           send_fifo_1|       pointer|
+|send_fifo_1_full_n             |   in|    1|     ap_fifo|                           send_fifo_1|       pointer|
+|send_fifo_1_write              |  out|    1|     ap_fifo|                           send_fifo_1|       pointer|
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+

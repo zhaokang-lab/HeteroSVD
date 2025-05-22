@@ -1,0 +1,10 @@
+digraph N {
+ b132[color=orange,fontcolor=black,style=filled,label="b132\nEVENT #2"];  {rank=same; S0;  b132;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S0;  end;}
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="successor",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+}

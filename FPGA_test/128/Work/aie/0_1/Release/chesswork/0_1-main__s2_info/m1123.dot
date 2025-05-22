@@ -1,0 +1,26 @@
+digraph N {
+ b1437[color=orange,fontcolor=black,style=filled,label="b1437"];  {rank=same; S0;  b1437;}
+ b1438[color=orange,fontcolor=black,style=filled,label="b1438"];  {rank=same; S1;  b1438;}
+ b1439[color=orange,fontcolor=black,style=filled,label="b1439"];  {rank=same; S2;  b1439;}
+ b1440[color=orange,fontcolor=black,style=filled,label="b1440"];  {rank=same; S3;  b1440;}
+ b1441[color=orange,fontcolor=black,style=filled,label="b1441"];  {rank=same; S4;  b1441;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S4;  end;}
+   b1437 -> b1438 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1438 -> b1439 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1439 -> b1440 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1440 -> b1441 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2 [label="step 2",shape=box];
+  S1 -> S2[style=invis,weight=9000];
+  S3 [label="step 3",shape=box];
+  S2 -> S3[style=invis,weight=9000];
+  S4 [label="step 4",shape=box];
+  S3 -> S4[style=invis,weight=9000];
+  S5 [label="successor",shape=box];
+  S4 -> S5[style=invis,weight=9000];
+}

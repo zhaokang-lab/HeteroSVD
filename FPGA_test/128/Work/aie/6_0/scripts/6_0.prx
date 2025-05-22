@@ -1,0 +1,12 @@
+<project name="Project" processor="me">
+  <file type="c" name="6_0.cc" path="../src"/>
+  <issinit/>
+  <option id="cpp.define" value="__AIENGINE__ __AIE_ARCH__=10" inherit = "1"/>
+  <option id="backend.mist2.xargs" value="-ggraph" inherit = "1"/>
+  <option id="bridge.cfg" value="6_0.bcf"/>
+  <option id="cpp.include" value="&lt;XILINX_VITIS_AIETOOLS&gt;/include /home/luanxinya/SVD/FPGA_test/128/&lt;AIE_SRC_DIR&gt; /home/luanxinya/SVD/FPGA_test/128/&lt;AIE_SRC_DIR&gt;/aie/ProcessUnit /home/luanxinya/SVD/FPGA_test/128/./ /home/luanxinya/SVD/FPGA_test/128/./aie /home/luanxinya/SVD/FPGA_test/128//home/luanxinya/SVD/FPGA_test/128/./ /home/luanxinya/SVD/FPGA_test/128//home/luanxinya/SVD/FPGA_test/128/./aie /home/luanxinya/SVD/FPGA_test/128//usr/xilinx/Vitis/2023.2/aietools/include /usr/xilinx/Vitis/2023.2/aietools/include " inherit="1"/>
+  <option id="project.dir" value="&lt;CONFIG&gt;/6_0"/>
+  <option id="project.name" value="6_0"/>
+  <option id="project.type" value="exe"/>
+  <option id="simrun.issca" value="&lt;XILINX_VITIS_AIETOOLS&gt;/bin/unwrapped/lnx64.o/aie/ca_udm_dbg" inherit="0"/>
+</project>

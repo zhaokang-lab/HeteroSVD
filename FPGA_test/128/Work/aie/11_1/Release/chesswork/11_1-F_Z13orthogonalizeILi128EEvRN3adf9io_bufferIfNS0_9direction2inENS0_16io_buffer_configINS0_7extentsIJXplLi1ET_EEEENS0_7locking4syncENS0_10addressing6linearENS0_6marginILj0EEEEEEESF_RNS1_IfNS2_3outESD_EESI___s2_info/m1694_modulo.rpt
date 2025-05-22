@@ -1,0 +1,171 @@
+Modulo scheduling report for loop #1694 in "/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp", line 89: (loop #38)
+=======================================================================================================================================
+
+Initiation interval (II): 4 cycles (minimum II = 4)
+Software pipeline stages: 4 (folded over 3 iterations), minimum: 4
+Total iteration length: 16 cycles
+Aggressively scheduled: 1
+Aggressively folded: 1
+
+Min II:
+-------
+
+ * Critical cycle: b148 -[2,BP1]-> b150 -[6]-> b152 -[A:-5]-> b151 -[A:1,LC]-> b148 , delay: 4, loop degree: 1 => length critical cycle: 4
+
+    details:
+
+       b148  VFPMAC wd0, r7, wd1, ya, r12, cl0, wc0, #0, cl0, #0, cl4 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+        [2]     flow dep: __tmp.4587 in WD[0] , bypassed 1
+         |
+         v
+       b150  VFPMAC wd0, r5, wd0, ya, r12, cl0, wc1, #0, cl0, #0, cl4 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/mul_acc32_fp.hpp:85:114]
+         |
+         |
+        [6]     flow dep: __tmp.4594 in WD[0] 
+         |
+         v
+       b152  VST wd0, [p2], #32 [/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp:98:25]
+         |
+         |
+        [-5]    anti dep: __tmp.4594 in WD[0] -> __tmp.4611 in WD[0] 
+         |
+         v
+       b151  VFPMAC wd0, r4, wr3, ya, r12, cl0, wc0, #0, cl0, #0, cl4 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/mul_acc32_fp.hpp:85:114]
+         |
+         |
+       [1,LC]   anti dep: __seff.4608 in mcFPMul[0] , __seff.4609 in mcFPAdd[0] , __tmp.4611 in WD[0] -> __seff.4579 in mcFPMul[0] , __seff.4580 in mcFPAdd[0] , __tmp.4587 in WD[0] ; loop carried
+         |
+         v
+       b148  VFPMAC wd0, r7, wd1, ya, r12, cl0, wc0, #0, cl0, #0, cl4 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+
+    Total delay: 4, total loop degree: 1 => length critical cycle: 4
+
+ * Lower bound due to resources: 4
+
+    Critical transitories: cfgMaddmode, cfgMfloat, cfgMlconf, cfgMlxoffs, cfgMlzoffs, cfgMlzstart, cfgMxstart, cl_ra, cl_rb, cl_rm, fltAddOvstat, fltMulOstat, fltMulOvstat, fpaccO, fpaccR, mcRsrcFPAdd, mcRsrcFPMul, pmcA, pmxAl, r_rx, r_wb, v_rf, v_rv, v_wv, xa_r, y_r, __fpPaccA_w, __rsrc_RS_wr_r_wb___RS_r_wb_wad_E6
+
+ * Minimum control cycles: 0
+
+ => Lower bound for software pipelined schedule: 4 cycles
+
+Schedule:
+---------
+
+ 0:  b147 '0' @  0 (VLDA wr0, [p6], #32)                                             b151 '2' @  8 (VFPMAC wd0, r4, wr3, ya, r12, cl0, wc0, #0, cl0, #0, cl4)       
+ 1:  b148 '1' @  5 (VFPMAC wd0, r7, wd1, ya, r12, cl0, wc0, #0, cl0, #0, cl4)        b152 '3' @ 13 (VST wd0, [p2], #32)                                             
+ 2:  b146 '0' @  2 (VLDA wr0, [p1], #32)                                             b149 '1' @  6 (VFPMAC wr3, r6, wd1, ya, r12, cl0, wc1, #0, cl0, #1, cl4)        b153 '3' @ 14 (VST wd0, [p7], #32)                                             
+ 3:  b150 '1' @  7 (VFPMAC wd0, r5, wd0, ya, r12, cl0, wc1, #0, cl0, #0, cl4)       
+
+Register live ranges:
+---------------------
+
+Accurate access stages (aggressively scheduled)
+
+
+Register live ranges for register VH[8]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+VH[7]: span 28, min_span 28      |AAAAAAAAAAAAAAAAAAAAAAAAAAAA|AAAA| A: acc_ij.4707 <843> L384:27
+VH[5]: span 28, min_span 28      |BBBBBBBBBBBBBBBBBBBBBBBBBBBB|BBBB| B: __tmp.4708 <844> L384:27
+VH[4]: span 28, min_span 28      |CCCCCCCCCCCCCCCCCCCCCCCCCCCC|CCCC| C: __tmp.4706 <842> L384:27
+VH[0]: span  3, min_span  2      |:...:...:..DDE..:...:...:...|DE.D| D: __tmp.4589 <147> L384:27, E: vec1.4577 <146> L104:19
+VH[6]: span  4, min_span  4      |:...:...:...:..F:GH.:...:...|.GHF| F: __tmp.4587 <148> L384:27, G: __tmp.4594 <150> L85:114, H: __tmp.4611 <151> L85:114
+VH[3]: span  1, min_span  1      |:...:...:...:...I...:...:...|I...| I: __tmp.4605 <149> L384:27
+VH[2]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+VH[1]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+
+
+Register live ranges for register VL[8]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+VL[7]: span 28, min_span 28      |AAAAAAAAAAAAAAAAAAAAAAAAAAAA|AAAA| A: acc_ij.4707 <843> L384:27
+VL[5]: span 28, min_span 28      |BBBBBBBBBBBBBBBBBBBBBBBBBBBB|BBBB| B: __tmp.4708 <844> L384:27
+VL[4]: span 28, min_span 28      |CCCCCCCCCCCCCCCCCCCCCCCCCCCC|CCCC| C: __tmp.4706 <842> L384:27
+VL[0]: span  3, min_span  2      |:...:...:..DDE..:...:...:...|DE.D| D: __tmp.4589 <147> L384:27, E: vec1.4577 <146> L104:19
+VL[6]: span  4, min_span  4      |:...:...:...:..F:GH.:...:...|.GHF| F: __tmp.4587 <148> L384:27, G: __tmp.4594 <150> L85:114, H: __tmp.4611 <151> L85:114
+VL[3]: span  1, min_span  1      |:...:...:...:...I...:...:...|I...| I: __tmp.4605 <149> L384:27
+VL[2]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+VL[1]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+
+
+Register live ranges for register R[16]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+R[12]: span 28, min_span 28      |AAAAAAAAAAAAAAAAAAAAAAAAAAAA|AAAA| A: _cst.5664 <1233> L384:27
+R[ 7]: span  1, min_span  1      |:...:...:...:..b:...:...:...|...b| B: __seff.4578 <148> L384:27
+R[ 6]: span  1, min_span  1      |:...:...:...:...c...:...:...|c...| C: __seff.4601 <149> L384:27
+R[ 5]: span  1, min_span  1      |:...:...:...:...:d..:...:...|.d..| D: __seff.4590 <150> L85:114
+R[ 4]: span  1, min_span  1      |:...:...:...:...:.e.:...:...|..e.| E: __seff.4607 <151> L85:114
+R[15]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[14]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[13]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[11]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[10]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 9]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 8]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 3]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 2]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 1]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+R[ 0]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+
+
+Register live ranges for register CL[8]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+CL[4]: span 28, min_span 28      |AAAAAAAAAAAAAAAAAAAAAAAAAAAA|AAAA| A: __ct_9437184.4959 <952> L73:114
+CL[0]: span 28, min_span 28      |BBBBBBBBBBBBBBBBBBBBBBBBBBBB|BBBB| B: _cst.4687 <826> L73:114
+CL[2]: span 28, min_span  0      |cccccccccccccccccccccccccccc|cccc| C: _cst.5636 <1228> L77:91
+CL[7]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+CL[6]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+CL[5]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+CL[3]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+CL[1]: span  0, min_span  0      |:...:...:...:...:...:...:...|....| 
+
+
+Register live ranges for register mcFPMul[1]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+mcFPMul[0]: span  4, min_span  1 |:...:...:...:abcd...:...:...|dabc| A: __seff.4579 <148> L384:27, B: __seff.4602 <149> L384:27, C: __seff.4591 <150> L85:114, D: __seff.4608 <151> L85:114
+
+
+Register live ranges for register mcFPAdd[1]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+mcFPAdd[0]: span  4, min_span  1 |:...:...:...:..abcd.:...:...|bcda| A: __seff.4580 <148> L384:27, B: __seff.4603 <149> L384:27, C: __seff.4592 <150> L85:114, D: __seff.4609 <151> L85:114
+
+
+Register live ranges for register P[8]:
+
+                                  0000000000111111111122222222
+                                  0123456789012345678901234567 0123
+P[6]: span  1, min_span  1       |:...:.A.:...:...:...:...:...|..A.| A: __shv___tmp.4585 <147> L384:27
+P[1]: span  1, min_span  1       |:...:...B...:...:...:...:...|B...| B: __shv___tmp.4621 <146> L104:19
+P[2]: span  1, min_span  1       |:...:...:...:...:..C:...:...|...C| C: __shv___tmp.4599 <152> L98:25
+P[7]: span  1, min_span  1       |:...:...:...:...:...D...:...|D...| D: __shv___tmp.4616 <153> L102:25
+P[5]: span  0, min_span  0       |:...:...:...:...:...:...:...|....| 
+P[4]: span  0, min_span  0       |:...:...:...:...:...:...:...|....| 
+P[3]: span  0, min_span  0       |:...:...:...:...:...:...:...|....| 
+P[0]: span  0, min_span  0       |:...:...:...:...:...:...:...|....| 
+
+General info:
+-------------
+
+Tool    : mist version U-2022.12#3eec2545bc#230622 (s2)
+Cmd line: --mist2 -v -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 +Omodo -k110 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +Odisable-spill-instr-class=LR_short_spill +Odisaggr-record-accesses +Oslr=crUPSMode +Oslr=crSRSMode -ggraph
+Work dir: /home/luanxinya/SVD/FPGA_test/128/Work/aie/11_1/Release/chesswork
+SFG in : 11_1-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/11_1/Release/chesswork/11_1-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___ra.sfg)
+SFG out: 11_1-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/11_1/Release/chesswork/11_1-F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI___s2.sfg)
+Src file: /home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Orthogonalize.cpp
+Function: F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI_
+Line    : 89
+Loop    : #38
+Body    : #1694
+# nodes : 8

@@ -1,0 +1,2391 @@
+{
+  "net1":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R0", "S_SOUTH_ch0_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C3_R1", "S_NORTH_ch3_C3_R0"],
+      ["M_WEST_ch3_C1_R0", "S_EAST_ch3_C0_R0"],
+      ["M_WEST_ch3_C2_R0", "S_EAST_ch3_C1_R0"],
+      ["M_WEST_ch3_C3_R0", "S_EAST_ch3_C2_R0"],
+      ["S_EAST_ch3_C0_R0", "M_S2MM_DMA_ch1_C0_R0"],
+      ["S_EAST_ch3_C1_R0", "M_WEST_ch3_C1_R0"],
+      ["S_EAST_ch3_C2_R0", "M_WEST_ch3_C2_R0"],
+      ["S_NORTH_ch3_C3_R0", "M_WEST_ch3_C3_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch0_C3_R0"],
+      ["S_SOUTH_ch0_C3_R1", "M_SOUTH_ch3_C3_R1"]
+    ]
+  },
+  "net3":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R0", "S_SOUTH_ch0_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C3_R1", "S_NORTH_ch3_C3_R0"],
+      ["M_WEST_ch3_C2_R0", "S_EAST_ch3_C1_R0"],
+      ["M_WEST_ch3_C3_R0", "S_EAST_ch3_C2_R0"],
+      ["S_EAST_ch3_C1_R0", "M_S2MM_DMA_ch1_C1_R0"],
+      ["S_EAST_ch3_C2_R0", "M_WEST_ch3_C2_R0"],
+      ["S_NORTH_ch3_C3_R0", "M_WEST_ch3_C3_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch0_C3_R0"],
+      ["S_SOUTH_ch0_C3_R1", "M_SOUTH_ch3_C3_R1"]
+    ]
+  },
+  "net5":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R0", "S_SOUTH_ch0_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C3_R1", "S_NORTH_ch3_C3_R0"],
+      ["M_WEST_ch3_C3_R0", "S_EAST_ch3_C2_R0"],
+      ["S_EAST_ch3_C2_R0", "M_S2MM_DMA_ch1_C2_R0"],
+      ["S_NORTH_ch3_C3_R0", "M_WEST_ch3_C3_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch0_C3_R0"],
+      ["S_SOUTH_ch0_C3_R1", "M_SOUTH_ch3_C3_R1"]
+    ]
+  },
+  "net7":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R0", "S_SOUTH_ch0_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C3_R1", "S_NORTH_ch3_C3_R0"],
+      ["S_NORTH_ch3_C3_R0", "M_S2MM_DMA_ch1_C3_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch0_C3_R0"],
+      ["S_SOUTH_ch0_C3_R1", "M_SOUTH_ch3_C3_R1"]
+    ]
+  },
+  "net9":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C3_R1", "S_WEST_ch3_C4_R1"],
+      ["M_NORTH_ch1_C3_R0", "S_SOUTH_ch1_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C4_R1", "S_NORTH_ch3_C4_R0"],
+      ["S_NORTH_ch3_C4_R0", "M_S2MM_DMA_ch1_C4_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch1_C3_R0"],
+      ["S_SOUTH_ch1_C3_R1", "M_EAST_ch3_C3_R1"],
+      ["S_WEST_ch3_C4_R1", "M_SOUTH_ch3_C4_R1"]
+    ]
+  },
+  "net11":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C3_R1", "S_WEST_ch3_C4_R1"],
+      ["M_EAST_ch3_C4_R0", "S_WEST_ch3_C5_R0"],
+      ["M_NORTH_ch1_C3_R0", "S_SOUTH_ch1_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C4_R1", "S_NORTH_ch3_C4_R0"],
+      ["S_NORTH_ch3_C4_R0", "M_EAST_ch3_C4_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch1_C3_R0"],
+      ["S_SOUTH_ch1_C3_R1", "M_EAST_ch3_C3_R1"],
+      ["S_WEST_ch3_C4_R1", "M_SOUTH_ch3_C4_R1"],
+      ["S_WEST_ch3_C5_R0", "M_S2MM_DMA_ch1_C5_R0"]
+    ]
+  },
+  "net13":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C3_R1", "S_WEST_ch3_C4_R1"],
+      ["M_EAST_ch3_C4_R0", "S_WEST_ch3_C5_R0"],
+      ["M_EAST_ch3_C5_R0", "S_WEST_ch3_C6_R0"],
+      ["M_EAST_ch3_C6_R0", "S_WEST_ch3_C7_R0"],
+      ["M_NORTH_ch1_C3_R0", "S_SOUTH_ch1_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C4_R1", "S_NORTH_ch3_C4_R0"],
+      ["S_NORTH_ch3_C4_R0", "M_EAST_ch3_C4_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch1_C3_R0"],
+      ["S_SOUTH_ch1_C3_R1", "M_EAST_ch3_C3_R1"],
+      ["S_WEST_ch3_C4_R1", "M_SOUTH_ch3_C4_R1"],
+      ["S_WEST_ch3_C5_R0", "M_EAST_ch3_C5_R0"],
+      ["S_WEST_ch3_C6_R0", "M_EAST_ch3_C6_R0"],
+      ["S_WEST_ch3_C7_R0", "M_S2MM_DMA_ch0_C7_R0"]
+    ]
+  },
+  "net15":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C3_R1", "S_WEST_ch3_C4_R1"],
+      ["M_EAST_ch3_C4_R0", "S_WEST_ch3_C5_R0"],
+      ["M_EAST_ch3_C5_R0", "S_WEST_ch3_C6_R0"],
+      ["M_EAST_ch3_C6_R0", "S_WEST_ch3_C7_R0"],
+      ["M_EAST_ch3_C7_R0", "S_WEST_ch3_C8_R0"],
+      ["M_NORTH_ch1_C3_R0", "S_SOUTH_ch1_C3_R1"],
+      ["M_SHIM_NORTH_ch0_C3", "S_SOUTH_ch0_C3_R0"],
+      ["M_SHIM_WEST_ch3_C4", "S_SHIM_EAST_ch3_C3"],
+      ["M_SHIM_WEST_ch3_C5", "S_SHIM_EAST_ch3_C4"],
+      ["M_SHIM_WEST_ch3_C6", "S_SHIM_EAST_ch3_C5"],
+      ["M_SHIM_WEST_ch3_C7", "S_SHIM_EAST_ch3_C6"],
+      ["M_SOUTH_ch3_C4_R1", "S_NORTH_ch3_C4_R0"],
+      ["S_NORTH_ch3_C4_R0", "M_EAST_ch3_C4_R0"],
+      ["S_SHIM_EAST_ch3_C3", "M_SHIM_NORTH_ch0_C3"],
+      ["S_SHIM_EAST_ch3_C4", "M_SHIM_WEST_ch3_C4"],
+      ["S_SHIM_EAST_ch3_C5", "M_SHIM_WEST_ch3_C5"],
+      ["S_SHIM_EAST_ch3_C6", "M_SHIM_WEST_ch3_C6"],
+      ["S_SHIM_SOUTH_ch0_C7", "M_SHIM_WEST_ch3_C7"],
+      ["S_SOUTH_ch0_C3_R0", "M_NORTH_ch1_C3_R0"],
+      ["S_SOUTH_ch1_C3_R1", "M_EAST_ch3_C3_R1"],
+      ["S_WEST_ch3_C4_R1", "M_SOUTH_ch3_C4_R1"],
+      ["S_WEST_ch3_C5_R0", "M_EAST_ch3_C5_R0"],
+      ["S_WEST_ch3_C6_R0", "M_EAST_ch3_C6_R0"],
+      ["S_WEST_ch3_C7_R0", "M_EAST_ch3_C7_R0"],
+      ["S_WEST_ch3_C8_R0", "M_S2MM_DMA_ch0_C8_R0"]
+    ]
+  },
+  "net85":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C1_R5", "S_WEST_ch3_C2_R5"],
+      ["M_EAST_ch3_C2_R5", "S_WEST_ch3_C3_R5"],
+      ["M_EAST_ch3_C3_R5", "S_WEST_ch3_C4_R5"],
+      ["M_EAST_ch3_C4_R5", "S_WEST_ch3_C5_R5"],
+      ["M_EAST_ch3_C5_R5", "S_WEST_ch3_C6_R5"],
+      ["M_EAST_ch3_C6_R5", "S_WEST_ch3_C7_R5"],
+      ["M_EAST_ch3_C7_R5", "S_WEST_ch3_C8_R5"],
+      ["M_EAST_ch3_C8_R5", "S_WEST_ch3_C9_R5"],
+      ["S_MM2S_DMA_ch1_C1_R5", "M_EAST_ch3_C1_R5"],
+      ["S_WEST_ch3_C2_R5", "M_EAST_ch3_C2_R5"],
+      ["S_WEST_ch3_C3_R5", "M_EAST_ch3_C3_R5"],
+      ["S_WEST_ch3_C4_R5", "M_EAST_ch3_C4_R5"],
+      ["S_WEST_ch3_C5_R5", "M_EAST_ch3_C5_R5"],
+      ["S_WEST_ch3_C6_R5", "M_EAST_ch3_C6_R5"],
+      ["S_WEST_ch3_C7_R5", "M_EAST_ch3_C7_R5"],
+      ["S_WEST_ch3_C8_R5", "M_EAST_ch3_C8_R5"],
+      ["S_WEST_ch3_C9_R5", "M_S2MM_DMA_ch0_C9_R5"]
+    ]
+  },
+  "net0":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R1", "S_SOUTH_ch0_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C3_R1", "S_NORTH_ch2_C3_R0"],
+      ["M_SOUTH_ch3_C3_R2", "S_NORTH_ch3_C3_R1"],
+      ["M_WEST_ch2_C1_R0", "S_EAST_ch2_C0_R0"],
+      ["M_WEST_ch2_C2_R0", "S_EAST_ch2_C1_R0"],
+      ["M_WEST_ch2_C3_R0", "S_EAST_ch2_C2_R0"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch2_C0_R0", "M_S2MM_DMA_ch0_C0_R0"],
+      ["S_EAST_ch2_C1_R0", "M_WEST_ch2_C1_R0"],
+      ["S_EAST_ch2_C2_R0", "M_WEST_ch2_C2_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C3_R0", "M_WEST_ch2_C3_R0"],
+      ["S_NORTH_ch3_C3_R1", "M_SOUTH_ch2_C3_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch0_C3_R2", "M_SOUTH_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch0_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"]
+    ]
+  },
+  "net2":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R1", "S_SOUTH_ch0_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C3_R1", "S_NORTH_ch2_C3_R0"],
+      ["M_SOUTH_ch3_C3_R2", "S_NORTH_ch3_C3_R1"],
+      ["M_WEST_ch2_C2_R0", "S_EAST_ch2_C1_R0"],
+      ["M_WEST_ch2_C3_R0", "S_EAST_ch2_C2_R0"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch2_C1_R0", "M_S2MM_DMA_ch0_C1_R0"],
+      ["S_EAST_ch2_C2_R0", "M_WEST_ch2_C2_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C3_R0", "M_WEST_ch2_C3_R0"],
+      ["S_NORTH_ch3_C3_R1", "M_SOUTH_ch2_C3_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch0_C3_R2", "M_SOUTH_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch0_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"]
+    ]
+  },
+  "net4":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R1", "S_SOUTH_ch0_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C3_R1", "S_NORTH_ch2_C3_R0"],
+      ["M_SOUTH_ch3_C3_R2", "S_NORTH_ch3_C3_R1"],
+      ["M_WEST_ch2_C3_R0", "S_EAST_ch2_C2_R0"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch2_C2_R0", "M_S2MM_DMA_ch0_C2_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C3_R0", "M_WEST_ch2_C3_R0"],
+      ["S_NORTH_ch3_C3_R1", "M_SOUTH_ch2_C3_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch0_C3_R2", "M_SOUTH_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch0_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"]
+    ]
+  },
+  "net6":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C3_R1", "S_SOUTH_ch0_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C3_R1", "S_NORTH_ch2_C3_R0"],
+      ["M_SOUTH_ch3_C3_R2", "S_NORTH_ch3_C3_R1"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C3_R0", "M_S2MM_DMA_ch0_C3_R0"],
+      ["S_NORTH_ch3_C3_R1", "M_SOUTH_ch2_C3_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch0_C3_R2", "M_SOUTH_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch0_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"]
+    ]
+  },
+  "net8":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C3_R2", "S_WEST_ch3_C4_R2"],
+      ["M_NORTH_ch1_C3_R1", "S_SOUTH_ch1_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C4_R1", "S_NORTH_ch2_C4_R0"],
+      ["M_SOUTH_ch3_C4_R2", "S_NORTH_ch3_C4_R1"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C4_R0", "M_S2MM_DMA_ch0_C4_R0"],
+      ["S_NORTH_ch3_C4_R1", "M_SOUTH_ch2_C4_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch1_C3_R2", "M_EAST_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch1_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"],
+      ["S_WEST_ch3_C4_R2", "M_SOUTH_ch3_C4_R2"]
+    ]
+  },
+  "net10":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C4_R0", "S_WEST_ch2_C5_R0"],
+      ["M_EAST_ch3_C3_R2", "S_WEST_ch3_C4_R2"],
+      ["M_NORTH_ch1_C3_R1", "S_SOUTH_ch1_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C4_R1", "S_NORTH_ch2_C4_R0"],
+      ["M_SOUTH_ch3_C4_R2", "S_NORTH_ch3_C4_R1"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C4_R0", "M_EAST_ch2_C4_R0"],
+      ["S_NORTH_ch3_C4_R1", "M_SOUTH_ch2_C4_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch1_C3_R2", "M_EAST_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch1_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"],
+      ["S_WEST_ch2_C5_R0", "M_S2MM_DMA_ch0_C5_R0"],
+      ["S_WEST_ch3_C4_R2", "M_SOUTH_ch3_C4_R2"]
+    ]
+  },
+  "net12":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C4_R0", "S_WEST_ch2_C5_R0"],
+      ["M_EAST_ch2_C5_R0", "S_WEST_ch2_C6_R0"],
+      ["M_EAST_ch3_C3_R2", "S_WEST_ch3_C4_R2"],
+      ["M_NORTH_ch1_C3_R1", "S_SOUTH_ch1_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C4_R1", "S_NORTH_ch2_C4_R0"],
+      ["M_SOUTH_ch3_C4_R2", "S_NORTH_ch3_C4_R1"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C4_R0", "M_EAST_ch2_C4_R0"],
+      ["S_NORTH_ch3_C4_R1", "M_SOUTH_ch2_C4_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch1_C3_R2", "M_EAST_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch1_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"],
+      ["S_WEST_ch2_C5_R0", "M_EAST_ch2_C5_R0"],
+      ["S_WEST_ch2_C6_R0", "M_S2MM_DMA_ch0_C6_R0"],
+      ["S_WEST_ch3_C4_R2", "M_SOUTH_ch3_C4_R2"]
+    ]
+  },
+  "net14":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C4_R0", "S_WEST_ch2_C5_R0"],
+      ["M_EAST_ch2_C5_R0", "S_WEST_ch2_C6_R0"],
+      ["M_EAST_ch2_C6_R0", "S_WEST_ch2_C7_R0"],
+      ["M_EAST_ch3_C3_R2", "S_WEST_ch3_C4_R2"],
+      ["M_NORTH_ch1_C3_R1", "S_SOUTH_ch1_C3_R2"],
+      ["M_NORTH_ch2_C3_R0", "S_SOUTH_ch2_C3_R1"],
+      ["M_SHIM_NORTH_ch5_C6", "S_SOUTH_ch5_C6_R0"],
+      ["M_SOUTH_ch2_C4_R1", "S_NORTH_ch2_C4_R0"],
+      ["M_SOUTH_ch3_C4_R2", "S_NORTH_ch3_C4_R1"],
+      ["M_WEST_ch3_C4_R0", "S_EAST_ch3_C3_R0"],
+      ["M_WEST_ch3_C5_R0", "S_EAST_ch3_C4_R0"],
+      ["M_WEST_ch3_C6_R0", "S_EAST_ch3_C5_R0"],
+      ["S_EAST_ch3_C3_R0", "M_NORTH_ch2_C3_R0"],
+      ["S_EAST_ch3_C4_R0", "M_WEST_ch3_C4_R0"],
+      ["S_EAST_ch3_C5_R0", "M_WEST_ch3_C5_R0"],
+      ["S_NORTH_ch2_C4_R0", "M_EAST_ch2_C4_R0"],
+      ["S_NORTH_ch3_C4_R1", "M_SOUTH_ch2_C4_R1"],
+      ["S_SHIM_SOUTH_ch0_C6", "M_SHIM_NORTH_ch5_C6"],
+      ["S_SOUTH_ch1_C3_R2", "M_EAST_ch3_C3_R2"],
+      ["S_SOUTH_ch2_C3_R1", "M_NORTH_ch1_C3_R1"],
+      ["S_SOUTH_ch5_C6_R0", "M_WEST_ch3_C6_R0"],
+      ["S_WEST_ch2_C5_R0", "M_EAST_ch2_C5_R0"],
+      ["S_WEST_ch2_C6_R0", "M_EAST_ch2_C6_R0"],
+      ["S_WEST_ch2_C7_R0", "M_S2MM_DMA_ch1_C7_R0"],
+      ["S_WEST_ch3_C4_R2", "M_SOUTH_ch3_C4_R2"]
+    ]
+  },
+  "net67":
+  {
+    "tree":
+    [
+      ["M_WEST_ch3_C1_R4", "S_EAST_ch3_C0_R4"],
+      ["M_WEST_ch3_C2_R4", "S_EAST_ch3_C1_R4"],
+      ["M_WEST_ch3_C3_R4", "S_EAST_ch3_C2_R4"],
+      ["M_WEST_ch3_C4_R4", "S_EAST_ch3_C3_R4"],
+      ["M_WEST_ch3_C5_R4", "S_EAST_ch3_C4_R4"],
+      ["M_WEST_ch3_C6_R4", "S_EAST_ch3_C5_R4"],
+      ["M_WEST_ch3_C7_R4", "S_EAST_ch3_C6_R4"],
+      ["M_WEST_ch3_C8_R4", "S_EAST_ch3_C7_R4"],
+      ["S_EAST_ch3_C0_R4", "M_S2MM_DMA_ch0_C0_R4"],
+      ["S_EAST_ch3_C1_R4", "M_WEST_ch3_C1_R4"],
+      ["S_EAST_ch3_C2_R4", "M_WEST_ch3_C2_R4"],
+      ["S_EAST_ch3_C3_R4", "M_WEST_ch3_C3_R4"],
+      ["S_EAST_ch3_C4_R4", "M_WEST_ch3_C4_R4"],
+      ["S_EAST_ch3_C5_R4", "M_WEST_ch3_C5_R4"],
+      ["S_EAST_ch3_C6_R4", "M_WEST_ch3_C6_R4"],
+      ["S_EAST_ch3_C7_R4", "M_WEST_ch3_C7_R4"],
+      ["S_MM2S_DMA_ch0_C8_R4", "M_WEST_ch3_C8_R4"]
+    ]
+  },
+  "net51":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C1_R3", "S_WEST_ch3_C2_R3"],
+      ["M_EAST_ch3_C2_R3", "S_WEST_ch3_C3_R3"],
+      ["M_EAST_ch3_C3_R3", "S_WEST_ch3_C4_R3"],
+      ["M_EAST_ch3_C4_R3", "S_WEST_ch3_C5_R3"],
+      ["M_EAST_ch3_C5_R3", "S_WEST_ch3_C6_R3"],
+      ["M_EAST_ch3_C6_R3", "S_WEST_ch3_C7_R3"],
+      ["M_EAST_ch3_C7_R3", "S_WEST_ch3_C8_R3"],
+      ["M_EAST_ch3_C8_R3", "S_WEST_ch3_C9_R3"],
+      ["S_MM2S_DMA_ch0_C1_R3", "M_EAST_ch3_C1_R3"],
+      ["S_WEST_ch3_C2_R3", "M_EAST_ch3_C2_R3"],
+      ["S_WEST_ch3_C3_R3", "M_EAST_ch3_C3_R3"],
+      ["S_WEST_ch3_C4_R3", "M_EAST_ch3_C4_R3"],
+      ["S_WEST_ch3_C5_R3", "M_EAST_ch3_C5_R3"],
+      ["S_WEST_ch3_C6_R3", "M_EAST_ch3_C6_R3"],
+      ["S_WEST_ch3_C7_R3", "M_EAST_ch3_C7_R3"],
+      ["S_WEST_ch3_C8_R3", "M_EAST_ch3_C8_R3"],
+      ["S_WEST_ch3_C9_R3", "M_S2MM_DMA_ch0_C9_R3"]
+    ]
+  },
+  "net33":
+  {
+    "tree":
+    [
+      ["M_WEST_ch3_C1_R2", "S_EAST_ch3_C0_R2"],
+      ["M_WEST_ch3_C2_R2", "S_EAST_ch3_C1_R2"],
+      ["M_WEST_ch3_C3_R2", "S_EAST_ch3_C2_R2"],
+      ["M_WEST_ch3_C4_R2", "S_EAST_ch3_C3_R2"],
+      ["M_WEST_ch3_C5_R2", "S_EAST_ch3_C4_R2"],
+      ["M_WEST_ch3_C6_R2", "S_EAST_ch3_C5_R2"],
+      ["M_WEST_ch3_C7_R2", "S_EAST_ch3_C6_R2"],
+      ["M_WEST_ch3_C8_R2", "S_EAST_ch3_C7_R2"],
+      ["S_EAST_ch3_C0_R2", "M_S2MM_DMA_ch0_C0_R2"],
+      ["S_EAST_ch3_C1_R2", "M_WEST_ch3_C1_R2"],
+      ["S_EAST_ch3_C2_R2", "M_WEST_ch3_C2_R2"],
+      ["S_EAST_ch3_C3_R2", "M_WEST_ch3_C3_R2"],
+      ["S_EAST_ch3_C4_R2", "M_WEST_ch3_C4_R2"],
+      ["S_EAST_ch3_C5_R2", "M_WEST_ch3_C5_R2"],
+      ["S_EAST_ch3_C6_R2", "M_WEST_ch3_C6_R2"],
+      ["S_EAST_ch3_C7_R2", "M_WEST_ch3_C7_R2"],
+      ["S_MM2S_DMA_ch0_C8_R2", "M_WEST_ch3_C8_R2"]
+    ]
+  },
+  "net275":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C0_R4", "S_NORTH_ch3_C0_R3"],
+      ["M_SOUTH_ch3_C0_R5", "S_NORTH_ch3_C0_R4"],
+      ["M_SOUTH_ch3_C0_R6", "S_NORTH_ch3_C0_R5"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch0_C0_R6", "M_SOUTH_ch3_C0_R6"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch3_C0_R4", "M_SOUTH_ch3_C0_R4"],
+      ["S_NORTH_ch3_C0_R5", "M_SOUTH_ch3_C0_R5"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net260":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch0_C1_R1", "S_SOUTH_ch0_C1_R2"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_SOUTH_ch3_C0_R2", "S_NORTH_ch3_C0_R1"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C1_R2", "S_EAST_ch2_C0_R2"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C0_R2", "M_SOUTH_ch3_C0_R2"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_NORTH_ch3_C0_R1", "M_S2MM_DMA_ch0_C0_R1"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch0_C1_R1"],
+      ["S_SOUTH_ch0_C1_R2", "M_WEST_ch2_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"]
+    ]
+  },
+  "net262":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch0_C1_R1", "S_SOUTH_ch0_C1_R2"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_SOUTH_ch3_C0_R2", "S_NORTH_ch3_C0_R1"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C1_R2", "S_EAST_ch2_C0_R2"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C0_R2", "M_SOUTH_ch3_C0_R2"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_NORTH_ch3_C0_R1", "M_S2MM_DMA_ch1_C0_R1"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch0_C1_R1"],
+      ["S_SOUTH_ch0_C1_R2", "M_WEST_ch2_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"]
+    ]
+  },
+  "net264":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch0_C1_R1", "S_SOUTH_ch0_C1_R2"],
+      ["M_NORTH_ch5_C0_R2", "S_SOUTH_ch5_C0_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C1_R2", "S_EAST_ch2_C0_R2"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C0_R2", "M_NORTH_ch5_C0_R2"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch0_C1_R1"],
+      ["S_SOUTH_ch0_C1_R2", "M_WEST_ch2_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R3", "M_S2MM_DMA_ch0_C0_R3"]
+    ]
+  },
+  "net266":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch0_C1_R1", "S_SOUTH_ch0_C1_R2"],
+      ["M_NORTH_ch5_C0_R2", "S_SOUTH_ch5_C0_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C1_R2", "S_EAST_ch2_C0_R2"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C0_R2", "M_NORTH_ch5_C0_R2"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch0_C1_R1"],
+      ["S_SOUTH_ch0_C1_R2", "M_WEST_ch2_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R3", "M_S2MM_DMA_ch1_C0_R3"]
+    ]
+  },
+  "net268":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch1_C1_R1", "S_SOUTH_ch1_C1_R2"],
+      ["M_NORTH_ch5_C0_R3", "S_SOUTH_ch5_C0_R4"],
+      ["M_NORTH_ch5_C0_R4", "S_SOUTH_ch5_C0_R5"],
+      ["M_NORTH_ch5_C1_R2", "S_SOUTH_ch5_C1_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["M_WEST_ch3_C1_R3", "S_EAST_ch3_C0_R3"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_EAST_ch3_C0_R3", "M_NORTH_ch5_C0_R3"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch1_C1_R1"],
+      ["S_SOUTH_ch1_C1_R2", "M_NORTH_ch5_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R4", "M_NORTH_ch5_C0_R4"],
+      ["S_SOUTH_ch5_C0_R5", "M_S2MM_DMA_ch0_C0_R5"],
+      ["S_SOUTH_ch5_C1_R3", "M_WEST_ch3_C1_R3"]
+    ]
+  },
+  "net270":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch1_C1_R1", "S_SOUTH_ch1_C1_R2"],
+      ["M_NORTH_ch5_C0_R3", "S_SOUTH_ch5_C0_R4"],
+      ["M_NORTH_ch5_C0_R4", "S_SOUTH_ch5_C0_R5"],
+      ["M_NORTH_ch5_C1_R2", "S_SOUTH_ch5_C1_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["M_WEST_ch3_C1_R3", "S_EAST_ch3_C0_R3"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_EAST_ch3_C0_R3", "M_NORTH_ch5_C0_R3"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch1_C1_R1"],
+      ["S_SOUTH_ch1_C1_R2", "M_NORTH_ch5_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R4", "M_NORTH_ch5_C0_R4"],
+      ["S_SOUTH_ch5_C0_R5", "M_S2MM_DMA_ch1_C0_R5"],
+      ["S_SOUTH_ch5_C1_R3", "M_WEST_ch3_C1_R3"]
+    ]
+  },
+  "net272":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch1_C1_R1", "S_SOUTH_ch1_C1_R2"],
+      ["M_NORTH_ch5_C0_R3", "S_SOUTH_ch5_C0_R4"],
+      ["M_NORTH_ch5_C0_R4", "S_SOUTH_ch5_C0_R5"],
+      ["M_NORTH_ch5_C0_R5", "S_SOUTH_ch5_C0_R6"],
+      ["M_NORTH_ch5_C0_R6", "S_SOUTH_ch5_C0_R7"],
+      ["M_NORTH_ch5_C1_R2", "S_SOUTH_ch5_C1_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["M_WEST_ch3_C1_R3", "S_EAST_ch3_C0_R3"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_EAST_ch3_C0_R3", "M_NORTH_ch5_C0_R3"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch1_C1_R1"],
+      ["S_SOUTH_ch1_C1_R2", "M_NORTH_ch5_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R4", "M_NORTH_ch5_C0_R4"],
+      ["S_SOUTH_ch5_C0_R5", "M_NORTH_ch5_C0_R5"],
+      ["S_SOUTH_ch5_C0_R6", "M_NORTH_ch5_C0_R6"],
+      ["S_SOUTH_ch5_C0_R7", "M_S2MM_DMA_ch0_C0_R7"],
+      ["S_SOUTH_ch5_C1_R3", "M_WEST_ch3_C1_R3"]
+    ]
+  },
+  "net274":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch0_C1_R0", "S_SOUTH_ch0_C1_R1"],
+      ["M_NORTH_ch1_C1_R1", "S_SOUTH_ch1_C1_R2"],
+      ["M_NORTH_ch5_C0_R3", "S_SOUTH_ch5_C0_R4"],
+      ["M_NORTH_ch5_C0_R4", "S_SOUTH_ch5_C0_R5"],
+      ["M_NORTH_ch5_C0_R5", "S_SOUTH_ch5_C0_R6"],
+      ["M_NORTH_ch5_C1_R2", "S_SOUTH_ch5_C1_R3"],
+      ["M_SHIM_NORTH_ch4_C6", "S_SOUTH_ch4_C6_R0"],
+      ["M_WEST_ch1_C2_R0", "S_EAST_ch1_C1_R0"],
+      ["M_WEST_ch1_C3_R0", "S_EAST_ch1_C2_R0"],
+      ["M_WEST_ch2_C4_R0", "S_EAST_ch2_C3_R0"],
+      ["M_WEST_ch2_C5_R0", "S_EAST_ch2_C4_R0"],
+      ["M_WEST_ch2_C6_R0", "S_EAST_ch2_C5_R0"],
+      ["M_WEST_ch3_C1_R3", "S_EAST_ch3_C0_R3"],
+      ["S_EAST_ch1_C1_R0", "M_NORTH_ch0_C1_R0"],
+      ["S_EAST_ch1_C2_R0", "M_WEST_ch1_C2_R0"],
+      ["S_EAST_ch2_C3_R0", "M_WEST_ch1_C3_R0"],
+      ["S_EAST_ch2_C4_R0", "M_WEST_ch2_C4_R0"],
+      ["S_EAST_ch2_C5_R0", "M_WEST_ch2_C5_R0"],
+      ["S_EAST_ch3_C0_R3", "M_NORTH_ch5_C0_R3"],
+      ["S_SHIM_SOUTH_ch4_C6", "M_SHIM_NORTH_ch4_C6"],
+      ["S_SOUTH_ch0_C1_R1", "M_NORTH_ch1_C1_R1"],
+      ["S_SOUTH_ch1_C1_R2", "M_NORTH_ch5_C1_R2"],
+      ["S_SOUTH_ch4_C6_R0", "M_WEST_ch2_C6_R0"],
+      ["S_SOUTH_ch5_C0_R4", "M_NORTH_ch5_C0_R4"],
+      ["S_SOUTH_ch5_C0_R5", "M_NORTH_ch5_C0_R5"],
+      ["S_SOUTH_ch5_C0_R6", "M_S2MM_DMA_ch0_C0_R6"],
+      ["S_SOUTH_ch5_C1_R3", "M_WEST_ch3_C1_R3"]
+    ]
+  },
+  "net273":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C0_R4", "S_NORTH_ch3_C0_R3"],
+      ["M_SOUTH_ch3_C0_R5", "S_NORTH_ch3_C0_R4"],
+      ["M_SOUTH_ch3_C0_R6", "S_NORTH_ch3_C0_R5"],
+      ["M_SOUTH_ch3_C0_R7", "S_NORTH_ch3_C0_R6"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch0_C0_R7", "M_SOUTH_ch3_C0_R7"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch3_C0_R4", "M_SOUTH_ch3_C0_R4"],
+      ["S_NORTH_ch3_C0_R5", "M_SOUTH_ch3_C0_R5"],
+      ["S_NORTH_ch3_C0_R6", "M_SOUTH_ch3_C0_R6"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net271":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C0_R4", "S_NORTH_ch3_C0_R3"],
+      ["M_SOUTH_ch3_C0_R5", "S_NORTH_ch3_C0_R4"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["M_WEST_ch3_C1_R5", "S_EAST_ch3_C0_R5"],
+      ["S_EAST_ch3_C0_R5", "M_SOUTH_ch3_C0_R5"],
+      ["S_MM2S_DMA_ch0_C1_R5", "M_WEST_ch3_C1_R5"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch3_C0_R4", "M_SOUTH_ch3_C0_R4"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net269":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C0_R4", "S_NORTH_ch3_C0_R3"],
+      ["M_SOUTH_ch3_C0_R5", "S_NORTH_ch3_C0_R4"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch0_C0_R5", "M_SOUTH_ch3_C0_R5"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch3_C0_R4", "M_SOUTH_ch3_C0_R4"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net267":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch1_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net265":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch2_C0_R2", "S_NORTH_ch2_C0_R1"],
+      ["M_SOUTH_ch3_C0_R3", "S_NORTH_ch3_C0_R2"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch0_C0_R3", "M_SOUTH_ch3_C0_R3"],
+      ["S_NORTH_ch2_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C0_R2", "M_SOUTH_ch2_C0_R2"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net263":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch1_C1_R1", "M_EAST_ch2_C1_R1"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"]
+    ]
+  },
+  "net261":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C3_R1", "S_WEST_ch1_C4_R1"],
+      ["M_EAST_ch2_C1_R1", "S_WEST_ch2_C2_R1"],
+      ["M_EAST_ch2_C2_R1", "S_WEST_ch2_C3_R1"],
+      ["M_EAST_ch2_C4_R1", "S_WEST_ch2_C5_R1"],
+      ["M_EAST_ch2_C5_R1", "S_WEST_ch2_C6_R1"],
+      ["M_EAST_ch3_C0_R1", "S_WEST_ch3_C1_R1"],
+      ["M_SOUTH_ch3_C6_R0", "S_SHIM_NORTH_ch3_C6"],
+      ["M_SOUTH_ch3_C6_R1", "S_NORTH_ch3_C6_R0"],
+      ["S_MM2S_DMA_ch0_C0_R1", "M_EAST_ch3_C0_R1"],
+      ["S_NORTH_ch3_C6_R0", "M_SOUTH_ch3_C6_R0"],
+      ["S_SHIM_NORTH_ch3_C6", "M_SHIM_SOUTH_ch0_C6"],
+      ["S_WEST_ch1_C4_R1", "M_EAST_ch2_C4_R1"],
+      ["S_WEST_ch2_C2_R1", "M_EAST_ch2_C2_R1"],
+      ["S_WEST_ch2_C3_R1", "M_EAST_ch1_C3_R1"],
+      ["S_WEST_ch2_C5_R1", "M_EAST_ch2_C5_R1"],
+      ["S_WEST_ch2_C6_R1", "M_SOUTH_ch3_C6_R1"],
+      ["S_WEST_ch3_C1_R1", "M_EAST_ch2_C1_R1"]
+    ]
+  },
+  "net255":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["M_WEST_ch2_C23_R1", "S_EAST_ch2_C22_R1"],
+      ["M_WEST_ch2_C24_R1", "S_EAST_ch2_C23_R1"],
+      ["M_WEST_ch2_C25_R1", "S_EAST_ch2_C24_R1"],
+      ["M_WEST_ch2_C26_R1", "S_EAST_ch2_C25_R1"],
+      ["S_EAST_ch2_C22_R1", "M_SOUTH_ch2_C22_R1"],
+      ["S_EAST_ch2_C23_R1", "M_WEST_ch2_C23_R1"],
+      ["S_EAST_ch2_C24_R1", "M_WEST_ch2_C24_R1"],
+      ["S_EAST_ch2_C25_R1", "M_WEST_ch2_C25_R1"],
+      ["S_MM2S_DMA_ch1_C26_R1", "M_WEST_ch2_C26_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"]
+    ]
+  },
+  "net254":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C21_R1", "S_WEST_ch0_C22_R1"],
+      ["M_EAST_ch1_C19_R1", "S_WEST_ch1_C20_R1"],
+      ["M_EAST_ch1_C20_R1", "S_WEST_ch1_C21_R1"],
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["S_MM2S_DMA_ch1_C19_R1", "M_EAST_ch1_C19_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"],
+      ["S_WEST_ch0_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_WEST_ch1_C20_R1", "M_EAST_ch1_C20_R1"],
+      ["S_WEST_ch1_C21_R1", "M_EAST_ch0_C21_R1"]
+    ]
+  },
+  "net253":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C19_R1", "S_WEST_ch2_C20_R1"],
+      ["M_EAST_ch2_C20_R1", "S_WEST_ch2_C21_R1"],
+      ["M_EAST_ch3_C21_R1", "S_WEST_ch3_C22_R1"],
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["S_MM2S_DMA_ch0_C19_R1", "M_EAST_ch2_C19_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"],
+      ["S_WEST_ch2_C20_R1", "M_EAST_ch2_C20_R1"],
+      ["S_WEST_ch2_C21_R1", "M_EAST_ch3_C21_R1"],
+      ["S_WEST_ch3_C22_R1", "M_SOUTH_ch2_C22_R1"]
+    ]
+  },
+  "net252":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C21_R1", "S_WEST_ch0_C22_R1"],
+      ["M_EAST_ch1_C20_R1", "S_WEST_ch1_C21_R1"],
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["S_MM2S_DMA_ch1_C20_R1", "M_EAST_ch1_C20_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"],
+      ["S_WEST_ch0_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_WEST_ch1_C21_R1", "M_EAST_ch0_C21_R1"]
+    ]
+  },
+  "net251":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C20_R1", "S_WEST_ch2_C21_R1"],
+      ["M_EAST_ch3_C21_R1", "S_WEST_ch3_C22_R1"],
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["S_MM2S_DMA_ch0_C20_R1", "M_EAST_ch2_C20_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"],
+      ["S_WEST_ch2_C21_R1", "M_EAST_ch3_C21_R1"],
+      ["S_WEST_ch3_C22_R1", "M_SOUTH_ch2_C22_R1"]
+    ]
+  },
+  "net250":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C21_R1", "S_WEST_ch0_C22_R1"],
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["S_MM2S_DMA_ch1_C21_R1", "M_EAST_ch0_C21_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"],
+      ["S_WEST_ch0_C22_R1", "M_SOUTH_ch3_C22_R1"]
+    ]
+  },
+  "net249":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C21_R1", "S_WEST_ch3_C22_R1"],
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["S_MM2S_DMA_ch0_C21_R1", "M_EAST_ch3_C21_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"],
+      ["S_WEST_ch3_C22_R1", "M_SOUTH_ch2_C22_R1"]
+    ]
+  },
+  "net248":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["S_MM2S_DMA_ch1_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"]
+    ]
+  },
+  "net247":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["S_MM2S_DMA_ch0_C22_R1", "M_SOUTH_ch2_C22_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"]
+    ]
+  },
+  "net246":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["M_WEST_ch3_C23_R1", "S_EAST_ch3_C22_R1"],
+      ["S_EAST_ch3_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_MM2S_DMA_ch1_C23_R1", "M_WEST_ch3_C23_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"]
+    ]
+  },
+  "net245":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["M_WEST_ch2_C23_R1", "S_EAST_ch2_C22_R1"],
+      ["S_EAST_ch2_C22_R1", "M_SOUTH_ch2_C22_R1"],
+      ["S_MM2S_DMA_ch0_C23_R1", "M_WEST_ch2_C23_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"]
+    ]
+  },
+  "net244":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["M_WEST_ch3_C23_R1", "S_EAST_ch3_C22_R1"],
+      ["M_WEST_ch3_C24_R1", "S_EAST_ch3_C23_R1"],
+      ["S_EAST_ch3_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_EAST_ch3_C23_R1", "M_WEST_ch3_C23_R1"],
+      ["S_MM2S_DMA_ch1_C24_R1", "M_WEST_ch3_C24_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"]
+    ]
+  },
+  "net243":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["M_WEST_ch2_C23_R1", "S_EAST_ch2_C22_R1"],
+      ["M_WEST_ch2_C24_R1", "S_EAST_ch2_C23_R1"],
+      ["S_EAST_ch2_C22_R1", "M_SOUTH_ch2_C22_R1"],
+      ["S_EAST_ch2_C23_R1", "M_WEST_ch2_C23_R1"],
+      ["S_MM2S_DMA_ch0_C24_R1", "M_WEST_ch2_C24_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"]
+    ]
+  },
+  "net242":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["M_WEST_ch3_C23_R1", "S_EAST_ch3_C22_R1"],
+      ["M_WEST_ch3_C24_R1", "S_EAST_ch3_C23_R1"],
+      ["M_WEST_ch3_C25_R1", "S_EAST_ch3_C24_R1"],
+      ["S_EAST_ch3_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_EAST_ch3_C23_R1", "M_WEST_ch3_C23_R1"],
+      ["S_EAST_ch3_C24_R1", "M_WEST_ch3_C24_R1"],
+      ["S_MM2S_DMA_ch1_C25_R1", "M_WEST_ch3_C25_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"]
+    ]
+  },
+  "net241":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch2_C22_R0", "S_SHIM_NORTH_ch2_C22"],
+      ["M_SOUTH_ch2_C22_R1", "S_NORTH_ch2_C22_R0"],
+      ["M_WEST_ch2_C23_R1", "S_EAST_ch2_C22_R1"],
+      ["M_WEST_ch2_C24_R1", "S_EAST_ch2_C23_R1"],
+      ["M_WEST_ch2_C25_R1", "S_EAST_ch2_C24_R1"],
+      ["S_EAST_ch2_C22_R1", "M_SOUTH_ch2_C22_R1"],
+      ["S_EAST_ch2_C23_R1", "M_WEST_ch2_C23_R1"],
+      ["S_EAST_ch2_C24_R1", "M_WEST_ch2_C24_R1"],
+      ["S_MM2S_DMA_ch0_C25_R1", "M_WEST_ch2_C25_R1"],
+      ["S_NORTH_ch2_C22_R0", "M_SOUTH_ch2_C22_R0"],
+      ["S_SHIM_NORTH_ch2_C22", "M_SHIM_SOUTH_ch4_C22"]
+    ]
+  },
+  "net240":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C22_R0", "S_SHIM_NORTH_ch3_C22"],
+      ["M_SOUTH_ch3_C22_R1", "S_NORTH_ch3_C22_R0"],
+      ["M_WEST_ch3_C23_R1", "S_EAST_ch3_C22_R1"],
+      ["M_WEST_ch3_C24_R1", "S_EAST_ch3_C23_R1"],
+      ["M_WEST_ch3_C25_R1", "S_EAST_ch3_C24_R1"],
+      ["M_WEST_ch3_C26_R1", "S_EAST_ch3_C25_R1"],
+      ["S_EAST_ch3_C22_R1", "M_SOUTH_ch3_C22_R1"],
+      ["S_EAST_ch3_C23_R1", "M_WEST_ch3_C23_R1"],
+      ["S_EAST_ch3_C24_R1", "M_WEST_ch3_C24_R1"],
+      ["S_EAST_ch3_C25_R1", "M_WEST_ch3_C25_R1"],
+      ["S_MM2S_DMA_ch0_C26_R1", "M_WEST_ch3_C26_R1"],
+      ["S_NORTH_ch3_C22_R0", "M_SOUTH_ch3_C22_R0"],
+      ["S_SHIM_NORTH_ch3_C22", "M_SHIM_SOUTH_ch2_C22"]
+    ]
+  },
+  "net239":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C17_R0", "S_WEST_ch0_C18_R0"],
+      ["M_EAST_ch1_C18_R0", "S_WEST_ch1_C19_R0"],
+      ["M_EAST_ch2_C19_R0", "S_WEST_ch2_C20_R0"],
+      ["M_EAST_ch3_C20_R0", "S_WEST_ch3_C21_R0"],
+      ["M_EAST_ch3_C21_R0", "S_WEST_ch3_C22_R0"],
+      ["M_EAST_ch3_C22_R0", "S_WEST_ch3_C23_R0"],
+      ["M_EAST_ch3_C23_R0", "S_WEST_ch3_C24_R0"],
+      ["M_EAST_ch3_C24_R0", "S_WEST_ch3_C25_R0"],
+      ["S_MM2S_DMA_ch0_C17_R0", "M_EAST_ch0_C17_R0"],
+      ["S_WEST_ch0_C18_R0", "M_EAST_ch1_C18_R0"],
+      ["S_WEST_ch1_C19_R0", "M_EAST_ch2_C19_R0"],
+      ["S_WEST_ch2_C20_R0", "M_EAST_ch3_C20_R0"],
+      ["S_WEST_ch3_C21_R0", "M_EAST_ch3_C21_R0"],
+      ["S_WEST_ch3_C22_R0", "M_EAST_ch3_C22_R0"],
+      ["S_WEST_ch3_C23_R0", "M_EAST_ch3_C23_R0"],
+      ["S_WEST_ch3_C24_R0", "M_EAST_ch3_C24_R0"],
+      ["S_WEST_ch3_C25_R0", "M_S2MM_DMA_ch1_C25_R0"]
+    ]
+  },
+  "net238":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C13_R0", "S_WEST_ch2_C14_R0"],
+      ["M_EAST_ch2_C14_R0", "S_WEST_ch2_C15_R0"],
+      ["M_EAST_ch2_C17_R0", "S_WEST_ch2_C18_R0"],
+      ["M_EAST_ch3_C10_R0", "S_WEST_ch3_C11_R0"],
+      ["M_EAST_ch3_C11_R0", "S_WEST_ch3_C12_R0"],
+      ["M_EAST_ch3_C12_R0", "S_WEST_ch3_C13_R0"],
+      ["M_EAST_ch3_C15_R0", "S_WEST_ch3_C16_R0"],
+      ["M_EAST_ch3_C16_R0", "S_WEST_ch3_C17_R0"],
+      ["S_MM2S_DMA_ch1_C10_R0", "M_EAST_ch3_C10_R0"],
+      ["S_WEST_ch2_C14_R0", "M_EAST_ch2_C14_R0"],
+      ["S_WEST_ch2_C15_R0", "M_EAST_ch3_C15_R0"],
+      ["S_WEST_ch2_C18_R0", "M_S2MM_DMA_ch1_C18_R0"],
+      ["S_WEST_ch3_C11_R0", "M_EAST_ch3_C11_R0"],
+      ["S_WEST_ch3_C12_R0", "M_EAST_ch3_C12_R0"],
+      ["S_WEST_ch3_C13_R0", "M_EAST_ch2_C13_R0"],
+      ["S_WEST_ch3_C16_R0", "M_EAST_ch3_C16_R0"],
+      ["S_WEST_ch3_C17_R0", "M_EAST_ch2_C17_R0"]
+    ]
+  },
+  "net237":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C17_R1", "S_WEST_ch0_C18_R1"],
+      ["M_NORTH_ch0_C17_R0", "S_SOUTH_ch0_C17_R1"],
+      ["M_SOUTH_ch3_C18_R1", "S_NORTH_ch3_C18_R0"],
+      ["S_MM2S_DMA_ch1_C17_R0", "M_NORTH_ch0_C17_R0"],
+      ["S_NORTH_ch3_C18_R0", "M_S2MM_DMA_ch0_C18_R0"],
+      ["S_SOUTH_ch0_C17_R1", "M_EAST_ch0_C17_R1"],
+      ["S_WEST_ch0_C18_R1", "M_SOUTH_ch3_C18_R1"]
+    ]
+  },
+  "net236":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C19_R0", "S_WEST_ch0_C20_R0"],
+      ["M_EAST_ch2_C11_R1", "S_WEST_ch2_C12_R1"],
+      ["M_EAST_ch2_C17_R1", "S_WEST_ch2_C18_R1"],
+      ["M_EAST_ch3_C12_R1", "S_WEST_ch3_C13_R1"],
+      ["M_EAST_ch3_C13_R1", "S_WEST_ch3_C14_R1"],
+      ["M_EAST_ch3_C14_R1", "S_WEST_ch3_C15_R1"],
+      ["M_EAST_ch3_C15_R1", "S_WEST_ch3_C16_R1"],
+      ["M_EAST_ch3_C16_R1", "S_WEST_ch3_C17_R1"],
+      ["M_EAST_ch3_C18_R1", "S_WEST_ch3_C19_R1"],
+      ["M_NORTH_ch0_C11_R0", "S_SOUTH_ch0_C11_R1"],
+      ["M_SOUTH_ch3_C19_R1", "S_NORTH_ch3_C19_R0"],
+      ["S_MM2S_DMA_ch1_C11_R0", "M_NORTH_ch0_C11_R0"],
+      ["S_NORTH_ch3_C19_R0", "M_EAST_ch0_C19_R0"],
+      ["S_SOUTH_ch0_C11_R1", "M_EAST_ch2_C11_R1"],
+      ["S_WEST_ch0_C20_R0", "M_S2MM_DMA_ch0_C20_R0"],
+      ["S_WEST_ch2_C12_R1", "M_EAST_ch3_C12_R1"],
+      ["S_WEST_ch2_C18_R1", "M_EAST_ch3_C18_R1"],
+      ["S_WEST_ch3_C13_R1", "M_EAST_ch3_C13_R1"],
+      ["S_WEST_ch3_C14_R1", "M_EAST_ch3_C14_R1"],
+      ["S_WEST_ch3_C15_R1", "M_EAST_ch3_C15_R1"],
+      ["S_WEST_ch3_C16_R1", "M_EAST_ch3_C16_R1"],
+      ["S_WEST_ch3_C17_R1", "M_EAST_ch2_C17_R1"],
+      ["S_WEST_ch3_C19_R1", "M_SOUTH_ch3_C19_R1"]
+    ]
+  },
+  "net235":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C16_R2", "S_WEST_ch0_C17_R2"],
+      ["M_EAST_ch0_C17_R2", "S_WEST_ch0_C18_R2"],
+      ["M_EAST_ch0_C18_R2", "S_WEST_ch0_C19_R2"],
+      ["M_EAST_ch1_C13_R0", "S_WEST_ch1_C14_R0"],
+      ["M_EAST_ch1_C14_R0", "S_WEST_ch1_C15_R0"],
+      ["M_EAST_ch1_C15_R2", "S_WEST_ch1_C16_R2"],
+      ["M_EAST_ch2_C10_R0", "S_WEST_ch2_C11_R0"],
+      ["M_EAST_ch2_C11_R0", "S_WEST_ch2_C12_R0"],
+      ["M_EAST_ch2_C12_R0", "S_WEST_ch2_C13_R0"],
+      ["M_NORTH_ch0_C15_R0", "S_SOUTH_ch0_C15_R1"],
+      ["M_NORTH_ch1_C15_R1", "S_SOUTH_ch1_C15_R2"],
+      ["M_SOUTH_ch2_C19_R1", "S_NORTH_ch2_C19_R0"],
+      ["M_SOUTH_ch3_C19_R2", "S_NORTH_ch3_C19_R1"],
+      ["S_MM2S_DMA_ch0_C10_R0", "M_EAST_ch2_C10_R0"],
+      ["S_NORTH_ch2_C19_R0", "M_S2MM_DMA_ch0_C19_R0"],
+      ["S_NORTH_ch3_C19_R1", "M_SOUTH_ch2_C19_R1"],
+      ["S_SOUTH_ch0_C15_R1", "M_NORTH_ch1_C15_R1"],
+      ["S_SOUTH_ch1_C15_R2", "M_EAST_ch1_C15_R2"],
+      ["S_WEST_ch0_C17_R2", "M_EAST_ch0_C17_R2"],
+      ["S_WEST_ch0_C18_R2", "M_EAST_ch0_C18_R2"],
+      ["S_WEST_ch0_C19_R2", "M_SOUTH_ch3_C19_R2"],
+      ["S_WEST_ch1_C14_R0", "M_EAST_ch1_C14_R0"],
+      ["S_WEST_ch1_C15_R0", "M_NORTH_ch0_C15_R0"],
+      ["S_WEST_ch1_C16_R2", "M_EAST_ch0_C16_R2"],
+      ["S_WEST_ch2_C11_R0", "M_EAST_ch2_C11_R0"],
+      ["S_WEST_ch2_C12_R0", "M_EAST_ch2_C12_R0"],
+      ["S_WEST_ch2_C13_R0", "M_EAST_ch1_C13_R0"]
+    ]
+  },
+  "net234":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C13_R0", "S_WEST_ch0_C14_R0"],
+      ["M_EAST_ch0_C14_R0", "S_WEST_ch0_C15_R0"],
+      ["M_EAST_ch1_C12_R0", "S_WEST_ch1_C13_R0"],
+      ["M_EAST_ch1_C15_R0", "S_WEST_ch1_C16_R0"],
+      ["M_EAST_ch1_C16_R0", "S_WEST_ch1_C17_R0"],
+      ["M_EAST_ch1_C17_R0", "S_WEST_ch1_C18_R0"],
+      ["M_EAST_ch1_C19_R0", "S_WEST_ch1_C20_R0"],
+      ["M_EAST_ch2_C20_R0", "S_WEST_ch2_C21_R0"],
+      ["M_EAST_ch3_C18_R0", "S_WEST_ch3_C19_R0"],
+      ["S_MM2S_DMA_ch1_C12_R0", "M_EAST_ch1_C12_R0"],
+      ["S_WEST_ch0_C14_R0", "M_EAST_ch0_C14_R0"],
+      ["S_WEST_ch0_C15_R0", "M_EAST_ch1_C15_R0"],
+      ["S_WEST_ch1_C13_R0", "M_EAST_ch0_C13_R0"],
+      ["S_WEST_ch1_C16_R0", "M_EAST_ch1_C16_R0"],
+      ["S_WEST_ch1_C17_R0", "M_EAST_ch1_C17_R0"],
+      ["S_WEST_ch1_C18_R0", "M_EAST_ch3_C18_R0"],
+      ["S_WEST_ch1_C20_R0", "M_EAST_ch2_C20_R0"],
+      ["S_WEST_ch2_C21_R0", "M_S2MM_DMA_ch0_C21_R0"],
+      ["S_WEST_ch3_C19_R0", "M_EAST_ch1_C19_R0"]
+    ]
+  },
+  "net233":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C11_R2", "S_WEST_ch3_C12_R2"],
+      ["M_EAST_ch3_C12_R2", "S_WEST_ch3_C13_R2"],
+      ["M_EAST_ch3_C13_R2", "S_WEST_ch3_C14_R2"],
+      ["M_EAST_ch3_C14_R2", "S_WEST_ch3_C15_R2"],
+      ["M_EAST_ch3_C15_R2", "S_WEST_ch3_C16_R2"],
+      ["M_EAST_ch3_C16_R2", "S_WEST_ch3_C17_R2"],
+      ["M_EAST_ch3_C17_R2", "S_WEST_ch3_C18_R2"],
+      ["M_EAST_ch3_C18_R2", "S_WEST_ch3_C19_R2"],
+      ["M_EAST_ch3_C19_R2", "S_WEST_ch3_C20_R2"],
+      ["M_EAST_ch3_C20_R2", "S_WEST_ch3_C21_R2"],
+      ["M_NORTH_ch0_C11_R1", "S_SOUTH_ch0_C11_R2"],
+      ["M_NORTH_ch5_C11_R0", "S_SOUTH_ch5_C11_R1"],
+      ["M_SOUTH_ch3_C21_R2", "S_NORTH_ch3_C21_R1"],
+      ["S_MM2S_DMA_ch0_C11_R0", "M_NORTH_ch5_C11_R0"],
+      ["S_NORTH_ch3_C21_R1", "M_S2MM_DMA_ch0_C21_R1"],
+      ["S_SOUTH_ch0_C11_R2", "M_EAST_ch3_C11_R2"],
+      ["S_SOUTH_ch5_C11_R1", "M_NORTH_ch0_C11_R1"],
+      ["S_WEST_ch3_C12_R2", "M_EAST_ch3_C12_R2"],
+      ["S_WEST_ch3_C13_R2", "M_EAST_ch3_C13_R2"],
+      ["S_WEST_ch3_C14_R2", "M_EAST_ch3_C14_R2"],
+      ["S_WEST_ch3_C15_R2", "M_EAST_ch3_C15_R2"],
+      ["S_WEST_ch3_C16_R2", "M_EAST_ch3_C16_R2"],
+      ["S_WEST_ch3_C17_R2", "M_EAST_ch3_C17_R2"],
+      ["S_WEST_ch3_C18_R2", "M_EAST_ch3_C18_R2"],
+      ["S_WEST_ch3_C19_R2", "M_EAST_ch3_C19_R2"],
+      ["S_WEST_ch3_C20_R2", "M_EAST_ch3_C20_R2"],
+      ["S_WEST_ch3_C21_R2", "M_SOUTH_ch3_C21_R2"]
+    ]
+  },
+  "net232":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C14_R1", "S_WEST_ch0_C15_R1"],
+      ["M_EAST_ch1_C13_R1", "S_WEST_ch1_C14_R1"],
+      ["M_EAST_ch1_C19_R2", "S_WEST_ch1_C20_R2"],
+      ["M_EAST_ch1_C20_R2", "S_WEST_ch1_C21_R2"],
+      ["M_EAST_ch2_C15_R2", "S_WEST_ch2_C16_R2"],
+      ["M_EAST_ch2_C16_R2", "S_WEST_ch2_C17_R2"],
+      ["M_EAST_ch2_C17_R2", "S_WEST_ch2_C18_R2"],
+      ["M_EAST_ch2_C18_R2", "S_WEST_ch2_C19_R2"],
+      ["M_EAST_ch2_C21_R2", "S_WEST_ch2_C22_R2"],
+      ["M_NORTH_ch0_C13_R0", "S_SOUTH_ch0_C13_R1"],
+      ["M_NORTH_ch0_C15_R1", "S_SOUTH_ch0_C15_R2"],
+      ["M_SOUTH_ch1_C22_R1", "S_NORTH_ch1_C22_R0"],
+      ["M_SOUTH_ch3_C22_R2", "S_NORTH_ch3_C22_R1"],
+      ["S_MM2S_DMA_ch1_C13_R0", "M_NORTH_ch0_C13_R0"],
+      ["S_NORTH_ch1_C22_R0", "M_S2MM_DMA_ch0_C22_R0"],
+      ["S_NORTH_ch3_C22_R1", "M_SOUTH_ch1_C22_R1"],
+      ["S_SOUTH_ch0_C13_R1", "M_EAST_ch1_C13_R1"],
+      ["S_SOUTH_ch0_C15_R2", "M_EAST_ch2_C15_R2"],
+      ["S_WEST_ch0_C15_R1", "M_NORTH_ch0_C15_R1"],
+      ["S_WEST_ch1_C14_R1", "M_EAST_ch0_C14_R1"],
+      ["S_WEST_ch1_C20_R2", "M_EAST_ch1_C20_R2"],
+      ["S_WEST_ch1_C21_R2", "M_EAST_ch2_C21_R2"],
+      ["S_WEST_ch2_C16_R2", "M_EAST_ch2_C16_R2"],
+      ["S_WEST_ch2_C17_R2", "M_EAST_ch2_C17_R2"],
+      ["S_WEST_ch2_C18_R2", "M_EAST_ch2_C18_R2"],
+      ["S_WEST_ch2_C19_R2", "M_EAST_ch1_C19_R2"],
+      ["S_WEST_ch2_C22_R2", "M_SOUTH_ch3_C22_R2"]
+    ]
+  },
+  "net231":
+  {
+    "tree":
+    [
+      ["M_SHIM_EAST_ch3_C12", "S_SHIM_WEST_ch3_C13"],
+      ["M_SHIM_EAST_ch3_C13", "S_SHIM_WEST_ch3_C14"],
+      ["M_SHIM_EAST_ch3_C14", "S_SHIM_WEST_ch3_C15"],
+      ["M_SHIM_EAST_ch3_C15", "S_SHIM_WEST_ch3_C16"],
+      ["M_SHIM_EAST_ch3_C16", "S_SHIM_WEST_ch3_C17"],
+      ["M_SHIM_EAST_ch3_C17", "S_SHIM_WEST_ch3_C18"],
+      ["M_SHIM_EAST_ch3_C18", "S_SHIM_WEST_ch3_C19"],
+      ["M_SHIM_EAST_ch3_C19", "S_SHIM_WEST_ch3_C20"],
+      ["M_SHIM_EAST_ch3_C20", "S_SHIM_WEST_ch3_C21"],
+      ["M_SHIM_NORTH_ch5_C21", "S_SOUTH_ch5_C21_R0"],
+      ["M_SOUTH_ch0_C12_R0", "S_SHIM_NORTH_ch0_C12"],
+      ["S_MM2S_DMA_ch0_C12_R0", "M_SOUTH_ch0_C12_R0"],
+      ["S_SHIM_NORTH_ch0_C12", "M_SHIM_EAST_ch3_C12"],
+      ["S_SHIM_WEST_ch3_C13", "M_SHIM_EAST_ch3_C13"],
+      ["S_SHIM_WEST_ch3_C14", "M_SHIM_EAST_ch3_C14"],
+      ["S_SHIM_WEST_ch3_C15", "M_SHIM_EAST_ch3_C15"],
+      ["S_SHIM_WEST_ch3_C16", "M_SHIM_EAST_ch3_C16"],
+      ["S_SHIM_WEST_ch3_C17", "M_SHIM_EAST_ch3_C17"],
+      ["S_SHIM_WEST_ch3_C18", "M_SHIM_EAST_ch3_C18"],
+      ["S_SHIM_WEST_ch3_C19", "M_SHIM_EAST_ch3_C19"],
+      ["S_SHIM_WEST_ch3_C20", "M_SHIM_EAST_ch3_C20"],
+      ["S_SHIM_WEST_ch3_C21", "M_SHIM_NORTH_ch5_C21"],
+      ["S_SOUTH_ch5_C21_R0", "M_S2MM_DMA_ch1_C21_R0"]
+    ]
+  },
+  "net230":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C14_R3", "S_WEST_ch2_C15_R3"],
+      ["M_EAST_ch2_C15_R3", "S_WEST_ch2_C16_R3"],
+      ["M_EAST_ch2_C16_R3", "S_WEST_ch2_C17_R3"],
+      ["M_EAST_ch2_C17_R3", "S_WEST_ch2_C18_R3"],
+      ["M_EAST_ch3_C18_R3", "S_WEST_ch3_C19_R3"],
+      ["M_EAST_ch3_C19_R3", "S_WEST_ch3_C20_R3"],
+      ["M_EAST_ch3_C20_R3", "S_WEST_ch3_C21_R3"],
+      ["M_EAST_ch3_C21_R3", "S_WEST_ch3_C22_R3"],
+      ["M_EAST_ch3_C22_R3", "S_WEST_ch3_C23_R3"],
+      ["M_NORTH_ch0_C14_R1", "S_SOUTH_ch0_C14_R2"],
+      ["M_NORTH_ch0_C14_R2", "S_SOUTH_ch0_C14_R3"],
+      ["M_NORTH_ch5_C14_R0", "S_SOUTH_ch5_C14_R1"],
+      ["M_SOUTH_ch3_C23_R2", "S_NORTH_ch3_C23_R1"],
+      ["M_SOUTH_ch3_C23_R3", "S_NORTH_ch3_C23_R2"],
+      ["S_MM2S_DMA_ch1_C14_R0", "M_NORTH_ch5_C14_R0"],
+      ["S_NORTH_ch3_C23_R1", "M_S2MM_DMA_ch0_C23_R1"],
+      ["S_NORTH_ch3_C23_R2", "M_SOUTH_ch3_C23_R2"],
+      ["S_SOUTH_ch0_C14_R2", "M_NORTH_ch0_C14_R2"],
+      ["S_SOUTH_ch0_C14_R3", "M_EAST_ch2_C14_R3"],
+      ["S_SOUTH_ch5_C14_R1", "M_NORTH_ch0_C14_R1"],
+      ["S_WEST_ch2_C15_R3", "M_EAST_ch2_C15_R3"],
+      ["S_WEST_ch2_C16_R3", "M_EAST_ch2_C16_R3"],
+      ["S_WEST_ch2_C17_R3", "M_EAST_ch2_C17_R3"],
+      ["S_WEST_ch2_C18_R3", "M_EAST_ch3_C18_R3"],
+      ["S_WEST_ch3_C19_R3", "M_EAST_ch3_C19_R3"],
+      ["S_WEST_ch3_C20_R3", "M_EAST_ch3_C20_R3"],
+      ["S_WEST_ch3_C21_R3", "M_EAST_ch3_C21_R3"],
+      ["S_WEST_ch3_C22_R3", "M_EAST_ch3_C22_R3"],
+      ["S_WEST_ch3_C23_R3", "M_SOUTH_ch3_C23_R3"]
+    ]
+  },
+  "net229":
+  {
+    "tree":
+    [
+      ["M_SHIM_EAST_ch2_C13", "S_SHIM_WEST_ch2_C14"],
+      ["M_SHIM_EAST_ch2_C14", "S_SHIM_WEST_ch2_C15"],
+      ["M_SHIM_EAST_ch2_C15", "S_SHIM_WEST_ch2_C16"],
+      ["M_SHIM_EAST_ch2_C16", "S_SHIM_WEST_ch2_C17"],
+      ["M_SHIM_EAST_ch2_C17", "S_SHIM_WEST_ch2_C18"],
+      ["M_SHIM_EAST_ch2_C18", "S_SHIM_WEST_ch2_C19"],
+      ["M_SHIM_EAST_ch2_C19", "S_SHIM_WEST_ch2_C20"],
+      ["M_SHIM_EAST_ch2_C20", "S_SHIM_WEST_ch2_C21"],
+      ["M_SHIM_EAST_ch3_C21", "S_SHIM_WEST_ch3_C22"],
+      ["M_SHIM_EAST_ch3_C22", "S_SHIM_WEST_ch3_C23"],
+      ["M_SHIM_NORTH_ch5_C23", "S_SOUTH_ch5_C23_R0"],
+      ["M_SOUTH_ch0_C13_R0", "S_SHIM_NORTH_ch0_C13"],
+      ["S_MM2S_DMA_ch0_C13_R0", "M_SOUTH_ch0_C13_R0"],
+      ["S_SHIM_NORTH_ch0_C13", "M_SHIM_EAST_ch2_C13"],
+      ["S_SHIM_WEST_ch2_C14", "M_SHIM_EAST_ch2_C14"],
+      ["S_SHIM_WEST_ch2_C15", "M_SHIM_EAST_ch2_C15"],
+      ["S_SHIM_WEST_ch2_C16", "M_SHIM_EAST_ch2_C16"],
+      ["S_SHIM_WEST_ch2_C17", "M_SHIM_EAST_ch2_C17"],
+      ["S_SHIM_WEST_ch2_C18", "M_SHIM_EAST_ch2_C18"],
+      ["S_SHIM_WEST_ch2_C19", "M_SHIM_EAST_ch2_C19"],
+      ["S_SHIM_WEST_ch2_C20", "M_SHIM_EAST_ch2_C20"],
+      ["S_SHIM_WEST_ch2_C21", "M_SHIM_EAST_ch3_C21"],
+      ["S_SHIM_WEST_ch3_C22", "M_SHIM_EAST_ch3_C22"],
+      ["S_SHIM_WEST_ch3_C23", "M_SHIM_NORTH_ch5_C23"],
+      ["S_SOUTH_ch5_C23_R0", "M_S2MM_DMA_ch0_C23_R0"]
+    ]
+  },
+  "net228":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C15_R1", "S_WEST_ch1_C16_R1"],
+      ["M_EAST_ch1_C16_R2", "S_WEST_ch1_C17_R2"],
+      ["M_EAST_ch1_C17_R2", "S_WEST_ch1_C18_R2"],
+      ["M_EAST_ch1_C18_R2", "S_WEST_ch1_C19_R2"],
+      ["M_EAST_ch2_C19_R2", "S_WEST_ch2_C20_R2"],
+      ["M_EAST_ch2_C20_R2", "S_WEST_ch2_C21_R2"],
+      ["M_EAST_ch3_C21_R2", "S_WEST_ch3_C22_R2"],
+      ["M_EAST_ch3_C22_R2", "S_WEST_ch3_C23_R2"],
+      ["M_EAST_ch3_C23_R2", "S_WEST_ch3_C24_R2"],
+      ["M_NORTH_ch0_C16_R1", "S_SOUTH_ch0_C16_R2"],
+      ["M_NORTH_ch5_C15_R0", "S_SOUTH_ch5_C15_R1"],
+      ["M_SOUTH_ch3_C24_R2", "S_NORTH_ch3_C24_R1"],
+      ["S_MM2S_DMA_ch1_C15_R0", "M_NORTH_ch5_C15_R0"],
+      ["S_NORTH_ch3_C24_R1", "M_S2MM_DMA_ch0_C24_R1"],
+      ["S_SOUTH_ch0_C16_R2", "M_EAST_ch1_C16_R2"],
+      ["S_SOUTH_ch5_C15_R1", "M_EAST_ch1_C15_R1"],
+      ["S_WEST_ch1_C16_R1", "M_NORTH_ch0_C16_R1"],
+      ["S_WEST_ch1_C17_R2", "M_EAST_ch1_C17_R2"],
+      ["S_WEST_ch1_C18_R2", "M_EAST_ch1_C18_R2"],
+      ["S_WEST_ch1_C19_R2", "M_EAST_ch2_C19_R2"],
+      ["S_WEST_ch2_C20_R2", "M_EAST_ch2_C20_R2"],
+      ["S_WEST_ch2_C21_R2", "M_EAST_ch3_C21_R2"],
+      ["S_WEST_ch3_C22_R2", "M_EAST_ch3_C22_R2"],
+      ["S_WEST_ch3_C23_R2", "M_EAST_ch3_C23_R2"],
+      ["S_WEST_ch3_C24_R2", "M_SOUTH_ch3_C24_R2"]
+    ]
+  },
+  "net227":
+  {
+    "tree":
+    [
+      ["M_SHIM_EAST_ch1_C14", "S_SHIM_WEST_ch1_C15"],
+      ["M_SHIM_EAST_ch1_C15", "S_SHIM_WEST_ch1_C16"],
+      ["M_SHIM_EAST_ch1_C16", "S_SHIM_WEST_ch1_C17"],
+      ["M_SHIM_EAST_ch1_C17", "S_SHIM_WEST_ch1_C18"],
+      ["M_SHIM_EAST_ch1_C18", "S_SHIM_WEST_ch1_C19"],
+      ["M_SHIM_EAST_ch1_C19", "S_SHIM_WEST_ch1_C20"],
+      ["M_SHIM_EAST_ch1_C20", "S_SHIM_WEST_ch1_C21"],
+      ["M_SHIM_EAST_ch2_C21", "S_SHIM_WEST_ch2_C22"],
+      ["M_SHIM_EAST_ch2_C22", "S_SHIM_WEST_ch2_C23"],
+      ["M_SHIM_EAST_ch3_C23", "S_SHIM_WEST_ch3_C24"],
+      ["M_SHIM_NORTH_ch5_C24", "S_SOUTH_ch5_C24_R0"],
+      ["M_SOUTH_ch0_C14_R0", "S_SHIM_NORTH_ch0_C14"],
+      ["S_MM2S_DMA_ch0_C14_R0", "M_SOUTH_ch0_C14_R0"],
+      ["S_SHIM_NORTH_ch0_C14", "M_SHIM_EAST_ch1_C14"],
+      ["S_SHIM_WEST_ch1_C15", "M_SHIM_EAST_ch1_C15"],
+      ["S_SHIM_WEST_ch1_C16", "M_SHIM_EAST_ch1_C16"],
+      ["S_SHIM_WEST_ch1_C17", "M_SHIM_EAST_ch1_C17"],
+      ["S_SHIM_WEST_ch1_C18", "M_SHIM_EAST_ch1_C18"],
+      ["S_SHIM_WEST_ch1_C19", "M_SHIM_EAST_ch1_C19"],
+      ["S_SHIM_WEST_ch1_C20", "M_SHIM_EAST_ch1_C20"],
+      ["S_SHIM_WEST_ch1_C21", "M_SHIM_EAST_ch2_C21"],
+      ["S_SHIM_WEST_ch2_C22", "M_SHIM_EAST_ch2_C22"],
+      ["S_SHIM_WEST_ch2_C23", "M_SHIM_EAST_ch3_C23"],
+      ["S_SHIM_WEST_ch3_C24", "M_SHIM_NORTH_ch5_C24"],
+      ["S_SOUTH_ch5_C24_R0", "M_S2MM_DMA_ch0_C24_R0"]
+    ]
+  },
+  "net226":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C16_R1", "S_WEST_ch0_C17_R1"],
+      ["M_EAST_ch0_C19_R1", "S_WEST_ch0_C20_R1"],
+      ["M_EAST_ch0_C20_R1", "S_WEST_ch0_C21_R1"],
+      ["M_EAST_ch1_C18_R1", "S_WEST_ch1_C19_R1"],
+      ["M_EAST_ch1_C21_R1", "S_WEST_ch1_C22_R1"],
+      ["M_EAST_ch2_C22_R1", "S_WEST_ch2_C23_R1"],
+      ["M_EAST_ch3_C17_R1", "S_WEST_ch3_C18_R1"],
+      ["M_EAST_ch3_C23_R1", "S_WEST_ch3_C24_R1"],
+      ["M_EAST_ch3_C24_R1", "S_WEST_ch3_C25_R1"],
+      ["M_NORTH_ch5_C16_R0", "S_SOUTH_ch5_C16_R1"],
+      ["S_MM2S_DMA_ch1_C16_R0", "M_NORTH_ch5_C16_R0"],
+      ["S_SOUTH_ch5_C16_R1", "M_EAST_ch0_C16_R1"],
+      ["S_WEST_ch0_C17_R1", "M_EAST_ch3_C17_R1"],
+      ["S_WEST_ch0_C20_R1", "M_EAST_ch0_C20_R1"],
+      ["S_WEST_ch0_C21_R1", "M_EAST_ch1_C21_R1"],
+      ["S_WEST_ch1_C19_R1", "M_EAST_ch0_C19_R1"],
+      ["S_WEST_ch1_C22_R1", "M_EAST_ch2_C22_R1"],
+      ["S_WEST_ch2_C23_R1", "M_EAST_ch3_C23_R1"],
+      ["S_WEST_ch3_C18_R1", "M_EAST_ch1_C18_R1"],
+      ["S_WEST_ch3_C24_R1", "M_EAST_ch3_C24_R1"],
+      ["S_WEST_ch3_C25_R1", "M_S2MM_DMA_ch0_C25_R1"]
+    ]
+  },
+  "net225":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C20_R0", "S_WEST_ch1_C21_R0"],
+      ["M_EAST_ch2_C15_R0", "S_WEST_ch2_C16_R0"],
+      ["M_EAST_ch2_C16_R0", "S_WEST_ch2_C17_R0"],
+      ["M_EAST_ch2_C18_R0", "S_WEST_ch2_C19_R0"],
+      ["M_EAST_ch2_C21_R0", "S_WEST_ch2_C22_R0"],
+      ["M_EAST_ch2_C22_R0", "S_WEST_ch2_C23_R0"],
+      ["M_EAST_ch2_C23_R0", "S_WEST_ch2_C24_R0"],
+      ["M_EAST_ch2_C24_R0", "S_WEST_ch2_C25_R0"],
+      ["M_EAST_ch3_C17_R0", "S_WEST_ch3_C18_R0"],
+      ["M_EAST_ch3_C19_R0", "S_WEST_ch3_C20_R0"],
+      ["S_MM2S_DMA_ch0_C15_R0", "M_EAST_ch2_C15_R0"],
+      ["S_WEST_ch1_C21_R0", "M_EAST_ch2_C21_R0"],
+      ["S_WEST_ch2_C16_R0", "M_EAST_ch2_C16_R0"],
+      ["S_WEST_ch2_C17_R0", "M_EAST_ch3_C17_R0"],
+      ["S_WEST_ch2_C19_R0", "M_EAST_ch3_C19_R0"],
+      ["S_WEST_ch2_C22_R0", "M_EAST_ch2_C22_R0"],
+      ["S_WEST_ch2_C23_R0", "M_EAST_ch2_C23_R0"],
+      ["S_WEST_ch2_C24_R0", "M_EAST_ch2_C24_R0"],
+      ["S_WEST_ch2_C25_R0", "M_S2MM_DMA_ch0_C25_R0"],
+      ["S_WEST_ch3_C18_R0", "M_EAST_ch2_C18_R0"],
+      ["S_WEST_ch3_C20_R0", "M_EAST_ch1_C20_R0"]
+    ]
+  },
+  "net224":
+  {
+    "tree":
+    [
+      ["M_SHIM_EAST_ch0_C16", "S_SHIM_WEST_ch0_C17"],
+      ["M_SHIM_EAST_ch0_C17", "S_SHIM_WEST_ch0_C18"],
+      ["M_SHIM_EAST_ch0_C18", "S_SHIM_WEST_ch0_C19"],
+      ["M_SHIM_EAST_ch0_C19", "S_SHIM_WEST_ch0_C20"],
+      ["M_SHIM_EAST_ch0_C20", "S_SHIM_WEST_ch0_C21"],
+      ["M_SHIM_EAST_ch1_C21", "S_SHIM_WEST_ch1_C22"],
+      ["M_SHIM_EAST_ch1_C22", "S_SHIM_WEST_ch1_C23"],
+      ["M_SHIM_EAST_ch2_C23", "S_SHIM_WEST_ch2_C24"],
+      ["M_SHIM_EAST_ch3_C24", "S_SHIM_WEST_ch3_C25"],
+      ["M_SHIM_EAST_ch3_C25", "S_SHIM_WEST_ch3_C26"],
+      ["M_SHIM_NORTH_ch5_C26", "S_SOUTH_ch5_C26_R0"],
+      ["M_SOUTH_ch0_C16_R0", "S_SHIM_NORTH_ch0_C16"],
+      ["S_MM2S_DMA_ch0_C16_R0", "M_SOUTH_ch0_C16_R0"],
+      ["S_SHIM_NORTH_ch0_C16", "M_SHIM_EAST_ch0_C16"],
+      ["S_SHIM_WEST_ch0_C17", "M_SHIM_EAST_ch0_C17"],
+      ["S_SHIM_WEST_ch0_C18", "M_SHIM_EAST_ch0_C18"],
+      ["S_SHIM_WEST_ch0_C19", "M_SHIM_EAST_ch0_C19"],
+      ["S_SHIM_WEST_ch0_C20", "M_SHIM_EAST_ch0_C20"],
+      ["S_SHIM_WEST_ch0_C21", "M_SHIM_EAST_ch1_C21"],
+      ["S_SHIM_WEST_ch1_C22", "M_SHIM_EAST_ch1_C22"],
+      ["S_SHIM_WEST_ch1_C23", "M_SHIM_EAST_ch2_C23"],
+      ["S_SHIM_WEST_ch2_C24", "M_SHIM_EAST_ch3_C24"],
+      ["S_SHIM_WEST_ch3_C25", "M_SHIM_EAST_ch3_C25"],
+      ["S_SHIM_WEST_ch3_C26", "M_SHIM_NORTH_ch5_C26"],
+      ["S_SOUTH_ch5_C26_R0", "M_S2MM_DMA_ch0_C26_R0"]
+    ]
+  },
+  "net221":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C15_R1", "S_WEST_ch0_C16_R1"],
+      ["M_EAST_ch1_C14_R1", "S_WEST_ch1_C15_R1"],
+      ["M_EAST_ch1_C17_R1", "S_WEST_ch1_C18_R1"],
+      ["M_EAST_ch2_C12_R1", "S_WEST_ch2_C13_R1"],
+      ["M_EAST_ch2_C13_R1", "S_WEST_ch2_C14_R1"],
+      ["M_EAST_ch2_C16_R1", "S_WEST_ch2_C17_R1"],
+      ["M_EAST_ch3_C10_R1", "S_WEST_ch3_C11_R1"],
+      ["M_EAST_ch3_C11_R1", "S_WEST_ch3_C12_R1"],
+      ["S_MM2S_DMA_ch0_C10_R1", "M_EAST_ch3_C10_R1"],
+      ["S_WEST_ch0_C16_R1", "M_EAST_ch2_C16_R1"],
+      ["S_WEST_ch1_C15_R1", "M_EAST_ch0_C15_R1"],
+      ["S_WEST_ch1_C18_R1", "M_S2MM_DMA_ch0_C18_R1"],
+      ["S_WEST_ch2_C13_R1", "M_EAST_ch2_C13_R1"],
+      ["S_WEST_ch2_C14_R1", "M_EAST_ch1_C14_R1"],
+      ["S_WEST_ch2_C17_R1", "M_EAST_ch1_C17_R1"],
+      ["S_WEST_ch3_C11_R1", "M_EAST_ch3_C11_R1"],
+      ["S_WEST_ch3_C12_R1", "M_EAST_ch2_C12_R1"]
+    ]
+  },
+  "net203":
+  {
+    "tree":
+    [
+      ["M_WEST_ch3_C10_R2", "S_EAST_ch3_C9_R2"],
+      ["M_WEST_ch3_C11_R2", "S_EAST_ch3_C10_R2"],
+      ["M_WEST_ch3_C12_R2", "S_EAST_ch3_C11_R2"],
+      ["M_WEST_ch3_C13_R2", "S_EAST_ch3_C12_R2"],
+      ["M_WEST_ch3_C14_R2", "S_EAST_ch3_C13_R2"],
+      ["M_WEST_ch3_C15_R2", "S_EAST_ch3_C14_R2"],
+      ["M_WEST_ch3_C16_R2", "S_EAST_ch3_C15_R2"],
+      ["M_WEST_ch3_C17_R2", "S_EAST_ch3_C16_R2"],
+      ["S_EAST_ch3_C10_R2", "M_WEST_ch3_C10_R2"],
+      ["S_EAST_ch3_C11_R2", "M_WEST_ch3_C11_R2"],
+      ["S_EAST_ch3_C12_R2", "M_WEST_ch3_C12_R2"],
+      ["S_EAST_ch3_C13_R2", "M_WEST_ch3_C13_R2"],
+      ["S_EAST_ch3_C14_R2", "M_WEST_ch3_C14_R2"],
+      ["S_EAST_ch3_C15_R2", "M_WEST_ch3_C15_R2"],
+      ["S_EAST_ch3_C16_R2", "M_WEST_ch3_C16_R2"],
+      ["S_EAST_ch3_C9_R2", "M_S2MM_DMA_ch0_C9_R2"],
+      ["S_MM2S_DMA_ch0_C17_R2", "M_WEST_ch3_C17_R2"]
+    ]
+  },
+  "net187":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C10_R3", "S_WEST_ch3_C11_R3"],
+      ["M_EAST_ch3_C11_R3", "S_WEST_ch3_C12_R3"],
+      ["M_EAST_ch3_C12_R3", "S_WEST_ch3_C13_R3"],
+      ["M_EAST_ch3_C13_R3", "S_WEST_ch3_C14_R3"],
+      ["M_EAST_ch3_C14_R3", "S_WEST_ch3_C15_R3"],
+      ["M_EAST_ch3_C15_R3", "S_WEST_ch3_C16_R3"],
+      ["M_EAST_ch3_C16_R3", "S_WEST_ch3_C17_R3"],
+      ["M_EAST_ch3_C17_R3", "S_WEST_ch3_C18_R3"],
+      ["S_MM2S_DMA_ch0_C10_R3", "M_EAST_ch3_C10_R3"],
+      ["S_WEST_ch3_C11_R3", "M_EAST_ch3_C11_R3"],
+      ["S_WEST_ch3_C12_R3", "M_EAST_ch3_C12_R3"],
+      ["S_WEST_ch3_C13_R3", "M_EAST_ch3_C13_R3"],
+      ["S_WEST_ch3_C14_R3", "M_EAST_ch3_C14_R3"],
+      ["S_WEST_ch3_C15_R3", "M_EAST_ch3_C15_R3"],
+      ["S_WEST_ch3_C16_R3", "M_EAST_ch3_C16_R3"],
+      ["S_WEST_ch3_C17_R3", "M_EAST_ch3_C17_R3"],
+      ["S_WEST_ch3_C18_R3", "M_S2MM_DMA_ch0_C18_R3"]
+    ]
+  },
+  "net17":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C3_R1", "S_WEST_ch2_C4_R1"],
+      ["M_EAST_ch3_C1_R1", "S_WEST_ch3_C2_R1"],
+      ["M_EAST_ch3_C2_R1", "S_WEST_ch3_C3_R1"],
+      ["M_EAST_ch3_C4_R1", "S_WEST_ch3_C5_R1"],
+      ["M_EAST_ch3_C5_R1", "S_WEST_ch3_C6_R1"],
+      ["M_EAST_ch3_C6_R1", "S_WEST_ch3_C7_R1"],
+      ["M_EAST_ch3_C7_R1", "S_WEST_ch3_C8_R1"],
+      ["M_EAST_ch3_C8_R1", "S_WEST_ch3_C9_R1"],
+      ["S_MM2S_DMA_ch0_C1_R1", "M_EAST_ch3_C1_R1"],
+      ["S_WEST_ch2_C4_R1", "M_EAST_ch3_C4_R1"],
+      ["S_WEST_ch3_C2_R1", "M_EAST_ch3_C2_R1"],
+      ["S_WEST_ch3_C3_R1", "M_EAST_ch2_C3_R1"],
+      ["S_WEST_ch3_C5_R1", "M_EAST_ch3_C5_R1"],
+      ["S_WEST_ch3_C6_R1", "M_EAST_ch3_C6_R1"],
+      ["S_WEST_ch3_C7_R1", "M_EAST_ch3_C7_R1"],
+      ["S_WEST_ch3_C8_R1", "M_EAST_ch3_C8_R1"],
+      ["S_WEST_ch3_C9_R1", "M_S2MM_DMA_ch0_C9_R1"]
+    ]
+  },
+  "net169":
+  {
+    "tree":
+    [
+      ["M_WEST_ch3_C10_R4", "S_EAST_ch3_C9_R4"],
+      ["M_WEST_ch3_C11_R4", "S_EAST_ch3_C10_R4"],
+      ["M_WEST_ch3_C12_R4", "S_EAST_ch3_C11_R4"],
+      ["M_WEST_ch3_C13_R4", "S_EAST_ch3_C12_R4"],
+      ["M_WEST_ch3_C14_R4", "S_EAST_ch3_C13_R4"],
+      ["M_WEST_ch3_C15_R4", "S_EAST_ch3_C14_R4"],
+      ["M_WEST_ch3_C16_R4", "S_EAST_ch3_C15_R4"],
+      ["M_WEST_ch3_C17_R4", "S_EAST_ch3_C16_R4"],
+      ["S_EAST_ch3_C10_R4", "M_WEST_ch3_C10_R4"],
+      ["S_EAST_ch3_C11_R4", "M_WEST_ch3_C11_R4"],
+      ["S_EAST_ch3_C12_R4", "M_WEST_ch3_C12_R4"],
+      ["S_EAST_ch3_C13_R4", "M_WEST_ch3_C13_R4"],
+      ["S_EAST_ch3_C14_R4", "M_WEST_ch3_C14_R4"],
+      ["S_EAST_ch3_C15_R4", "M_WEST_ch3_C15_R4"],
+      ["S_EAST_ch3_C16_R4", "M_WEST_ch3_C16_R4"],
+      ["S_EAST_ch3_C9_R4", "M_S2MM_DMA_ch0_C9_R4"],
+      ["S_MM2S_DMA_ch0_C17_R4", "M_WEST_ch3_C17_R4"]
+    ]
+  },
+  "net153":
+  {
+    "tree":
+    [
+      ["M_EAST_ch3_C10_R5", "S_WEST_ch3_C11_R5"],
+      ["M_EAST_ch3_C11_R5", "S_WEST_ch3_C12_R5"],
+      ["M_EAST_ch3_C12_R5", "S_WEST_ch3_C13_R5"],
+      ["M_EAST_ch3_C13_R5", "S_WEST_ch3_C14_R5"],
+      ["M_EAST_ch3_C14_R5", "S_WEST_ch3_C15_R5"],
+      ["M_EAST_ch3_C15_R5", "S_WEST_ch3_C16_R5"],
+      ["M_EAST_ch3_C16_R5", "S_WEST_ch3_C17_R5"],
+      ["M_EAST_ch3_C17_R5", "S_WEST_ch3_C18_R5"],
+      ["S_MM2S_DMA_ch0_C10_R5", "M_EAST_ch3_C10_R5"],
+      ["S_WEST_ch3_C11_R5", "M_EAST_ch3_C11_R5"],
+      ["S_WEST_ch3_C12_R5", "M_EAST_ch3_C12_R5"],
+      ["S_WEST_ch3_C13_R5", "M_EAST_ch3_C13_R5"],
+      ["S_WEST_ch3_C14_R5", "M_EAST_ch3_C14_R5"],
+      ["S_WEST_ch3_C15_R5", "M_EAST_ch3_C15_R5"],
+      ["S_WEST_ch3_C16_R5", "M_EAST_ch3_C16_R5"],
+      ["S_WEST_ch3_C17_R5", "M_EAST_ch3_C17_R5"],
+      ["S_WEST_ch3_C18_R5", "M_S2MM_DMA_ch0_C18_R5"]
+    ]
+  },
+  "net135":
+  {
+    "tree":
+    [
+      ["M_WEST_ch3_C10_R6", "S_EAST_ch3_C9_R6"],
+      ["M_WEST_ch3_C11_R6", "S_EAST_ch3_C10_R6"],
+      ["M_WEST_ch3_C12_R6", "S_EAST_ch3_C11_R6"],
+      ["M_WEST_ch3_C13_R6", "S_EAST_ch3_C12_R6"],
+      ["M_WEST_ch3_C14_R6", "S_EAST_ch3_C13_R6"],
+      ["M_WEST_ch3_C15_R6", "S_EAST_ch3_C14_R6"],
+      ["M_WEST_ch3_C16_R6", "S_EAST_ch3_C15_R6"],
+      ["M_WEST_ch3_C17_R6", "S_EAST_ch3_C16_R6"],
+      ["S_EAST_ch3_C10_R6", "M_WEST_ch3_C10_R6"],
+      ["S_EAST_ch3_C11_R6", "M_WEST_ch3_C11_R6"],
+      ["S_EAST_ch3_C12_R6", "M_WEST_ch3_C12_R6"],
+      ["S_EAST_ch3_C13_R6", "M_WEST_ch3_C13_R6"],
+      ["S_EAST_ch3_C14_R6", "M_WEST_ch3_C14_R6"],
+      ["S_EAST_ch3_C15_R6", "M_WEST_ch3_C15_R6"],
+      ["S_EAST_ch3_C16_R6", "M_WEST_ch3_C16_R6"],
+      ["S_EAST_ch3_C9_R6", "M_S2MM_DMA_ch0_C9_R6"],
+      ["S_MM2S_DMA_ch0_C17_R6", "M_WEST_ch3_C17_R6"]
+    ]
+  },
+  "net127":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C10_R7", "S_WEST_ch1_C11_R7"],
+      ["M_EAST_ch2_C11_R7", "S_WEST_ch2_C12_R7"],
+      ["M_EAST_ch2_C12_R7", "S_WEST_ch2_C13_R7"],
+      ["M_EAST_ch3_C13_R7", "S_WEST_ch3_C14_R7"],
+      ["M_EAST_ch3_C14_R7", "S_WEST_ch3_C15_R7"],
+      ["M_EAST_ch3_C15_R7", "S_WEST_ch3_C16_R7"],
+      ["M_EAST_ch3_C16_R7", "S_WEST_ch3_C17_R7"],
+      ["M_EAST_ch3_C17_R7", "S_WEST_ch3_C18_R7"],
+      ["M_EAST_ch3_C8_R7", "S_WEST_ch3_C9_R7"],
+      ["M_EAST_ch3_C9_R7", "S_WEST_ch3_C10_R7"],
+      ["S_MM2S_DMA_ch1_C8_R7", "M_EAST_ch3_C8_R7"],
+      ["S_WEST_ch1_C11_R7", "M_EAST_ch2_C11_R7"],
+      ["S_WEST_ch2_C12_R7", "M_EAST_ch2_C12_R7"],
+      ["S_WEST_ch2_C13_R7", "M_EAST_ch3_C13_R7"],
+      ["S_WEST_ch3_C10_R7", "M_EAST_ch1_C10_R7"],
+      ["S_WEST_ch3_C14_R7", "M_EAST_ch3_C14_R7"],
+      ["S_WEST_ch3_C15_R7", "M_EAST_ch3_C15_R7"],
+      ["S_WEST_ch3_C16_R7", "M_EAST_ch3_C16_R7"],
+      ["S_WEST_ch3_C17_R7", "M_EAST_ch3_C17_R7"],
+      ["S_WEST_ch3_C18_R7", "M_S2MM_DMA_ch0_C18_R7"],
+      ["S_WEST_ch3_C9_R7", "M_EAST_ch3_C9_R7"]
+    ]
+  },
+  "net126":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C11_R7", "S_WEST_ch0_C12_R7"],
+      ["M_EAST_ch0_C12_R7", "S_WEST_ch0_C13_R7"],
+      ["M_EAST_ch0_C5_R7", "S_WEST_ch0_C6_R7"],
+      ["M_EAST_ch1_C6_R7", "S_WEST_ch1_C7_R7"],
+      ["M_EAST_ch1_C7_R7", "S_WEST_ch1_C8_R7"],
+      ["M_EAST_ch1_C8_R7", "S_WEST_ch1_C9_R7"],
+      ["M_EAST_ch1_C9_R7", "S_WEST_ch1_C10_R7"],
+      ["M_EAST_ch2_C13_R7", "S_WEST_ch2_C14_R7"],
+      ["M_EAST_ch3_C10_R7", "S_WEST_ch3_C11_R7"],
+      ["S_MM2S_DMA_ch1_C5_R7", "M_EAST_ch0_C5_R7"],
+      ["S_WEST_ch0_C12_R7", "M_EAST_ch0_C12_R7"],
+      ["S_WEST_ch0_C13_R7", "M_EAST_ch2_C13_R7"],
+      ["S_WEST_ch0_C6_R7", "M_EAST_ch1_C6_R7"],
+      ["S_WEST_ch1_C10_R7", "M_EAST_ch3_C10_R7"],
+      ["S_WEST_ch1_C7_R7", "M_EAST_ch1_C7_R7"],
+      ["S_WEST_ch1_C8_R7", "M_EAST_ch1_C8_R7"],
+      ["S_WEST_ch1_C9_R7", "M_EAST_ch1_C9_R7"],
+      ["S_WEST_ch2_C14_R7", "M_S2MM_DMA_ch1_C14_R7"],
+      ["S_WEST_ch3_C11_R7", "M_EAST_ch0_C11_R7"]
+    ]
+  },
+  "net125":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C4_R6", "S_WEST_ch0_C5_R6"],
+      ["M_EAST_ch0_C5_R6", "S_WEST_ch0_C6_R6"],
+      ["M_EAST_ch0_C8_R4", "S_WEST_ch0_C9_R4"],
+      ["M_EAST_ch0_C9_R4", "S_WEST_ch0_C10_R4"],
+      ["M_EAST_ch1_C10_R4", "S_WEST_ch1_C11_R4"],
+      ["M_EAST_ch1_C11_R4", "S_WEST_ch1_C12_R4"],
+      ["M_EAST_ch1_C12_R4", "S_WEST_ch1_C13_R4"],
+      ["M_EAST_ch1_C7_R4", "S_WEST_ch1_C8_R4"],
+      ["M_EAST_ch2_C6_R4", "S_WEST_ch2_C7_R4"],
+      ["M_NORTH_ch4_C13_R5", "S_SOUTH_ch4_C13_R6"],
+      ["M_NORTH_ch4_C13_R6", "S_SOUTH_ch4_C13_R7"],
+      ["M_NORTH_ch5_C13_R4", "S_SOUTH_ch5_C13_R5"],
+      ["M_SOUTH_ch1_C4_R7", "S_NORTH_ch1_C4_R6"],
+      ["M_SOUTH_ch1_C6_R5", "S_NORTH_ch1_C6_R4"],
+      ["M_SOUTH_ch1_C6_R6", "S_NORTH_ch1_C6_R5"],
+      ["S_MM2S_DMA_ch1_C4_R7", "M_SOUTH_ch1_C4_R7"],
+      ["S_NORTH_ch1_C4_R6", "M_EAST_ch0_C4_R6"],
+      ["S_NORTH_ch1_C6_R4", "M_EAST_ch2_C6_R4"],
+      ["S_NORTH_ch1_C6_R5", "M_SOUTH_ch1_C6_R5"],
+      ["S_SOUTH_ch4_C13_R6", "M_NORTH_ch4_C13_R6"],
+      ["S_SOUTH_ch4_C13_R7", "M_S2MM_DMA_ch1_C13_R7"],
+      ["S_SOUTH_ch5_C13_R5", "M_NORTH_ch4_C13_R5"],
+      ["S_WEST_ch0_C10_R4", "M_EAST_ch1_C10_R4"],
+      ["S_WEST_ch0_C5_R6", "M_EAST_ch0_C5_R6"],
+      ["S_WEST_ch0_C6_R6", "M_SOUTH_ch1_C6_R6"],
+      ["S_WEST_ch0_C9_R4", "M_EAST_ch0_C9_R4"],
+      ["S_WEST_ch1_C11_R4", "M_EAST_ch1_C11_R4"],
+      ["S_WEST_ch1_C12_R4", "M_EAST_ch1_C12_R4"],
+      ["S_WEST_ch1_C13_R4", "M_NORTH_ch5_C13_R4"],
+      ["S_WEST_ch1_C8_R4", "M_EAST_ch0_C8_R4"],
+      ["S_WEST_ch2_C7_R4", "M_EAST_ch1_C7_R4"]
+    ]
+  },
+  "net124":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C6_R6", "S_WEST_ch0_C7_R6"],
+      ["M_EAST_ch3_C10_R4", "S_WEST_ch3_C11_R4"],
+      ["M_EAST_ch3_C11_R4", "S_WEST_ch3_C12_R4"],
+      ["M_EAST_ch3_C12_R4", "S_WEST_ch3_C13_R4"],
+      ["M_EAST_ch3_C13_R4", "S_WEST_ch3_C14_R4"],
+      ["M_EAST_ch3_C14_R4", "S_WEST_ch3_C15_R4"],
+      ["M_EAST_ch3_C7_R4", "S_WEST_ch3_C8_R4"],
+      ["M_EAST_ch3_C8_R4", "S_WEST_ch3_C9_R4"],
+      ["M_EAST_ch3_C9_R4", "S_WEST_ch3_C10_R4"],
+      ["M_NORTH_ch5_C15_R4", "S_SOUTH_ch5_C15_R5"],
+      ["M_NORTH_ch5_C15_R5", "S_SOUTH_ch5_C15_R6"],
+      ["M_NORTH_ch5_C15_R6", "S_SOUTH_ch5_C15_R7"],
+      ["M_SOUTH_ch0_C7_R5", "S_NORTH_ch0_C7_R4"],
+      ["M_SOUTH_ch0_C7_R6", "S_NORTH_ch0_C7_R5"],
+      ["M_SOUTH_ch1_C6_R7", "S_NORTH_ch1_C6_R6"],
+      ["S_MM2S_DMA_ch1_C6_R7", "M_SOUTH_ch1_C6_R7"],
+      ["S_NORTH_ch0_C7_R4", "M_EAST_ch3_C7_R4"],
+      ["S_NORTH_ch0_C7_R5", "M_SOUTH_ch0_C7_R5"],
+      ["S_NORTH_ch1_C6_R6", "M_EAST_ch0_C6_R6"],
+      ["S_SOUTH_ch5_C15_R5", "M_NORTH_ch5_C15_R5"],
+      ["S_SOUTH_ch5_C15_R6", "M_NORTH_ch5_C15_R6"],
+      ["S_SOUTH_ch5_C15_R7", "M_S2MM_DMA_ch1_C15_R7"],
+      ["S_WEST_ch0_C7_R6", "M_SOUTH_ch0_C7_R6"],
+      ["S_WEST_ch3_C10_R4", "M_EAST_ch3_C10_R4"],
+      ["S_WEST_ch3_C11_R4", "M_EAST_ch3_C11_R4"],
+      ["S_WEST_ch3_C12_R4", "M_EAST_ch3_C12_R4"],
+      ["S_WEST_ch3_C13_R4", "M_EAST_ch3_C13_R4"],
+      ["S_WEST_ch3_C14_R4", "M_EAST_ch3_C14_R4"],
+      ["S_WEST_ch3_C15_R4", "M_NORTH_ch5_C15_R4"],
+      ["S_WEST_ch3_C8_R4", "M_EAST_ch3_C8_R4"],
+      ["S_WEST_ch3_C9_R4", "M_EAST_ch3_C9_R4"]
+    ]
+  },
+  "net123":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C10_R7", "S_WEST_ch0_C11_R7"],
+      ["M_EAST_ch0_C6_R7", "S_WEST_ch0_C7_R7"],
+      ["M_EAST_ch0_C9_R5", "S_WEST_ch0_C10_R5"],
+      ["M_EAST_ch1_C5_R7", "S_WEST_ch1_C6_R7"],
+      ["M_EAST_ch1_C8_R5", "S_WEST_ch1_C9_R5"],
+      ["M_EAST_ch3_C3_R7", "S_WEST_ch3_C4_R7"],
+      ["M_EAST_ch3_C4_R7", "S_WEST_ch3_C5_R7"],
+      ["M_EAST_ch3_C7_R7", "S_WEST_ch3_C8_R7"],
+      ["M_NORTH_ch4_C10_R5", "S_SOUTH_ch4_C10_R6"],
+      ["M_NORTH_ch4_C10_R6", "S_SOUTH_ch4_C10_R7"],
+      ["M_SOUTH_ch1_C8_R6", "S_NORTH_ch1_C8_R5"],
+      ["M_SOUTH_ch1_C8_R7", "S_NORTH_ch1_C8_R6"],
+      ["S_MM2S_DMA_ch1_C3_R7", "M_EAST_ch3_C3_R7"],
+      ["S_NORTH_ch1_C8_R5", "M_EAST_ch1_C8_R5"],
+      ["S_NORTH_ch1_C8_R6", "M_SOUTH_ch1_C8_R6"],
+      ["S_SOUTH_ch4_C10_R6", "M_NORTH_ch4_C10_R6"],
+      ["S_SOUTH_ch4_C10_R7", "M_EAST_ch0_C10_R7"],
+      ["S_WEST_ch0_C10_R5", "M_NORTH_ch4_C10_R5"],
+      ["S_WEST_ch0_C11_R7", "M_S2MM_DMA_ch0_C11_R7"],
+      ["S_WEST_ch0_C7_R7", "M_EAST_ch3_C7_R7"],
+      ["S_WEST_ch1_C6_R7", "M_EAST_ch0_C6_R7"],
+      ["S_WEST_ch1_C9_R5", "M_EAST_ch0_C9_R5"],
+      ["S_WEST_ch3_C4_R7", "M_EAST_ch3_C4_R7"],
+      ["S_WEST_ch3_C5_R7", "M_EAST_ch1_C5_R7"],
+      ["S_WEST_ch3_C8_R7", "M_SOUTH_ch1_C8_R7"]
+    ]
+  },
+  "net122":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C8_R7", "S_WEST_ch0_C9_R7"],
+      ["M_EAST_ch0_C9_R7", "S_WEST_ch0_C10_R7"],
+      ["M_EAST_ch1_C13_R7", "S_WEST_ch1_C14_R7"],
+      ["M_EAST_ch2_C10_R7", "S_WEST_ch2_C11_R7"],
+      ["M_EAST_ch2_C14_R7", "S_WEST_ch2_C15_R7"],
+      ["M_EAST_ch2_C15_R7", "S_WEST_ch2_C16_R7"],
+      ["M_EAST_ch2_C7_R7", "S_WEST_ch2_C8_R7"],
+      ["M_EAST_ch3_C11_R7", "S_WEST_ch3_C12_R7"],
+      ["M_EAST_ch3_C12_R7", "S_WEST_ch3_C13_R7"],
+      ["S_MM2S_DMA_ch1_C7_R7", "M_EAST_ch2_C7_R7"],
+      ["S_WEST_ch0_C10_R7", "M_EAST_ch2_C10_R7"],
+      ["S_WEST_ch0_C9_R7", "M_EAST_ch0_C9_R7"],
+      ["S_WEST_ch1_C14_R7", "M_EAST_ch2_C14_R7"],
+      ["S_WEST_ch2_C11_R7", "M_EAST_ch3_C11_R7"],
+      ["S_WEST_ch2_C15_R7", "M_EAST_ch2_C15_R7"],
+      ["S_WEST_ch2_C16_R7", "M_S2MM_DMA_ch1_C16_R7"],
+      ["S_WEST_ch2_C8_R7", "M_EAST_ch0_C8_R7"],
+      ["S_WEST_ch3_C12_R7", "M_EAST_ch3_C12_R7"],
+      ["S_WEST_ch3_C13_R7", "M_EAST_ch1_C13_R7"]
+    ]
+  },
+  "net121":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C2_R6", "S_WEST_ch1_C3_R6"],
+      ["M_EAST_ch1_C3_R6", "S_WEST_ch1_C4_R6"],
+      ["M_EAST_ch1_C4_R6", "S_WEST_ch1_C5_R6"],
+      ["M_EAST_ch1_C5_R6", "S_WEST_ch1_C6_R6"],
+      ["M_EAST_ch1_C8_R4", "S_WEST_ch1_C9_R4"],
+      ["M_EAST_ch1_C9_R4", "S_WEST_ch1_C10_R4"],
+      ["M_EAST_ch2_C7_R4", "S_WEST_ch2_C8_R4"],
+      ["M_EAST_ch3_C6_R4", "S_WEST_ch3_C7_R4"],
+      ["M_NORTH_ch5_C10_R4", "S_SOUTH_ch5_C10_R5"],
+      ["M_NORTH_ch5_C10_R5", "S_SOUTH_ch5_C10_R6"],
+      ["M_NORTH_ch5_C10_R6", "S_SOUTH_ch5_C10_R7"],
+      ["M_SOUTH_ch0_C2_R7", "S_NORTH_ch0_C2_R6"],
+      ["M_SOUTH_ch0_C6_R5", "S_NORTH_ch0_C6_R4"],
+      ["M_SOUTH_ch0_C6_R6", "S_NORTH_ch0_C6_R5"],
+      ["S_MM2S_DMA_ch1_C2_R7", "M_SOUTH_ch0_C2_R7"],
+      ["S_NORTH_ch0_C2_R6", "M_EAST_ch1_C2_R6"],
+      ["S_NORTH_ch0_C6_R4", "M_EAST_ch3_C6_R4"],
+      ["S_NORTH_ch0_C6_R5", "M_SOUTH_ch0_C6_R5"],
+      ["S_SOUTH_ch5_C10_R5", "M_NORTH_ch5_C10_R5"],
+      ["S_SOUTH_ch5_C10_R6", "M_NORTH_ch5_C10_R6"],
+      ["S_SOUTH_ch5_C10_R7", "M_S2MM_DMA_ch1_C10_R7"],
+      ["S_WEST_ch1_C10_R4", "M_NORTH_ch5_C10_R4"],
+      ["S_WEST_ch1_C3_R6", "M_EAST_ch1_C3_R6"],
+      ["S_WEST_ch1_C4_R6", "M_EAST_ch1_C4_R6"],
+      ["S_WEST_ch1_C5_R6", "M_EAST_ch1_C5_R6"],
+      ["S_WEST_ch1_C6_R6", "M_SOUTH_ch0_C6_R6"],
+      ["S_WEST_ch1_C9_R4", "M_EAST_ch1_C9_R4"],
+      ["S_WEST_ch2_C8_R4", "M_EAST_ch1_C8_R4"],
+      ["S_WEST_ch3_C7_R4", "M_EAST_ch2_C7_R4"]
+    ]
+  },
+  "net120":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C10_R6", "S_WEST_ch2_C11_R6"],
+      ["M_EAST_ch2_C11_R6", "S_WEST_ch2_C12_R6"],
+      ["M_EAST_ch2_C8_R6", "S_WEST_ch2_C9_R6"],
+      ["M_EAST_ch2_C9_R6", "S_WEST_ch2_C10_R6"],
+      ["M_EAST_ch3_C12_R6", "S_WEST_ch3_C13_R6"],
+      ["M_EAST_ch3_C13_R6", "S_WEST_ch3_C14_R6"],
+      ["M_EAST_ch3_C14_R6", "S_WEST_ch3_C15_R6"],
+      ["M_EAST_ch3_C15_R6", "S_WEST_ch3_C16_R6"],
+      ["M_EAST_ch3_C16_R6", "S_WEST_ch3_C17_R6"],
+      ["M_NORTH_ch5_C17_R6", "S_SOUTH_ch5_C17_R7"],
+      ["M_SOUTH_ch0_C8_R7", "S_NORTH_ch0_C8_R6"],
+      ["S_MM2S_DMA_ch0_C8_R7", "M_SOUTH_ch0_C8_R7"],
+      ["S_NORTH_ch0_C8_R6", "M_EAST_ch2_C8_R6"],
+      ["S_SOUTH_ch5_C17_R7", "M_S2MM_DMA_ch1_C17_R7"],
+      ["S_WEST_ch2_C10_R6", "M_EAST_ch2_C10_R6"],
+      ["S_WEST_ch2_C11_R6", "M_EAST_ch2_C11_R6"],
+      ["S_WEST_ch2_C12_R6", "M_EAST_ch3_C12_R6"],
+      ["S_WEST_ch2_C9_R6", "M_EAST_ch2_C9_R6"],
+      ["S_WEST_ch3_C13_R6", "M_EAST_ch3_C13_R6"],
+      ["S_WEST_ch3_C14_R6", "M_EAST_ch3_C14_R6"],
+      ["S_WEST_ch3_C15_R6", "M_EAST_ch3_C15_R6"],
+      ["S_WEST_ch3_C16_R6", "M_EAST_ch3_C16_R6"],
+      ["S_WEST_ch3_C17_R6", "M_NORTH_ch5_C17_R6"]
+    ]
+  },
+  "net119":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C10_R6", "S_WEST_ch0_C11_R6"],
+      ["M_EAST_ch0_C11_R6", "S_WEST_ch0_C12_R6"],
+      ["M_EAST_ch0_C8_R6", "S_WEST_ch0_C9_R6"],
+      ["M_EAST_ch0_C9_R6", "S_WEST_ch0_C10_R6"],
+      ["M_EAST_ch2_C12_R6", "S_WEST_ch2_C13_R6"],
+      ["M_EAST_ch2_C13_R6", "S_WEST_ch2_C14_R6"],
+      ["M_EAST_ch2_C14_R6", "S_WEST_ch2_C15_R6"],
+      ["M_EAST_ch2_C15_R6", "S_WEST_ch2_C16_R6"],
+      ["M_EAST_ch2_C16_R6", "S_WEST_ch2_C17_R6"],
+      ["M_EAST_ch3_C17_R6", "S_WEST_ch3_C18_R6"],
+      ["M_EAST_ch3_C1_R6", "S_WEST_ch3_C2_R6"],
+      ["M_EAST_ch3_C2_R6", "S_WEST_ch3_C3_R6"],
+      ["M_EAST_ch3_C3_R6", "S_WEST_ch3_C4_R6"],
+      ["M_EAST_ch3_C4_R6", "S_WEST_ch3_C5_R6"],
+      ["M_EAST_ch3_C5_R6", "S_WEST_ch3_C6_R6"],
+      ["M_EAST_ch3_C6_R6", "S_WEST_ch3_C7_R6"],
+      ["M_EAST_ch3_C7_R6", "S_WEST_ch3_C8_R6"],
+      ["M_NORTH_ch5_C18_R6", "S_SOUTH_ch5_C18_R7"],
+      ["M_SOUTH_ch0_C1_R7", "S_NORTH_ch0_C1_R6"],
+      ["S_MM2S_DMA_ch1_C1_R7", "M_SOUTH_ch0_C1_R7"],
+      ["S_NORTH_ch0_C1_R6", "M_EAST_ch3_C1_R6"],
+      ["S_SOUTH_ch5_C18_R7", "M_S2MM_DMA_ch1_C18_R7"],
+      ["S_WEST_ch0_C10_R6", "M_EAST_ch0_C10_R6"],
+      ["S_WEST_ch0_C11_R6", "M_EAST_ch0_C11_R6"],
+      ["S_WEST_ch0_C12_R6", "M_EAST_ch2_C12_R6"],
+      ["S_WEST_ch0_C9_R6", "M_EAST_ch0_C9_R6"],
+      ["S_WEST_ch2_C13_R6", "M_EAST_ch2_C13_R6"],
+      ["S_WEST_ch2_C14_R6", "M_EAST_ch2_C14_R6"],
+      ["S_WEST_ch2_C15_R6", "M_EAST_ch2_C15_R6"],
+      ["S_WEST_ch2_C16_R6", "M_EAST_ch2_C16_R6"],
+      ["S_WEST_ch2_C17_R6", "M_EAST_ch3_C17_R6"],
+      ["S_WEST_ch3_C18_R6", "M_NORTH_ch5_C18_R6"],
+      ["S_WEST_ch3_C2_R6", "M_EAST_ch3_C2_R6"],
+      ["S_WEST_ch3_C3_R6", "M_EAST_ch3_C3_R6"],
+      ["S_WEST_ch3_C4_R6", "M_EAST_ch3_C4_R6"],
+      ["S_WEST_ch3_C5_R6", "M_EAST_ch3_C5_R6"],
+      ["S_WEST_ch3_C6_R6", "M_EAST_ch3_C6_R6"],
+      ["S_WEST_ch3_C7_R6", "M_EAST_ch3_C7_R6"],
+      ["S_WEST_ch3_C8_R6", "M_EAST_ch0_C8_R6"]
+    ]
+  },
+  "net118":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C10_R6", "S_WEST_ch1_C11_R6"],
+      ["M_EAST_ch1_C11_R6", "S_WEST_ch1_C12_R6"],
+      ["M_EAST_ch1_C12_R6", "S_WEST_ch1_C13_R6"],
+      ["M_EAST_ch1_C13_R6", "S_WEST_ch1_C14_R6"],
+      ["M_EAST_ch1_C14_R6", "S_WEST_ch1_C15_R6"],
+      ["M_EAST_ch1_C15_R6", "S_WEST_ch1_C16_R6"],
+      ["M_EAST_ch1_C16_R6", "S_WEST_ch1_C17_R6"],
+      ["M_EAST_ch1_C8_R6", "S_WEST_ch1_C9_R6"],
+      ["M_EAST_ch1_C9_R6", "S_WEST_ch1_C10_R6"],
+      ["M_EAST_ch2_C7_R6", "S_WEST_ch2_C8_R6"],
+      ["M_NORTH_ch4_C17_R6", "S_SOUTH_ch4_C17_R7"],
+      ["M_SOUTH_ch0_C7_R7", "S_NORTH_ch0_C7_R6"],
+      ["S_MM2S_DMA_ch0_C7_R7", "M_SOUTH_ch0_C7_R7"],
+      ["S_NORTH_ch0_C7_R6", "M_EAST_ch2_C7_R6"],
+      ["S_SOUTH_ch4_C17_R7", "M_S2MM_DMA_ch0_C17_R7"],
+      ["S_WEST_ch1_C10_R6", "M_EAST_ch1_C10_R6"],
+      ["S_WEST_ch1_C11_R6", "M_EAST_ch1_C11_R6"],
+      ["S_WEST_ch1_C12_R6", "M_EAST_ch1_C12_R6"],
+      ["S_WEST_ch1_C13_R6", "M_EAST_ch1_C13_R6"],
+      ["S_WEST_ch1_C14_R6", "M_EAST_ch1_C14_R6"],
+      ["S_WEST_ch1_C15_R6", "M_EAST_ch1_C15_R6"],
+      ["S_WEST_ch1_C16_R6", "M_EAST_ch1_C16_R6"],
+      ["S_WEST_ch1_C17_R6", "M_NORTH_ch4_C17_R6"],
+      ["S_WEST_ch1_C9_R6", "M_EAST_ch1_C9_R6"],
+      ["S_WEST_ch2_C8_R6", "M_EAST_ch1_C8_R6"]
+    ]
+  },
+  "net117":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C4_R7", "S_WEST_ch0_C5_R7"],
+      ["M_EAST_ch0_C7_R7", "S_WEST_ch0_C8_R7"],
+      ["M_EAST_ch1_C3_R7", "S_WEST_ch1_C4_R7"],
+      ["M_EAST_ch2_C2_R7", "S_WEST_ch2_C3_R7"],
+      ["M_EAST_ch2_C6_R7", "S_WEST_ch2_C7_R7"],
+      ["M_EAST_ch2_C8_R7", "S_WEST_ch2_C9_R7"],
+      ["M_EAST_ch2_C9_R7", "S_WEST_ch2_C10_R7"],
+      ["M_EAST_ch3_C1_R7", "S_WEST_ch3_C2_R7"],
+      ["M_EAST_ch3_C5_R7", "S_WEST_ch3_C6_R7"],
+      ["S_MM2S_DMA_ch0_C1_R7", "M_EAST_ch3_C1_R7"],
+      ["S_WEST_ch0_C5_R7", "M_EAST_ch3_C5_R7"],
+      ["S_WEST_ch0_C8_R7", "M_EAST_ch2_C8_R7"],
+      ["S_WEST_ch1_C4_R7", "M_EAST_ch0_C4_R7"],
+      ["S_WEST_ch2_C10_R7", "M_S2MM_DMA_ch0_C10_R7"],
+      ["S_WEST_ch2_C3_R7", "M_EAST_ch1_C3_R7"],
+      ["S_WEST_ch2_C7_R7", "M_EAST_ch0_C7_R7"],
+      ["S_WEST_ch2_C9_R7", "M_EAST_ch2_C9_R7"],
+      ["S_WEST_ch3_C2_R7", "M_EAST_ch2_C2_R7"],
+      ["S_WEST_ch3_C6_R7", "M_EAST_ch2_C6_R7"]
+    ]
+  },
+  "net116":
+  {
+    "tree":
+    [
+      ["M_EAST_ch1_C7_R6", "S_WEST_ch1_C8_R6"],
+      ["M_EAST_ch2_C10_R4", "S_WEST_ch2_C11_R4"],
+      ["M_EAST_ch2_C11_R4", "S_WEST_ch2_C12_R4"],
+      ["M_EAST_ch2_C12_R4", "S_WEST_ch2_C13_R4"],
+      ["M_EAST_ch2_C13_R4", "S_WEST_ch2_C14_R4"],
+      ["M_EAST_ch2_C14_R4", "S_WEST_ch2_C15_R4"],
+      ["M_EAST_ch2_C6_R6", "S_WEST_ch2_C7_R6"],
+      ["M_EAST_ch2_C8_R4", "S_WEST_ch2_C9_R4"],
+      ["M_EAST_ch2_C9_R4", "S_WEST_ch2_C10_R4"],
+      ["M_EAST_ch3_C15_R4", "S_WEST_ch3_C16_R4"],
+      ["M_NORTH_ch5_C16_R4", "S_SOUTH_ch5_C16_R5"],
+      ["M_NORTH_ch5_C16_R5", "S_SOUTH_ch5_C16_R6"],
+      ["M_NORTH_ch5_C16_R6", "S_SOUTH_ch5_C16_R7"],
+      ["M_SOUTH_ch0_C6_R7", "S_NORTH_ch0_C6_R6"],
+      ["M_SOUTH_ch0_C8_R5", "S_NORTH_ch0_C8_R4"],
+      ["M_SOUTH_ch0_C8_R6", "S_NORTH_ch0_C8_R5"],
+      ["S_MM2S_DMA_ch0_C6_R7", "M_SOUTH_ch0_C6_R7"],
+      ["S_NORTH_ch0_C6_R6", "M_EAST_ch2_C6_R6"],
+      ["S_NORTH_ch0_C8_R4", "M_EAST_ch2_C8_R4"],
+      ["S_NORTH_ch0_C8_R5", "M_SOUTH_ch0_C8_R5"],
+      ["S_SOUTH_ch5_C16_R5", "M_NORTH_ch5_C16_R5"],
+      ["S_SOUTH_ch5_C16_R6", "M_NORTH_ch5_C16_R6"],
+      ["S_SOUTH_ch5_C16_R7", "M_S2MM_DMA_ch0_C16_R7"],
+      ["S_WEST_ch1_C8_R6", "M_SOUTH_ch0_C8_R6"],
+      ["S_WEST_ch2_C10_R4", "M_EAST_ch2_C10_R4"],
+      ["S_WEST_ch2_C11_R4", "M_EAST_ch2_C11_R4"],
+      ["S_WEST_ch2_C12_R4", "M_EAST_ch2_C12_R4"],
+      ["S_WEST_ch2_C13_R4", "M_EAST_ch2_C13_R4"],
+      ["S_WEST_ch2_C14_R4", "M_EAST_ch2_C14_R4"],
+      ["S_WEST_ch2_C15_R4", "M_EAST_ch3_C15_R4"],
+      ["S_WEST_ch2_C7_R6", "M_EAST_ch1_C7_R6"],
+      ["S_WEST_ch2_C9_R4", "M_EAST_ch2_C9_R4"],
+      ["S_WEST_ch3_C16_R4", "M_NORTH_ch5_C16_R4"]
+    ]
+  },
+  "net115":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C7_R6", "S_WEST_ch0_C8_R6"],
+      ["M_EAST_ch1_C6_R6", "S_WEST_ch1_C7_R6"],
+      ["M_EAST_ch2_C2_R6", "S_WEST_ch2_C3_R6"],
+      ["M_EAST_ch2_C3_R6", "S_WEST_ch2_C4_R6"],
+      ["M_EAST_ch2_C4_R6", "S_WEST_ch2_C5_R6"],
+      ["M_EAST_ch2_C5_R6", "S_WEST_ch2_C6_R6"],
+      ["M_EAST_ch3_C10_R6", "S_WEST_ch3_C11_R6"],
+      ["M_EAST_ch3_C11_R6", "S_WEST_ch3_C12_R6"],
+      ["M_EAST_ch3_C8_R6", "S_WEST_ch3_C9_R6"],
+      ["M_EAST_ch3_C9_R6", "S_WEST_ch3_C10_R6"],
+      ["M_NORTH_ch5_C12_R6", "S_SOUTH_ch5_C12_R7"],
+      ["M_SOUTH_ch1_C2_R7", "S_NORTH_ch1_C2_R6"],
+      ["S_MM2S_DMA_ch0_C2_R7", "M_SOUTH_ch1_C2_R7"],
+      ["S_NORTH_ch1_C2_R6", "M_EAST_ch2_C2_R6"],
+      ["S_SOUTH_ch5_C12_R7", "M_S2MM_DMA_ch0_C12_R7"],
+      ["S_WEST_ch0_C8_R6", "M_EAST_ch3_C8_R6"],
+      ["S_WEST_ch1_C7_R6", "M_EAST_ch0_C7_R6"],
+      ["S_WEST_ch2_C3_R6", "M_EAST_ch2_C3_R6"],
+      ["S_WEST_ch2_C4_R6", "M_EAST_ch2_C4_R6"],
+      ["S_WEST_ch2_C5_R6", "M_EAST_ch2_C5_R6"],
+      ["S_WEST_ch2_C6_R6", "M_EAST_ch1_C6_R6"],
+      ["S_WEST_ch3_C10_R6", "M_EAST_ch3_C10_R6"],
+      ["S_WEST_ch3_C11_R6", "M_EAST_ch3_C11_R6"],
+      ["S_WEST_ch3_C12_R6", "M_NORTH_ch5_C12_R6"],
+      ["S_WEST_ch3_C9_R6", "M_EAST_ch3_C9_R6"]
+    ]
+  },
+  "net114":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C10_R5", "S_WEST_ch0_C11_R5"],
+      ["M_EAST_ch0_C11_R5", "S_WEST_ch0_C12_R5"],
+      ["M_EAST_ch0_C13_R6", "S_WEST_ch0_C14_R6"],
+      ["M_EAST_ch0_C14_R6", "S_WEST_ch0_C15_R6"],
+      ["M_EAST_ch1_C12_R5", "S_WEST_ch1_C13_R5"],
+      ["M_EAST_ch1_C9_R5", "S_WEST_ch1_C10_R5"],
+      ["M_EAST_ch2_C5_R3", "S_WEST_ch2_C6_R3"],
+      ["M_EAST_ch2_C6_R3", "S_WEST_ch2_C7_R3"],
+      ["M_EAST_ch2_C7_R3", "S_WEST_ch2_C8_R3"],
+      ["M_EAST_ch2_C8_R3", "S_WEST_ch2_C9_R3"],
+      ["M_NORTH_ch4_C15_R6", "S_SOUTH_ch4_C15_R7"],
+      ["M_NORTH_ch5_C13_R5", "S_SOUTH_ch5_C13_R6"],
+      ["M_NORTH_ch5_C9_R3", "S_SOUTH_ch5_C9_R4"],
+      ["M_NORTH_ch5_C9_R4", "S_SOUTH_ch5_C9_R5"],
+      ["M_SOUTH_ch0_C5_R4", "S_NORTH_ch0_C5_R3"],
+      ["M_SOUTH_ch0_C5_R5", "S_NORTH_ch0_C5_R4"],
+      ["M_SOUTH_ch0_C5_R6", "S_NORTH_ch0_C5_R5"],
+      ["M_SOUTH_ch0_C5_R7", "S_NORTH_ch0_C5_R6"],
+      ["S_MM2S_DMA_ch0_C5_R7", "M_SOUTH_ch0_C5_R7"],
+      ["S_NORTH_ch0_C5_R3", "M_EAST_ch2_C5_R3"],
+      ["S_NORTH_ch0_C5_R4", "M_SOUTH_ch0_C5_R4"],
+      ["S_NORTH_ch0_C5_R5", "M_SOUTH_ch0_C5_R5"],
+      ["S_NORTH_ch0_C5_R6", "M_SOUTH_ch0_C5_R6"],
+      ["S_SOUTH_ch4_C15_R7", "M_S2MM_DMA_ch0_C15_R7"],
+      ["S_SOUTH_ch5_C13_R6", "M_EAST_ch0_C13_R6"],
+      ["S_SOUTH_ch5_C9_R4", "M_NORTH_ch5_C9_R4"],
+      ["S_SOUTH_ch5_C9_R5", "M_EAST_ch1_C9_R5"],
+      ["S_WEST_ch0_C11_R5", "M_EAST_ch0_C11_R5"],
+      ["S_WEST_ch0_C12_R5", "M_EAST_ch1_C12_R5"],
+      ["S_WEST_ch0_C14_R6", "M_EAST_ch0_C14_R6"],
+      ["S_WEST_ch0_C15_R6", "M_NORTH_ch4_C15_R6"],
+      ["S_WEST_ch1_C10_R5", "M_EAST_ch0_C10_R5"],
+      ["S_WEST_ch1_C13_R5", "M_NORTH_ch5_C13_R5"],
+      ["S_WEST_ch2_C6_R3", "M_EAST_ch2_C6_R3"],
+      ["S_WEST_ch2_C7_R3", "M_EAST_ch2_C7_R3"],
+      ["S_WEST_ch2_C8_R3", "M_EAST_ch2_C8_R3"],
+      ["S_WEST_ch2_C9_R3", "M_NORTH_ch5_C9_R3"]
+    ]
+  },
+  "net113":
+  {
+    "tree":
+    [
+      ["M_EAST_ch0_C12_R6", "S_WEST_ch0_C13_R6"],
+      ["M_EAST_ch0_C8_R5", "S_WEST_ch0_C9_R5"],
+      ["M_EAST_ch1_C10_R5", "S_WEST_ch1_C11_R5"],
+      ["M_EAST_ch1_C11_R5", "S_WEST_ch1_C12_R5"],
+      ["M_EAST_ch1_C5_R5", "S_WEST_ch1_C6_R5"],
+      ["M_EAST_ch1_C6_R5", "S_WEST_ch1_C7_R5"],
+      ["M_EAST_ch1_C7_R5", "S_WEST_ch1_C8_R5"],
+      ["M_EAST_ch2_C3_R7", "S_WEST_ch2_C4_R7"],
+      ["M_EAST_ch2_C4_R7", "S_WEST_ch2_C5_R7"],
+      ["M_EAST_ch2_C9_R5", "S_WEST_ch2_C10_R5"],
+      ["M_NORTH_ch5_C12_R5", "S_SOUTH_ch5_C12_R6"],
+      ["M_NORTH_ch5_C13_R6", "S_SOUTH_ch5_C13_R7"],
+      ["M_SOUTH_ch1_C5_R6", "S_NORTH_ch1_C5_R5"],
+      ["M_SOUTH_ch1_C5_R7", "S_NORTH_ch1_C5_R6"],
+      ["S_MM2S_DMA_ch0_C3_R7", "M_EAST_ch2_C3_R7"],
+      ["S_NORTH_ch1_C5_R5", "M_EAST_ch1_C5_R5"],
+      ["S_NORTH_ch1_C5_R6", "M_SOUTH_ch1_C5_R6"],
+      ["S_SOUTH_ch5_C12_R6", "M_EAST_ch0_C12_R6"],
+      ["S_SOUTH_ch5_C13_R7", "M_S2MM_DMA_ch0_C13_R7"],
+      ["S_WEST_ch0_C13_R6", "M_NORTH_ch5_C13_R6"],
+      ["S_WEST_ch0_C9_R5", "M_EAST_ch2_C9_R5"],
+      ["S_WEST_ch1_C11_R5", "M_EAST_ch1_C11_R5"],
+      ["S_WEST_ch1_C12_R5", "M_NORTH_ch5_C12_R5"],
+      ["S_WEST_ch1_C6_R5", "M_EAST_ch1_C6_R5"],
+      ["S_WEST_ch1_C7_R5", "M_EAST_ch1_C7_R5"],
+      ["S_WEST_ch1_C8_R5", "M_EAST_ch0_C8_R5"],
+      ["S_WEST_ch2_C10_R5", "M_EAST_ch1_C10_R5"],
+      ["S_WEST_ch2_C4_R7", "M_EAST_ch2_C4_R7"],
+      ["S_WEST_ch2_C5_R7", "M_SOUTH_ch1_C5_R7"]
+    ]
+  },
+  "net112":
+  {
+    "tree":
+    [
+      ["M_EAST_ch2_C10_R5", "S_WEST_ch2_C11_R5"],
+      ["M_EAST_ch2_C11_R5", "S_WEST_ch2_C12_R5"],
+      ["M_EAST_ch2_C12_R5", "S_WEST_ch2_C13_R5"],
+      ["M_EAST_ch2_C13_R5", "S_WEST_ch2_C14_R5"],
+      ["M_EAST_ch2_C4_R5", "S_WEST_ch2_C5_R5"],
+      ["M_EAST_ch2_C5_R5", "S_WEST_ch2_C6_R5"],
+      ["M_EAST_ch2_C6_R5", "S_WEST_ch2_C7_R5"],
+      ["M_EAST_ch2_C7_R5", "S_WEST_ch2_C8_R5"],
+      ["M_EAST_ch2_C8_R5", "S_WEST_ch2_C9_R5"],
+      ["M_EAST_ch3_C9_R5", "S_WEST_ch3_C10_R5"],
+      ["M_NORTH_ch5_C14_R5", "S_SOUTH_ch5_C14_R6"],
+      ["M_NORTH_ch5_C14_R6", "S_SOUTH_ch5_C14_R7"],
+      ["M_SOUTH_ch0_C4_R6", "S_NORTH_ch0_C4_R5"],
+      ["M_SOUTH_ch0_C4_R7", "S_NORTH_ch0_C4_R6"],
+      ["S_MM2S_DMA_ch0_C4_R7", "M_SOUTH_ch0_C4_R7"],
+      ["S_NORTH_ch0_C4_R5", "M_EAST_ch2_C4_R5"],
+      ["S_NORTH_ch0_C4_R6", "M_SOUTH_ch0_C4_R6"],
+      ["S_SOUTH_ch5_C14_R6", "M_NORTH_ch5_C14_R6"],
+      ["S_SOUTH_ch5_C14_R7", "M_S2MM_DMA_ch0_C14_R7"],
+      ["S_WEST_ch2_C11_R5", "M_EAST_ch2_C11_R5"],
+      ["S_WEST_ch2_C12_R5", "M_EAST_ch2_C12_R5"],
+      ["S_WEST_ch2_C13_R5", "M_EAST_ch2_C13_R5"],
+      ["S_WEST_ch2_C14_R5", "M_NORTH_ch5_C14_R5"],
+      ["S_WEST_ch2_C5_R5", "M_EAST_ch2_C5_R5"],
+      ["S_WEST_ch2_C6_R5", "M_EAST_ch2_C6_R5"],
+      ["S_WEST_ch2_C7_R5", "M_EAST_ch2_C7_R5"],
+      ["S_WEST_ch2_C8_R5", "M_EAST_ch2_C8_R5"],
+      ["S_WEST_ch2_C9_R5", "M_EAST_ch3_C9_R5"],
+      ["S_WEST_ch3_C10_R5", "M_EAST_ch2_C10_R5"]
+    ]
+  },
+  "net101":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch5_C8_R6", "S_SOUTH_ch5_C8_R7"],
+      ["M_WEST_ch3_C2_R7", "S_EAST_ch3_C1_R7"],
+      ["M_WEST_ch3_C3_R7", "S_EAST_ch3_C2_R7"],
+      ["M_WEST_ch3_C4_R7", "S_EAST_ch3_C3_R7"],
+      ["M_WEST_ch3_C5_R7", "S_EAST_ch3_C4_R7"],
+      ["M_WEST_ch3_C6_R7", "S_EAST_ch3_C5_R7"],
+      ["M_WEST_ch3_C7_R7", "S_EAST_ch3_C6_R7"],
+      ["M_WEST_ch3_C8_R7", "S_EAST_ch3_C7_R7"],
+      ["S_EAST_ch3_C1_R7", "M_S2MM_DMA_ch0_C1_R7"],
+      ["S_EAST_ch3_C2_R7", "M_WEST_ch3_C2_R7"],
+      ["S_EAST_ch3_C3_R7", "M_WEST_ch3_C3_R7"],
+      ["S_EAST_ch3_C4_R7", "M_WEST_ch3_C4_R7"],
+      ["S_EAST_ch3_C5_R7", "M_WEST_ch3_C5_R7"],
+      ["S_EAST_ch3_C6_R7", "M_WEST_ch3_C6_R7"],
+      ["S_EAST_ch3_C7_R7", "M_WEST_ch3_C7_R7"],
+      ["S_MM2S_DMA_ch0_C8_R6", "M_NORTH_ch5_C8_R6"],
+      ["S_SOUTH_ch5_C8_R7", "M_WEST_ch3_C8_R7"]
+    ]
+  }}
+
+

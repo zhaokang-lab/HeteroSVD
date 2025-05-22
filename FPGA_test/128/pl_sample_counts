@@ -1,0 +1,5 @@
+Sender (128-bit) 1_norm_in_0 56
+Sender (128-bit) 1_sweep_in_0 1040
+Sender (128-bit) 1_sweep_in_1 1040
+Receiver (128-bit) 1_sweep_out_0 1040
+Receiver (128-bit) 1_sweep_out_1 1040

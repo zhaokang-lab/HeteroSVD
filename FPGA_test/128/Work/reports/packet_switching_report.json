@@ -1,0 +1,1178 @@
+{
+    "Inputs": [
+        {
+            "Input": {
+                "PLIO": "1_sweep_in_0",
+                "DataFile": "aie/data/1_sweep_in_0.txt",
+                "Port": "i120_po0",
+                "PortName": "topSweepGraph1.in[0].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Input": {
+                "PLIO": "1_sweep_in_1",
+                "DataFile": "aie/data/1_sweep_in_1.txt",
+                "Port": "i124_po0",
+                "PortName": "topSweepGraph1.in[1].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Input": {
+                "PLIO": "1_norm_in_0",
+                "DataFile": "aie/data/1_norm_in_0.txt",
+                "Port": "i136_po0",
+                "PortName": "topNormGraph1.in[0].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    ],
+    "Outputs": [
+        {
+            "Output": {
+                "PLIO": "1_sweep_out_0",
+                "DataFile": "aie/data/1_sweep_out_0.txt",
+                "Port": "i121_pi0",
+                "PortName": "topSweepGraph1.out[0].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Output": {
+                "PLIO": "1_sweep_out_1",
+                "DataFile": "aie/data/1_sweep_out_1.txt",
+                "Port": "i125_pi0",
+                "PortName": "topSweepGraph1.out[1].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Output": {
+                "PLIO": "1_norm_out_0",
+                "DataFile": "aie/data/1_norm_out_0.txt",
+                "Port": "i137_pi0",
+                "PortName": "topNormGraph1.out[0].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    ],
+    "Internal": [
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[0][0]",
+                "Port": "i0_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[0][0].in[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[0][0]",
+                "Port": "i0_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[0][0].in[1]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[1][0]",
+                "Port": "i1_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[1][0].in[0]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[1][0]",
+                "Port": "i1_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[1][0].in[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[2][0]",
+                "Port": "i2_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[2][0].in[0]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[2][0]",
+                "Port": "i2_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[2][0].in[1]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[3][0]",
+                "Port": "i3_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[3][0].in[0]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[3][0]",
+                "Port": "i3_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[3][0].in[1]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[4][0]",
+                "Port": "i4_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[4][0].in[0]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[4][0]",
+                "Port": "i4_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[4][0].in[1]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[5][0]",
+                "Port": "i5_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[5][0].in[0]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[5][0]",
+                "Port": "i5_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[5][0].in[1]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[6][0]",
+                "Port": "i6_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[6][0].in[0]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[6][0]",
+                "Port": "i6_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[6][0].in[1]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[7][0]",
+                "Port": "i7_pi0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[7][0].in[0]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[7][0]",
+                "Port": "i7_pi1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[7][0].in[1]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[0][14]",
+                "Port": "i112_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[0][14].out[0]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[0][14]",
+                "Port": "i112_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[0][14].out[1]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[1][14]",
+                "Port": "i113_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[1][14].out[0]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[1][14]",
+                "Port": "i113_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[1][14].out[1]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[2][14]",
+                "Port": "i114_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[2][14].out[0]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[2][14]",
+                "Port": "i114_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[2][14].out[1]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[3][14]",
+                "Port": "i115_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[3][14].out[0]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[3][14]",
+                "Port": "i115_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[3][14].out[1]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[4][14]",
+                "Port": "i116_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[4][14].out[0]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[4][14]",
+                "Port": "i116_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[4][14].out[1]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[5][14]",
+                "Port": "i117_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[5][14].out[0]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[5][14]",
+                "Port": "i117_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[5][14].out[1]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[6][14]",
+                "Port": "i118_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[6][14].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[6][14]",
+                "Port": "i118_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[6][14].out[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[7][14]",
+                "Port": "i119_po0",
+                "PortName": "topSweepGraph1.sweepGraph.orth[7][14].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topSweepGraph1.sweepGraph.orth[7][14]",
+                "Port": "i119_po1",
+                "PortName": "topSweepGraph1.sweepGraph.orth[7][14].out[1]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_pi0",
+                "PortName": "topSweepGraph1.sp[0].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po0",
+                "PortName": "topSweepGraph1.sp[0].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po1",
+                "PortName": "topSweepGraph1.sp[0].out[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po2",
+                "PortName": "topSweepGraph1.sp[0].out[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po3",
+                "PortName": "topSweepGraph1.sp[0].out[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po4",
+                "PortName": "topSweepGraph1.sp[0].out[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po5",
+                "PortName": "topSweepGraph1.sp[0].out[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po6",
+                "PortName": "topSweepGraph1.sp[0].out[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[0]",
+                "Port": "i122_po7",
+                "PortName": "topSweepGraph1.sp[0].out[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi0",
+                "PortName": "topSweepGraph1.mg[0].in[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi1",
+                "PortName": "topSweepGraph1.mg[0].in[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi2",
+                "PortName": "topSweepGraph1.mg[0].in[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi3",
+                "PortName": "topSweepGraph1.mg[0].in[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi4",
+                "PortName": "topSweepGraph1.mg[0].in[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi5",
+                "PortName": "topSweepGraph1.mg[0].in[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi6",
+                "PortName": "topSweepGraph1.mg[0].in[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_pi7",
+                "PortName": "topSweepGraph1.mg[0].in[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Merge": "topSweepGraph1.mg[0]",
+                "Port": "i123_po0",
+                "PortName": "topSweepGraph1.mg[0].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_pi0",
+                "PortName": "topSweepGraph1.sp[1].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po0",
+                "PortName": "topSweepGraph1.sp[1].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po1",
+                "PortName": "topSweepGraph1.sp[1].out[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po2",
+                "PortName": "topSweepGraph1.sp[1].out[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po3",
+                "PortName": "topSweepGraph1.sp[1].out[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po4",
+                "PortName": "topSweepGraph1.sp[1].out[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po5",
+                "PortName": "topSweepGraph1.sp[1].out[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po6",
+                "PortName": "topSweepGraph1.sp[1].out[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topSweepGraph1.sp[1]",
+                "Port": "i126_po7",
+                "PortName": "topSweepGraph1.sp[1].out[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi0",
+                "PortName": "topSweepGraph1.mg[1].in[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi1",
+                "PortName": "topSweepGraph1.mg[1].in[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi2",
+                "PortName": "topSweepGraph1.mg[1].in[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi3",
+                "PortName": "topSweepGraph1.mg[1].in[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi4",
+                "PortName": "topSweepGraph1.mg[1].in[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi5",
+                "PortName": "topSweepGraph1.mg[1].in[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi6",
+                "PortName": "topSweepGraph1.mg[1].in[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_pi7",
+                "PortName": "topSweepGraph1.mg[1].in[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Merge": "topSweepGraph1.mg[1]",
+                "Port": "i127_po0",
+                "PortName": "topSweepGraph1.mg[1].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[0]",
+                "Port": "i128_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[0].in[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[0]",
+                "Port": "i128_po0",
+                "PortName": "topNormGraph1.normGraph.norm[0].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[1]",
+                "Port": "i129_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[1].in[0]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[1]",
+                "Port": "i129_po0",
+                "PortName": "topNormGraph1.normGraph.norm[1].out[0]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[2]",
+                "Port": "i130_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[2].in[0]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[2]",
+                "Port": "i130_po0",
+                "PortName": "topNormGraph1.normGraph.norm[2].out[0]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[3]",
+                "Port": "i131_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[3].in[0]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[3]",
+                "Port": "i131_po0",
+                "PortName": "topNormGraph1.normGraph.norm[3].out[0]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[4]",
+                "Port": "i132_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[4].in[0]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[4]",
+                "Port": "i132_po0",
+                "PortName": "topNormGraph1.normGraph.norm[4].out[0]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[5]",
+                "Port": "i133_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[5].in[0]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[5]",
+                "Port": "i133_po0",
+                "PortName": "topNormGraph1.normGraph.norm[5].out[0]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[6]",
+                "Port": "i134_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[6].in[0]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[6]",
+                "Port": "i134_po0",
+                "PortName": "topNormGraph1.normGraph.norm[6].out[0]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Kernel": "topNormGraph1.normGraph.norm[7]",
+                "Port": "i135_pi0",
+                "PortName": "topNormGraph1.normGraph.norm[7].in[0]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Kernel": "topNormGraph1.normGraph.norm[7]",
+                "Port": "i135_po0",
+                "PortName": "topNormGraph1.normGraph.norm[7].out[0]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_pi0",
+                "PortName": "topNormGraph1.sp[0].in[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po0",
+                "PortName": "topNormGraph1.sp[0].out[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po1",
+                "PortName": "topNormGraph1.sp[0].out[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po2",
+                "PortName": "topNormGraph1.sp[0].out[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po3",
+                "PortName": "topNormGraph1.sp[0].out[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po4",
+                "PortName": "topNormGraph1.sp[0].out[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po5",
+                "PortName": "topNormGraph1.sp[0].out[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po6",
+                "PortName": "topNormGraph1.sp[0].out[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Output": {
+                "Split": "topNormGraph1.sp[0]",
+                "Port": "i138_po7",
+                "PortName": "topNormGraph1.sp[0].out[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi0",
+                "PortName": "topNormGraph1.mg[0].in[0]"
+            },
+            "PacketID": [
+                0
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi1",
+                "PortName": "topNormGraph1.mg[0].in[1]"
+            },
+            "PacketID": [
+                1
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi2",
+                "PortName": "topNormGraph1.mg[0].in[2]"
+            },
+            "PacketID": [
+                2
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi3",
+                "PortName": "topNormGraph1.mg[0].in[3]"
+            },
+            "PacketID": [
+                3
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi4",
+                "PortName": "topNormGraph1.mg[0].in[4]"
+            },
+            "PacketID": [
+                4
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi5",
+                "PortName": "topNormGraph1.mg[0].in[5]"
+            },
+            "PacketID": [
+                5
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi6",
+                "PortName": "topNormGraph1.mg[0].in[6]"
+            },
+            "PacketID": [
+                6
+            ]
+        },
+        {
+            "Input": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_pi7",
+                "PortName": "topNormGraph1.mg[0].in[7]"
+            },
+            "PacketID": [
+                7
+            ]
+        },
+        {
+            "Output": {
+                "Merge": "topNormGraph1.mg[0]",
+                "Port": "i139_po0",
+                "PortName": "topNormGraph1.mg[0].out[0]"
+            },
+            "PacketID": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    ]
+}

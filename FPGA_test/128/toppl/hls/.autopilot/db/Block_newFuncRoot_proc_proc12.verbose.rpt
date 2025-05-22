@@ -1,0 +1,396 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_newFuncRoot_proc_proc12'
+================================================================
+* Date:           Mon May 12 19:57:10 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  0.837 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  2.222 ns|  2.222 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|       2|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      36|    -|
+|Register         |        -|     -|       67|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|       67|      38|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |   2|          3|    1|          3|
+    |ap_done    |   2|          2|    1|          2|
+    |empty      |  32|          2|   32|         64|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  36|          7|   34|         69|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------+----+----+-----+-----------+
+    |        Name       | FF | LUT| Bits| Const Bits|
+    +-------------------+----+----+-----+-----------+
+    |ap_CS_fsm          |   2|   0|    2|          0|
+    |ap_done_reg        |   1|   0|    1|          0|
+    |conv1_read_reg_31  |  32|   0|   32|          0|
+    |empty_preg         |  32|   0|   32|          0|
+    +-------------------+----+----+-----+-----------+
+    |Total              |  67|   0|   67|          0|
+    +-------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+-------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |         Source Object         |    C Type    |
++-------------+-----+-----+------------+-------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_continue  |   in|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  Block_newFuncRoot_proc_proc12|  return value|
+|conv1        |   in|   32|     ap_none|                          conv1|       pointer|
+|empty        |  out|   32|     ap_none|                          empty|       pointer|
++-------------+-----+-----+------------+-------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.83>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%muxLogicCE_to_conv1_read = muxlogic"   --->   Operation 3 'muxlogic' 'muxLogicCE_to_conv1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.83ns)   --->   "%conv1_read = read i32 @_ssdm_op_Read.ap_auto.volatile.floatP0A, i32 %conv1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 4 'read' 'conv1_read' <Predicate = true> <Delay = 0.83> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.83>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%bitcast_ln225 = bitcast i32 %conv1_read" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 5 'bitcast' 'bitcast_ln225' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%muxLogicData_to_write_ln225 = muxlogic i32 %bitcast_ln225"   --->   Operation 6 'muxlogic' 'muxLogicData_to_write_ln225' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.83ns)   --->   "%write_ln225 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %empty, i32 %bitcast_ln225" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 7 'write' 'write_ln225' <Predicate = true> <Delay = 0.83> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln225 = ret" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 8 'ret' 'ret_ln225' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ conv1]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ empty]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+muxLogicCE_to_conv1_read    (muxlogic) [ 000]
+conv1_read                  (read    ) [ 001]
+bitcast_ln225               (bitcast ) [ 000]
+muxLogicData_to_write_ln225 (muxlogic) [ 000]
+write_ln225                 (write   ) [ 000]
+ret_ln225                   (ret     ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="conv1">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="conv1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="empty">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.volatile.floatP0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i32P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1004" name="conv1_read_read_fu_8">
+<pin_list>
+<pin id="9" dir="0" index="0" bw="32" slack="0"/>
+<pin id="10" dir="0" index="1" bw="32" slack="0"/>
+<pin id="11" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="conv1_read/1 "/>
+</bind>
+</comp>
+
+<comp id="14" class="1004" name="write_ln225_write_fu_14">
+<pin_list>
+<pin id="15" dir="0" index="0" bw="0" slack="0"/>
+<pin id="16" dir="0" index="1" bw="32" slack="0"/>
+<pin id="17" dir="0" index="2" bw="32" slack="0"/>
+<pin id="18" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln225/2 "/>
+</bind>
+</comp>
+
+<comp id="21" class="1004" name="muxLogicCE_to_conv1_read_fu_21">
+<pin_list>
+<pin id="22" dir="1" index="0" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="muxlogic(592) " fcode="muxlogic"/>
+<opset="muxLogicCE_to_conv1_read/1 "/>
+</bind>
+</comp>
+
+<comp id="23" class="1004" name="bitcast_ln225_fu_23">
+<pin_list>
+<pin id="24" dir="0" index="0" bw="32" slack="1"/>
+<pin id="25" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitcast(44) " fcode="bitcast"/>
+<opset="bitcast_ln225/2 "/>
+</bind>
+</comp>
+
+<comp id="27" class="1004" name="muxLogicData_to_write_ln225_fu_27">
+<pin_list>
+<pin id="28" dir="0" index="0" bw="32" slack="0"/>
+<pin id="29" dir="1" index="1" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="muxlogic(592) " fcode="muxlogic"/>
+<opset="muxLogicData_to_write_ln225/2 "/>
+</bind>
+</comp>
+
+<comp id="31" class="1005" name="conv1_read_reg_31">
+<pin_list>
+<pin id="32" dir="0" index="0" bw="32" slack="1"/>
+<pin id="33" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="conv1_read "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="12"><net_src comp="4" pin="0"/><net_sink comp="8" pin=0"/></net>
+
+<net id="13"><net_src comp="0" pin="0"/><net_sink comp="8" pin=1"/></net>
+
+<net id="19"><net_src comp="6" pin="0"/><net_sink comp="14" pin=0"/></net>
+
+<net id="20"><net_src comp="2" pin="0"/><net_sink comp="14" pin=1"/></net>
+
+<net id="26"><net_src comp="23" pin="1"/><net_sink comp="14" pin=2"/></net>
+
+<net id="30"><net_src comp="23" pin="1"/><net_sink comp="27" pin=0"/></net>
+
+<net id="34"><net_src comp="8" pin="2"/><net_sink comp="31" pin=0"/></net>
+
+<net id="35"><net_src comp="31" pin="1"/><net_sink comp="23" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: empty | {2 }
+ - Input state : 
+	Port: Block_newFuncRoot_proc_proc12 : conv1 | {1 }
+  - Chain level:
+	State 1
+	State 2
+		muxLogicData_to_write_ln225 : 1
+		write_ln225 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------|
+| Operation|          Functional Unit          |
+|----------|-----------------------------------|
+|   read   |        conv1_read_read_fu_8       |
+|----------|-----------------------------------|
+|   write  |      write_ln225_write_fu_14      |
+|----------|-----------------------------------|
+| muxlogic |   muxLogicCE_to_conv1_read_fu_21  |
+|          | muxLogicData_to_write_ln225_fu_27 |
+|----------|-----------------------------------|
+|   Total  |                                   |
+|----------|-----------------------------------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------+--------+
+|                 |   FF   |
++-----------------+--------+
+|conv1_read_reg_31|   32   |
++-----------------+--------+
+|      Total      |   32   |
++-----------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+
+|           |   FF   |
++-----------+--------+
+|  Function |    -   |
+|   Memory  |    -   |
+|Multiplexer|    -   |
+|  Register |   32   |
++-----------+--------+
+|   Total   |   32   |
++-----------+--------+

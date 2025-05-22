@@ -1,0 +1,7 @@
+digraph N {
+ b156[color=red,fontcolor=black,style=filled,label="b156\nVFPMAC wd0, r7, wd0, ya, r2, cl0, r2, cl0, #0, cl1\ninp: WR0[0] WD[0] RS[2] RS[2] CL[0] CL[0] CL[1]\nout: WD[0]"];  {rank=same; S3;  b156;}
+ b156[color=red,fontcolor=black,style=filled,label="b156\nVFPMAC wd0, r7, wd0, ya, r2, cl0, r2, cl0, #0, cl1\ninp: WR0[0] WD[0] RS[2] RS[2] CL[0] CL[0] CL[1]\nout: WD[0]"];  {rank=same; S3;  b156;}
+   b156 -> b156 [color=black,fontcolor=black,style=dashed,label="len=2\nWD[0]"];
+   b156 -> b156 [color=black,fontcolor=black,style=dashed,label="len=2\nWD[0]"];
+  S3 [label="step 3",shape=box];
+}

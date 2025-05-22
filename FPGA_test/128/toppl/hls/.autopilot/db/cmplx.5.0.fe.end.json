@@ -1,0 +1,600 @@
+{
+    "1": {
+        "name": "SystemControl",
+        "file": "TopPL.cpp",
+        "fileloc": "293",
+        "instructions": "54",
+        "total_instructions": "243",
+        "calls": "23 11 30 5",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_261_4",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "261",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "Block_newFuncRoot_proc_proc11",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "224",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "receive4AIE_Pipeline_VITIS_LOOP_76_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "63",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "SystemControl_Pipeline_VITIS_LOOP_315_4",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "315",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "receive4DDR",
+        "file": "TopPL.cpp",
+        "fileloc": "26",
+        "instructions": "40",
+        "total_instructions": "80",
+        "calls": "12",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "send2AIE",
+        "file": "TopPL.cpp",
+        "fileloc": "94",
+        "instructions": "40",
+        "total_instructions": "70",
+        "calls": "18",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "receive4AIE.1",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "59",
+        "instructions": "92",
+        "total_instructions": "132",
+        "calls": "22",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "_Z4SendRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IS1_ILi128EELi512EEERNS0_INS_4axisIS5_Lm0ELm0ELm0ELh56ELb0EEELi0EEESB_SB__for.inc",
+        "file": "TopPL.cpp",
+        "fileloc": "0",
+        "instructions": "12",
+        "total_instructions": "152",
+        "calls": "26 7",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_142_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "244",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "SystemControl_Pipeline_VITIS_LOOP_304_3",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "304",
+        "instructions": "120",
+        "total_instructions": "120",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "receive4DDR_Pipeline_VITIS_LOOP_39_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "29",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_267_5",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "267",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "_Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD__for.inc",
+        "file": "TopPL.cpp",
+        "fileloc": "0",
+        "instructions": "22",
+        "total_instructions": "302",
+        "calls": "8 19 34 3 17 15",
+        "basicblocks": "1"
+    },
+    "15": {
+        "name": "Block_newFuncRoot_proc_proc13",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "225",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "dataflow_parent_loop_proc",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "172",
+        "instructions": "19",
+        "total_instructions": "171",
+        "calls": "9",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "Block_newFuncRoot_proc_proc12",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "225",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "18": {
+        "name": "send2AIE.2_Pipeline_VITIS_LOOP_112_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "98",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "receive4AIE",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "59",
+        "instructions": "92",
+        "total_instructions": "132",
+        "calls": "4",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_256_3",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "256",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "send2AIE_Pipeline_VITIS_LOOP_112_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "98",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "receive4AIE.1_Pipeline_VITIS_LOOP_76_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "63",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "SystemControl_Pipeline_VITIS_LOOP_295_1",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "295",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "send2AIE.3_Pipeline_VITIS_LOOP_112_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "98",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "TopPL",
+        "file": "TopPL.cpp",
+        "fileloc": "331",
+        "instructions": "100",
+        "total_instructions": "1430",
+        "calls": "1 33 29 27",
+        "basicblocks": "1"
+    },
+    "25": {
+        "name": "send2AIE",
+        "file": "TopPL.cpp",
+        "fileloc": "94",
+        "instructions": "40",
+        "total_instructions": "70",
+        "calls": "24",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "send2AIE",
+        "file": "TopPL.cpp",
+        "fileloc": "94",
+        "instructions": "40",
+        "total_instructions": "70",
+        "calls": "21",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "Receive",
+        "file": "TopPL.cpp",
+        "fileloc": "207",
+        "instructions": "32",
+        "total_instructions": "435",
+        "calls": "31 6",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "28": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_280_7",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "280",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "RoundRobin",
+        "file": "TopPL.cpp",
+        "fileloc": "239",
+        "instructions": "109",
+        "total_instructions": "310",
+        "calls": "10 32 20 2 13 35 28 36",
+        "basicblocks": "18",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "3",
+            "N": "1"
+        }
+    },
+    "30": {
+        "name": "SystemControl_Pipeline_VITIS_LOOP_321_5",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "321",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "dataflow_parent_loop_proc10",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "220",
+        "instructions": "21",
+        "total_instructions": "323",
+        "calls": "14",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_150_3",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "244",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "Send",
+        "file": "TopPL.cpp",
+        "fileloc": "159",
+        "instructions": "31",
+        "total_instructions": "342",
+        "calls": "16 25 25",
+        "basicblocks": "7",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "2"
+        }
+    },
+    "34": {
+        "name": "Block_newFuncRoot_proc_proc",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "224",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "35": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_275_6",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "275",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "RoundRobin_Pipeline_VITIS_LOOP_198_2",
+        "file": "\/home\/luanxinya\/SVD\/FPGA_test\/128\/pl\/TopPL.cpp",
+        "fileloc": "290",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

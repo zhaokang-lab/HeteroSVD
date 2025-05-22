@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<POWERDATA data="AI-Engine Compiler" dataVersion="" design="TopGraph" date="Wed Jan 22 22:16:09 2025
+">
+ <DEVICE part="xcvc1902" grade="extended" package="vsva2197" speed="-2MP" process="typical" vid="No"></DEVICE>
+  <AIE status="COMPILER_OUTPUT">
+    <AIE_MODULE name="TopGraph" num_tiles="177" clk_freq="1250">
+      <TILE name="CR(0,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.0083" coordinates="0,1">
+        <KERNEL name="i128"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.042" coordinates="0,2">
+        <KERNEL name="i129"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.084" coordinates="0,3">
+        <KERNEL name="i130"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.056" coordinates="0,4">
+        <KERNEL name="i131"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.076" coordinates="0,5">
+        <KERNEL name="i132"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="0,6">
+        <KERNEL name="i133"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.019" coordinates="0,7">
+        <KERNEL name="i134"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(0,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.0095" coordinates="0,8">
+        <KERNEL name="i135"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.051" coordinates="1,1">
+        <KERNEL name="i0"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.11" coordinates="1,2">
+        <KERNEL name="i8"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.073" coordinates="1,3">
+        <KERNEL name="i16"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.056" coordinates="1,4">
+        <KERNEL name="i24"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="1,5">
+        <KERNEL name="i32"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.043" coordinates="1,6">
+        <KERNEL name="i40"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="1,7">
+        <KERNEL name="i48"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(1,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="1,8">
+      </TILE>
+      <TILE name="CR(2,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.06" coordinates="2,1">
+        <KERNEL name="i1"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="2,2">
+        <KERNEL name="i9"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="2,3">
+        <KERNEL name="i17"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="2,4">
+        <KERNEL name="i25"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="2,5">
+        <KERNEL name="i33"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="2,6">
+        <KERNEL name="i41"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="2,7">
+        <KERNEL name="i49"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(2,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="2,8">
+      </TILE>
+      <TILE name="CR(3,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.14" coordinates="3,1">
+        <KERNEL name="i2"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.16" coordinates="3,2">
+        <KERNEL name="i10"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.073" coordinates="3,3">
+        <KERNEL name="i18"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="3,4">
+        <KERNEL name="i26"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="3,5">
+        <KERNEL name="i34"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="3,6">
+        <KERNEL name="i42"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="3,7">
+        <KERNEL name="i50"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(3,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="3,8">
+      </TILE>
+      <TILE name="CR(4,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.11" coordinates="4,1">
+        <KERNEL name="i3"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.11" coordinates="4,2">
+        <KERNEL name="i11"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.056" coordinates="4,3">
+        <KERNEL name="i19"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="4,4">
+        <KERNEL name="i27"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="4,5">
+        <KERNEL name="i35"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="4,6">
+        <KERNEL name="i43"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="4,7">
+        <KERNEL name="i51"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(4,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="4,8">
+      </TILE>
+      <TILE name="CR(5,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.096" coordinates="5,1">
+        <KERNEL name="i4"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="5,2">
+        <KERNEL name="i12"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="5,3">
+        <KERNEL name="i20"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="5,4">
+        <KERNEL name="i28"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="5,5">
+        <KERNEL name="i36"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="5,6">
+        <KERNEL name="i44"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="5,7">
+        <KERNEL name="i52"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(5,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="5,8">
+      </TILE>
+      <TILE name="CR(6,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.13" coordinates="6,1">
+        <KERNEL name="i5"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="6,2">
+        <KERNEL name="i13"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="6,3">
+        <KERNEL name="i21"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="6,4">
+        <KERNEL name="i29"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="6,5">
+        <KERNEL name="i37"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="6,6">
+        <KERNEL name="i45"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="6,7">
+        <KERNEL name="i53"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(6,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="6,8">
+      </TILE>
+      <TILE name="CR(7,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.013" coordinates="7,1">
+        <KERNEL name="i6"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="7,2">
+        <KERNEL name="i14"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="7,3">
+        <KERNEL name="i22"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="7,4">
+        <KERNEL name="i30"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="7,5">
+        <KERNEL name="i38"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="7,6">
+        <KERNEL name="i46"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="7,7">
+        <KERNEL name="i54"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(7,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="7,8">
+      </TILE>
+      <TILE name="CR(8,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.0045" coordinates="8,1">
+        <KERNEL name="i7"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="8,2">
+        <KERNEL name="i15"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="8,3">
+        <KERNEL name="i23"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="8,4">
+        <KERNEL name="i31"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="8,5">
+        <KERNEL name="i39"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="8,6">
+        <KERNEL name="i47"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.27" coordinates="8,7">
+        <KERNEL name="i55"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(8,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.27" coordinates="8,8">
+      </TILE>
+      <TILE name="CR(9,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.038" coordinates="9,2">
+      </TILE>
+      <TILE name="CR(9,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.038" coordinates="9,3">
+      </TILE>
+      <TILE name="CR(9,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.077" coordinates="9,4">
+      </TILE>
+      <TILE name="CR(9,4)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.23" coordinates="9,5">
+      </TILE>
+      <TILE name="CR(9,5)" type="none" int_core_load="0" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.19" coordinates="9,6">
+      </TILE>
+      <TILE name="CR(9,6)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.19" coordinates="9,7">
+      </TILE>
+      <TILE name="CR(9,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.15" coordinates="9,8">
+      </TILE>
+      <TILE name="CR(10,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="10,1">
+      </TILE>
+      <TILE name="CR(10,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="10,2">
+        <KERNEL name="i104"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="10,3">
+        <KERNEL name="i96"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="10,4">
+        <KERNEL name="i88"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="10,5">
+        <KERNEL name="i80"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="10,6">
+        <KERNEL name="i72"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.27" coordinates="10,7">
+        <KERNEL name="i64"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(10,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="10,8">
+        <KERNEL name="i56"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="11,1">
+      </TILE>
+      <TILE name="CR(11,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="11,2">
+        <KERNEL name="i105"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="11,3">
+        <KERNEL name="i97"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="11,4">
+        <KERNEL name="i89"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="11,5">
+        <KERNEL name="i81"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="11,6">
+        <KERNEL name="i73"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="11,7">
+        <KERNEL name="i65"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(11,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.15" coordinates="11,8">
+        <KERNEL name="i57"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="12,1">
+      </TILE>
+      <TILE name="CR(12,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="12,2">
+        <KERNEL name="i106"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="12,3">
+        <KERNEL name="i98"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="12,4">
+        <KERNEL name="i90"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="12,5">
+        <KERNEL name="i82"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="12,6">
+        <KERNEL name="i74"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="12,7">
+        <KERNEL name="i66"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(12,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.15" coordinates="12,8">
+        <KERNEL name="i58"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="13,1">
+      </TILE>
+      <TILE name="CR(13,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="13,2">
+        <KERNEL name="i107"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="13,3">
+        <KERNEL name="i99"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="13,4">
+        <KERNEL name="i91"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="13,5">
+        <KERNEL name="i83"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="13,6">
+        <KERNEL name="i75"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.27" coordinates="13,7">
+        <KERNEL name="i67"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(13,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="13,8">
+        <KERNEL name="i59"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="14,1">
+      </TILE>
+      <TILE name="CR(14,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="14,2">
+        <KERNEL name="i108"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="14,3">
+        <KERNEL name="i100"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="14,4">
+        <KERNEL name="i92"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="14,5">
+        <KERNEL name="i84"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="14,6">
+        <KERNEL name="i76"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="14,7">
+        <KERNEL name="i68"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(14,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="14,8">
+        <KERNEL name="i60"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="15,1">
+      </TILE>
+      <TILE name="CR(15,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="15,2">
+        <KERNEL name="i109"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="15,3">
+        <KERNEL name="i101"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="15,4">
+        <KERNEL name="i93"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="15,5">
+        <KERNEL name="i85"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="15,6">
+        <KERNEL name="i77"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.23" coordinates="15,7">
+        <KERNEL name="i69"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(15,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="15,8">
+        <KERNEL name="i61"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="16,1">
+      </TILE>
+      <TILE name="CR(16,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="16,2">
+        <KERNEL name="i110"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="16,3">
+        <KERNEL name="i102"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="16,4">
+        <KERNEL name="i94"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="16,5">
+        <KERNEL name="i86"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="16,6">
+        <KERNEL name="i78"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="16,7">
+        <KERNEL name="i70"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(16,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="16,8">
+        <KERNEL name="i62"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="17,1">
+      </TILE>
+      <TILE name="CR(17,1)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="17,2">
+        <KERNEL name="i111"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,2)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="17,3">
+        <KERNEL name="i103"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,3)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="17,4">
+        <KERNEL name="i95"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,4)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="17,5">
+        <KERNEL name="i87"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,5)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.038" coordinates="17,6">
+        <KERNEL name="i79"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,6)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="17,7">
+        <KERNEL name="i71"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(17,7)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="17,8">
+        <KERNEL name="i63"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(18,0)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.19" coordinates="18,1">
+      </TILE>
+      <TILE name="CR(18,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.15" coordinates="18,2">
+      </TILE>
+      <TILE name="CR(18,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.15" coordinates="18,3">
+      </TILE>
+      <TILE name="CR(18,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.077" coordinates="18,4">
+      </TILE>
+      <TILE name="CR(18,5)" type="none" int_core_load="0" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.038" coordinates="18,6">
+      </TILE>
+      <TILE name="CR(18,6)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="18,7">
+      </TILE>
+      <TILE name="CR(18,7)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="18,8">
+      </TILE>
+      <TILE name="CR(19,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="4" mem_rw_rate="0.2" stream_util="0.19" coordinates="19,1">
+        <KERNEL name="i112"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(19,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.13" coordinates="19,2">
+      </TILE>
+      <TILE name="CR(19,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.15" coordinates="19,3">
+      </TILE>
+      <TILE name="CR(19,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="19,4">
+      </TILE>
+      <TILE name="CR(20,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.15" coordinates="20,1">
+        <KERNEL name="i113"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(20,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.058" coordinates="20,2">
+      </TILE>
+      <TILE name="CR(20,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.12" coordinates="20,3">
+      </TILE>
+      <TILE name="CR(20,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="20,4">
+      </TILE>
+      <TILE name="CR(21,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="21,1">
+        <KERNEL name="i114"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(21,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.11" coordinates="21,2">
+      </TILE>
+      <TILE name="CR(21,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.12" coordinates="21,3">
+      </TILE>
+      <TILE name="CR(21,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="21,4">
+      </TILE>
+      <TILE name="CR(22,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.19" coordinates="22,1">
+        <KERNEL name="i115"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(22,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.15" coordinates="22,2">
+      </TILE>
+      <TILE name="CR(22,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.077" coordinates="22,3">
+      </TILE>
+      <TILE name="CR(22,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="22,4">
+      </TILE>
+      <TILE name="CR(23,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.12" coordinates="23,1">
+        <KERNEL name="i116"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(23,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.11" coordinates="23,2">
+      </TILE>
+      <TILE name="CR(23,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.077" coordinates="23,3">
+      </TILE>
+      <TILE name="CR(23,3)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="23,4">
+      </TILE>
+      <TILE name="CR(24,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.12" coordinates="24,1">
+        <KERNEL name="i117"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(24,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.1" coordinates="24,2">
+      </TILE>
+      <TILE name="CR(24,2)" type="none" int_core_load="0" fp_core_load="0" mem_banks="0" mem_rw_rate="0.2" stream_util="0.038" coordinates="24,3">
+      </TILE>
+      <TILE name="CR(25,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.077" coordinates="25,1">
+        <KERNEL name="i118"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(25,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.057" coordinates="25,2">
+      </TILE>
+      <TILE name="CR(26,0)" type="int16" int_core_load="0.54" fp_core_load="0" mem_banks="6" mem_rw_rate="0.2" stream_util="0.038" coordinates="26,1">
+        <KERNEL name="i119"  int_core_load="0.9" fp_core_load="0"></KERNEL>
+      </TILE>
+      <TILE name="CR(26,1)" type="none" int_core_load="0" fp_core_load="0" mem_banks="8" mem_rw_rate="0.2" stream_util="0.0096" coordinates="26,2">
+      </TILE>
+      <SHIM name="SHIM(3, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.038" num_pl_streams="0" num_aximm_connections="0" coordinates="3,0"></SHIM>
+      <SHIM name="SHIM(4, 0)" type="AIE_PL_SHIM" stream_util="0.038" num_pl_streams="0" num_aximm_connections="0" coordinates="4,0"></SHIM>
+      <SHIM name="SHIM(5, 0)" type="AIE_PL_SHIM" stream_util="0.038" num_pl_streams="0" num_aximm_connections="0" coordinates="5,0"></SHIM>
+      <SHIM name="SHIM(6, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.16" num_pl_streams="6" num_aximm_connections="0" coordinates="6,0"></SHIM>
+      <SHIM name="SHIM(7, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.038" num_pl_streams="2" num_aximm_connections="0" coordinates="7,0"></SHIM>
+      <SHIM name="SHIM(12, 0)" type="AIE_PL_SHIM" stream_util="0.043" num_pl_streams="0" num_aximm_connections="0" coordinates="12,0"></SHIM>
+      <SHIM name="SHIM(13, 0)" type="AIE_PL_SHIM" stream_util="0.085" num_pl_streams="0" num_aximm_connections="0" coordinates="13,0"></SHIM>
+      <SHIM name="SHIM(14, 0)" type="AIE_PL_SHIM" stream_util="0.13" num_pl_streams="0" num_aximm_connections="0" coordinates="14,0"></SHIM>
+      <SHIM name="SHIM(15, 0)" type="AIE_PL_SHIM" stream_util="0.13" num_pl_streams="0" num_aximm_connections="0" coordinates="15,0"></SHIM>
+      <SHIM name="SHIM(16, 0)" type="AIE_PL_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="16,0"></SHIM>
+      <SHIM name="SHIM(17, 0)" type="AIE_PL_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="17,0"></SHIM>
+      <SHIM name="SHIM(18, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="18,0"></SHIM>
+      <SHIM name="SHIM(19, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="19,0"></SHIM>
+      <SHIM name="SHIM(20, 0)" type="AIE_PL_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="20,0"></SHIM>
+      <SHIM name="SHIM(21, 0)" type="AIE_PL_SHIM" stream_util="0.17" num_pl_streams="0" num_aximm_connections="0" coordinates="21,0"></SHIM>
+      <SHIM name="SHIM(22, 0)" type="AIE_PL_SHIM" stream_util="0.21" num_pl_streams="4" num_aximm_connections="0" coordinates="22,0"></SHIM>
+      <SHIM name="SHIM(23, 0)" type="AIE_PL_SHIM" stream_util="0.13" num_pl_streams="0" num_aximm_connections="0" coordinates="23,0"></SHIM>
+      <SHIM name="SHIM(24, 0)" type="AIE_PL_SHIM" stream_util="0.085" num_pl_streams="0" num_aximm_connections="0" coordinates="24,0"></SHIM>
+      <SHIM name="SHIM(25, 0)" type="AIE_PL_SHIM" stream_util="0.043" num_pl_streams="0" num_aximm_connections="0" coordinates="25,0"></SHIM>
+      <SHIM name="SHIM(26, 0)" type="AIE_PL_NOC_SHIM" stream_util="0.043" num_pl_streams="0" num_aximm_connections="0" coordinates="26,0"></SHIM>
+    </AIE_MODULE>
+  </AIE>
+</POWERDATA>

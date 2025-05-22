@@ -1,0 +1,40 @@
+sgraph: F_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI__m1231
+n_nodes: 7
+ms_unfold_len: 5
+ms_RecMII: 3
+ms_ResMII: 3
+ms_MII: 3
+ms_II: 3
+ms_SC: 3
+ms_status: folded
+ms_cost: 30202
+ms_n_back_tracks: 0
+ms_tot_n_back_tracks: 0
+ms_n_nodes_scheduled:     7
+ms_tot_n_nodes_scheduled: 21
+ms_req_budgetRatio: 1
+ms_node_order: s253 #0
+ms_node_order: s686 #1
+ms_node_order: s251 #2
+ms_node_order: s695 #3
+ms_node_order: s249 #4
+ms_node_order: s252 #5
+ms_node_order: s250 #6
+ms_cstep s249: 0 0 0
+ms_cstep s250: 0 0 0
+ms_cstep s251: 2 1 5
+ms_cstep s252: 1 1 4
+ms_cstep s253: 0 2 6
+ms_cstep s686: 2 1 5
+ms_cstep s695: 1 1 4
+---------- block m1231: modulo scheduled: schedule S :
+    length: 3
+    word length: 48
+    word cost: 480
+    side-effect writes: 6
+    instr_prior: 10172
+    bundles per cstep:
+        0:	b249	--> p5533, 	b250	--> p5536, 	b253	--> p5939	 DELAYED_WRITE = 1
+        1:	b252	--> p5789, 	b695	--> p6366	 DELAYED_WRITE = 1
+        2:	b251	--> p5537, 	b686	--> p6365	 DELAYED_WRITE = 1
+    

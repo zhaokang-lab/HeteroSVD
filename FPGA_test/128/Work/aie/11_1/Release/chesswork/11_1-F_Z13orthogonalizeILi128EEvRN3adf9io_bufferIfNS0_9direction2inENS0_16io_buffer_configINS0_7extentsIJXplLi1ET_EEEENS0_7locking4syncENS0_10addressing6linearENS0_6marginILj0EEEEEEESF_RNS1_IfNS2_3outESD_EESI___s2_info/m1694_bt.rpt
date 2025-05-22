@@ -1,0 +1,16 @@
+Modulo scheduling backtracking report for m1694: #nodes = 8
+
+NO: s153 #0 s151 #1 s152 #2 s150 #3 s147 #4 s148 #5 s146 #6 s149 #7
+
+     1  1  1  1  1  1  1  1
+     5  5  5  5  4  4  4  4
+     3  1  2  0  7  8  6  9
+SW:  +  -  -  -  -  -  -  +
+
+Result #0 for II 4  (required budget ratio: 1):
+SL: 14  8 13  7  0  5  2  6 OK MAX COMPLETE (8)
+SD:  0  0  0  0  0  0  0  1
+BT:  0  0  0  0  0  0  0  0
+
+No iterative folding schedule available for comparison.
+

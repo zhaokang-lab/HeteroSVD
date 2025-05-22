@@ -1,0 +1,1256 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 103, Column: 16 }
+Function:        _Z8send2AIERN3hls6streamI7ap_uintILi128EELi512EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'generateHeader(unsigned int, unsigned int)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 5, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'send2AIE(hls::stream<ap_uint<128>, 512>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 95, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 95, Column: 0 }
+Function:        _Z8send2AIERN3hls6streamI7ap_uintILi128EELi512EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_704_1
+  - String:          ''' ('
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:15:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          send2AIE
+  - String:          ''' completely with a factor of '
+  - Factor:          '30'
+...
+--- !Passed
+Pass:            reflow-function-instantiate
+Name:            FunctionInstantiate
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 223, Column: 23 }
+Function:        _Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD_
+Args:            
+  - String:          'Instantiating function '''
+  - Name:            'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+  - String:          ''' to '''
+  - Name:            'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+  - String:          ''' by setting '
+  - String:          '''fromAIEstrm'' to ''sweep_rx0_1'''
+...
+--- !Passed
+Pass:            reflow-function-instantiate
+Name:            FunctionInstantiate
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 222, Column: 16 }
+Function:        _Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD_
+Args:            
+  - String:          'Instantiating function '''
+  - Name:            'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+  - String:          ''' to '''
+  - Name:            'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&) (.131)'
+  - String:          ''' by setting '
+  - String:          '''fromAIEstrm'' to ''sweep_rx0_0'''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 494, Column: 0 }
+Function:        _ZNK9fp_structIdE9to_doubleEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.26.33.39.47)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 509, Column: 0 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_double() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 482, Column: 0 }
+Function:        _ZNK9fp_structIdE6to_intEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.26.33.39.47)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_int() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 482, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_fmax<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_fmax<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_fmax<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_int() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 482, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_fmax<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h, 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 293, Column: 0 }
+Function:        _Z13SystemControliP7ap_uintILi32EEPN3hls6streamIS_ILi1EELi4EEEPNS3_IfLi4EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmax
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'SystemControl(int, ap_uint<32>*, hls::stream<ap_uint<1>, 4>*, hls::stream<float, 4>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 293, Column: 0 }
+Function:        _Z13SystemControliP7ap_uintILi32EEPN3hls6streamIS_ILi1EELi4EEEPNS3_IfLi4EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::print(char const*, float)'
+    DebugLoc:        { File: /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_print.h, 
+                       Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'SystemControl(int, ap_uint<32>*, hls::stream<ap_uint<1>, 4>*, hls::stream<float, 4>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 293, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 241, Column: 0 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'DDR2FIFO(ap_uint<128>*, hls::stream<ap_uint<128>, 512>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 137, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 241, Column: 0 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'FIFO2DDR(ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 4096>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 193, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 60, Column: 0 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE.131
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmax
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&) (.131)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 60, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 60, Column: 0 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmax
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'receive4AIE(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 60, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 210, Column: 0 }
+Function:        _Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'NormReceive(hls::stream<ap_uint<128>, 4096>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'Receive(hls::stream<ap_uint<1>, 4>&, hls::stream<float, 4>*, hls::stream<ap_uint<128>, 4096>*, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 210, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 362, Column: 20 }
+Function:        _Z5TopPLP7ap_uintILi128EES1_PS_ILi32EES3_iRN3hls6streamINS4_4axisIS0_Lm0ELm0ELm0ELh56ELb0EEELi0EEES9_S9_S9_S9_S9_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          convSet
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 363, Column: 21 }
+Function:        _Z5TopPLP7ap_uintILi128EES1_PS_ILi32EES3_iRN3hls6streamINS4_4axisIS0_Lm0ELm0ELm0ELh56ELb0EEELi0EEES9_S9_S9_S9_S9_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          syscontrol
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 364, Column: 21 }
+Function:        _Z5TopPLP7ap_uintILi128EES1_PS_ILi32EES3_iRN3hls6streamINS4_4axisIS0_Lm0ELm0ELm0ELh56ELb0EEELi0EEES9_S9_S9_S9_S9_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          send_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 365, Column: 26 }
+Function:        _Z5TopPLP7ap_uintILi128EES1_PS_ILi32EES3_iRN3hls6streamINS4_4axisIS0_Lm0ELm0ELm0ELh56ELb0EEELi0EEES9_S9_S9_S9_S9_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          receive_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 301, Column: 21 }
+Function:        _Z13SystemControliP7ap_uintILi32EEPN3hls6streamIS_ILi1EELi4EEEPNS3_IfLi4EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_301_2
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:301:21'
+  - String:          ' '
+  - Function:        'SystemControl(int, ap_uint<32>*, hls::stream<ap_uint<1>, 4>*, hls::stream<float, 4>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 293, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 169, Column: 23 }
+Function:        _Z4SendRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IS1_ILi128EELi512EEERNS0_INS_4axisIS5_Lm0ELm0ELm0ELh56ELb0EEELi0EEESB_SB_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_169_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:169:23'
+  - String:          ' '
+  - Function:        'Send(hls::stream<ap_uint<1>, 4>&, hls::stream<ap_uint<128>, 512>*, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 162, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 142, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_142_2
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:142:25'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 144, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.i.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 150, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep3seq
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_150_3
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:150:25'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 152, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          for.inc17.i.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        U4seq
+  - ArrayName:       U
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_197_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:197:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 200, Column: 24 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.i16.store.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '128'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        S5seq
+  - ArrayName:       S
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_197_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:197:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 203, Column: 10 }
+  - OrigDirection:   write
+  - OrigID:          for.inc10.i.store.5
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 250, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_250_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:250:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 150, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 150, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          scevgep3seq
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_140_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:140:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 142, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 142, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_140_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:140:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 216, Column: 23 }
+Function:        _Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_216_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:216:23'
+  - String:          ' '
+  - Function:        'Receive(hls::stream<ap_uint<1>, 4>&, hls::stream<float, 4>*, hls::stream<ap_uint<128>, 4096>*, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<128>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 210, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OrigLength:      '128'
+  - String:          ' x '
+  - OrigWords:       '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '8'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 197, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          S5seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq
+  - ArrayName:       S
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_197_1
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:197:21'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OrigLength:      '4096'
+  - String:          ' x '
+  - OrigWords:       '128'
+  - String:          'bit words has been widened by '
+  - Factor:          '4'
+  - String:          ': '
+  - Length:          '1024'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 197, Column: 21 }
+  - OrigDirection:   write
+  - OrigID:          U4seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq6
+  - ArrayName:       U
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_198_2
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:198:23'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 142, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OrigLength:      '256'
+  - String:          ' x '
+  - OrigWords:       '128'
+  - String:          'bit words has been widened by '
+  - Factor:          '4'
+  - String:          ': '
+  - Length:          '64'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 142, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq8
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_142_2
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:142:25'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 150, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OrigLength:      '256'
+  - String:          ' x '
+  - OrigWords:       '128'
+  - String:          'bit words has been widened by '
+  - Factor:          '4'
+  - String:          ': '
+  - Length:          '64'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 150, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          scevgep3seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq10
+  - ArrayName:       dataIn
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_150_3
+  - String:          ' '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:150:25'
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 169, Column: 23 }
+Function:        _Z4SendRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IS1_ILi128EELi512EEERNS0_INS_4axisIS5_Lm0ELm0ELm0ELh56ELb0EEELi0EEESB_SB_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_169_1
+  - String:          '''('
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:169:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 250, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_250_1
+  - String:          '''('
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:250:21'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 216, Column: 23 }
+Function:        _Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_216_1
+  - String:          '''('
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:216:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_295_1
+  - String:          '> at '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:295:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_304_3
+  - String:          '> at '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:304:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_321_5
+  - String:          '> at '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:321:25'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_315_4
+  - String:          '> at '
+  - LoopLoc:         '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:315:25'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 31, Column: 23 }
+Function:        _Z11receive4DDRRN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=data_temp'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  receive4DDR
+  - String:          ' '
+  - varLoc:          '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23'
+  - String:          ' '
+  - PragmaSrcLoc:    '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 40, Column: 9 }
+  - VarName:         data_temp
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 40, Column: 9 }
+Function:        _Z11receive4DDRRN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            data_temp
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 65, Column: 15 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=data_temp'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  receive4AIE
+  - String:          ' '
+  - varLoc:          '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 77, Column: 9 }
+  - VarName:         data_temp
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 77, Column: 9 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            data_temp
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 65, Column: 15 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE.131
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=data_temp'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  receive4AIE
+  - String:          ' '
+  - varLoc:          '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15'
+  - String:          ' '
+  - PragmaSrcLoc:    '/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 77, Column: 9 }
+  - VarName:         data_temp
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 77, Column: 9 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE.131
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            data_temp
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 65, Column: 15 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE.131
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_temp
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 65, Column: 15 }
+Function:        _Z11receive4AIERN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_temp
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 31, Column: 23 }
+Function:        _Z11receive4DDRRN3hls6streamI7ap_uintILi128EELi4096EEERNS0_INS_4axisIS2_Lm0ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_temp
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 142, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*) (.1)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 142, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 150, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*) (.1)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 150, Column: 25 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*) (.1)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - Function:        'RoundRobin(hls::stream<ap_uint<1>, 4>&, ap_uint<128>*, ap_uint<128>*, ap_uint<32>*, hls::stream<ap_uint<128>, 512>*, hls::stream<ap_uint<128>, 4096>*) (.1)'
+    DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                       Line: 241, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp, 
+                   Line: 197, Column: 21 }
+Function:        _Z10RoundRobinRN3hls6streamI7ap_uintILi1EELi4EEEPS1_ILi128EES6_PS1_ILi32EEPNS0_IS5_Li512EEEPNS0_IS5_Li4096EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '8'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

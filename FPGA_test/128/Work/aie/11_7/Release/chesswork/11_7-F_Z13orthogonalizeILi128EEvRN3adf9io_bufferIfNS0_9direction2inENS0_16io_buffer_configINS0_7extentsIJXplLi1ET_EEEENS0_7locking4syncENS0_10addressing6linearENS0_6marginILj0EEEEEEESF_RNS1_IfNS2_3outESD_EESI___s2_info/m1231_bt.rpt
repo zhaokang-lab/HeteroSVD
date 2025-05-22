@@ -1,0 +1,26 @@
+Modulo scheduling backtracking report for m1231: #nodes = 7
+
+NO: s253 #0 s686 #1 s251 #2 s695 #3 s249 #4 s252 #5 s250 #6
+
+     2  6  2  6  2  2  2
+     5  8  5  9  4  5  5
+     3  6  1  5  9  2  0
+SW:  +  -  -  -  -  +  -
+
+Result #0 for II 3  (required budget ratio: 1):
+SL:  2  1  1  0 -4  0 -4 OK MAX COMPLETE (7)
+SD:  0  0  0  0  0  0  0
+BT:  0  0  0  0  0  0  0
+
+Result #1 for II 3  (required budget ratio: 1):
+SL:  2  1  1  0 -4  0 -4 OK MAX COMPLETE (7)
+SD:  0  0  0  0  0  0  0
+BT:  0  0  0  0  0  0  0
+
+Result #2 for II 3  (required budget ratio: 1):
+SL:  2  1  1  0 -4  0 -4 OK MAX COMPLETE (7)
+SD:  0  0  0  0  0  0  0
+BT:  0  0  0  0  0  0  0
+
+No iterative folding schedule available for comparison.
+

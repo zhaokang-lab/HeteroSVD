@@ -1,0 +1,213 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateHeader" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="getPacketID" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receive4DDR" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receive4DDR" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receive4AIE" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fromAIEstrm" ARG_PragmaType="function_instantiate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receive4AIE" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="receive4AIE" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="send2AIE" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="send2AIE" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:143:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="DDR2FIFO" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:151:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="DDR2FIFO" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Send" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fifo type=fifo impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Send" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:173:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Send" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="FIFO2DDR" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:211:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Receive" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=fifo type=fifo impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Receive" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Receive" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:257:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RoundRobin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:262:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RoundRobin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RoundRobin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RoundRobin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="RoundRobin" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=TopPL" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:337:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave latency = 64 num_write_outstanding = 16 num_read_outstanding = 16 max_write_burst_length = 64 max_read_burst_length = 64 bundle = gmem0 port = dataIn depth = 8192" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave latency = 64 num_write_outstanding = 16 num_read_outstanding = 16 max_write_burst_length = 64 max_read_burst_length = 64 bundle = gmem1 port = U depth = 8192" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:341:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave latency = 64 num_write_outstanding = 16 num_read_outstanding = 16 max_write_burst_length = 64 max_read_burst_length = 64 bundle = gmem2 port = S depth = 8192" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:343:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave latency = 64 num_write_outstanding = 16 num_read_outstanding = 16 max_write_burst_length = 64 max_read_burst_length = 64 bundle = gmem3 port = ConvArray depth = 8192" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = dataIn bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:346:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = U bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:347:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = S bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:348:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = ITER bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = ConvArray bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:350:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:352:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = sweep_tx0_0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = sweep_tx0_1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:354:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = sweep_rx0_0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:355:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = sweep_rx0_1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = norm_tx0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:358:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port = norm_rx0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:360:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="TopPL" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:103:16" msg_body="Inlining function 'generateHeader(unsigned int, unsigned int)' into 'send2AIE(hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="generateHeader(unsigned int, unsigned int)" Callee-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 5 Column 0" Caller="send2AIE(hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 95 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:95:0" msg_body="Unrolling loop 'VITIS_LOOP_704_1' (/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:15:30) in function 'send2AIE' completely with a factor of 30">
+        <args Factor="30" LoopLoc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:15:30" LoopName="VITIS_LOOP_704_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_FUNCTION_INSTANTIATE" msg_id="214-367" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:223:23" msg_body="Instantiating function 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)' to 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)' by setting 'fromAIEstrm' to 'sweep_rx0_1'">
+        <args Name="islist {receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)} {receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)}"/>
+    </msg>
+    <msg msg_groups="PRAGMA_FUNCTION_INSTANTIATE" msg_id="214-367" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222:16" msg_body="Instantiating function 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)' to 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;) (.131)' by setting 'fromAIEstrm' to 'sweep_rx0_0'">
+        <args Name="islist {receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)} {receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;) (.131)}"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_isnan&lt;double&gt;(double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_isnan&lt;double&gt;(double)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:494:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.26.33.39.47)' into 'fp_struct&lt;double&gt;::to_double() const'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.26.33.39.47)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_double() const" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:509:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_double() const' into 'fp_struct&lt;double&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;double&gt;::to_double() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 494 Column 0" Caller="fp_struct&lt;double&gt;::to_ieee() const" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:482:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::data() const (.26.33.39.47)' into 'fp_struct&lt;double&gt;::to_int() const'">
+        <args Callee="fp_struct&lt;double&gt;::data() const (.26.33.39.47)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 475 Column 0" Caller="fp_struct&lt;double&gt;::to_int() const" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 482 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'double generic_fmax&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="double generic_fmax&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0" msg_body="Inlining function 'int generic_isnan&lt;double&gt;(double)' into 'double generic_fmax&lt;double&gt;(double, double)'">
+        <args Callee="int generic_isnan&lt;double&gt;(double)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h Line 16 Column 0" Caller="double generic_fmax&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_ieee() const' into 'double generic_fmax&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_ieee() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 509 Column 0" Caller="double generic_fmax&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::to_int() const' into 'double generic_fmax&lt;double&gt;(double, double)'">
+        <args Callee="fp_struct&lt;double&gt;::to_int() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 482 Column 0" Caller="double generic_fmax&lt;double&gt;(double, double)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fmax.h Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:293:0" msg_body="Inlining function 'fmax' into 'SystemControl(int, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;*, hls::stream&lt;float, 4&gt;*)'">
+        <args Callee="fmax" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp Line 6 Column 0" Caller="SystemControl(int, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;*, hls::stream&lt;float, 4&gt;*)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 293 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:293:0" msg_body="Inlining function 'hls::print(char const*, float)' into 'SystemControl(int, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;*, hls::stream&lt;float, 4&gt;*)'">
+        <args Callee="hls::print(char const*, float)" Callee-DebugLoc="File /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_print.h Line 35 Column 0" Caller="SystemControl(int, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;*, hls::stream&lt;float, 4&gt;*)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 293 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:241:0" msg_body="Inlining function 'DDR2FIFO(ap_uint&lt;128&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*)' into 'RoundRobin(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*)'">
+        <args Callee="DDR2FIFO(ap_uint&lt;128&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*)" Callee-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 137 Column 0" Caller="RoundRobin(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 241 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:241:0" msg_body="Inlining function 'FIFO2DDR(ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;)' into 'RoundRobin(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*)'">
+        <args Callee="FIFO2DDR(ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;)" Callee-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 193 Column 0" Caller="RoundRobin(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, ap_uint&lt;32&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 512&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 241 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:60:0" msg_body="Inlining function 'fmax' into 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;) (.131)'">
+        <args Callee="fmax" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp Line 6 Column 0" Caller="receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;) (.131)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:60:0" msg_body="Inlining function 'fmax' into 'receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="fmax" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/fmaxdouble.cpp Line 6 Column 0" Caller="receive4AIE(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:210:0" msg_body="Inlining function 'NormReceive(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)' into 'Receive(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, hls::stream&lt;float, 4&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="NormReceive(hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Callee-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 187 Column 0" Caller="Receive(hls::stream&lt;ap_uint&lt;1&gt;, 4&gt;&amp;, hls::stream&lt;float, 4&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 4096&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 210 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:362:20" msg_body="Applying array_partition to 'convSet': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="convSet"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:363:21" msg_body="Applying array_partition to 'syscontrol': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="syscontrol"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:364:21" msg_body="Applying array_partition to 'send_fifo': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="send_fifo"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:365:26" msg_body="Applying array_partition to 'receive_fifo': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="receive_fifo"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23" msg_body="array_partition dim=1 type=complete  variable=data_temp 1 receive4DDR /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23 /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9data_temp">
+        <args PragmaFunction="receive4DDR" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=data_temp" PragmaSrcLoc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9" PragmaSrcLoc-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 40 Column 9" PragmaType="array_partition" VarName="data_temp" varLoc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:40:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_temp' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_temp" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15" msg_body="array_partition dim=1 type=complete  variable=data_temp 1 receive4AIE /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15 /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9data_temp">
+        <args PragmaFunction="receive4AIE" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=data_temp" PragmaSrcLoc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9" PragmaSrcLoc-DebugLoc="File /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp Line 77 Column 9" PragmaType="array_partition" VarName="data_temp" varLoc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:77:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'data_temp' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="data_temp" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:65:15" msg_body="Applying array_partition to 'data_temp': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="data_temp"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:31:23" msg_body="Applying array_partition to 'data_temp': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="data_temp"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

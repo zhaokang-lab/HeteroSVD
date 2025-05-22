@@ -1,0 +1,30 @@
+sgraph: F_main_m847
+n_nodes: 3
+ms_unfold_len: 14
+ms_RecMII: 1
+ms_ResMII: 1
+ms_MII: 1
+ms_II: 1
+ms_SC: 14
+ms_status: folded
+ms_cost: 11300
+ms_n_back_tracks: 0
+ms_tot_n_back_tracks: 0
+ms_n_nodes_scheduled:     3
+ms_tot_n_nodes_scheduled: 3
+ms_req_budgetRatio: 1
+ms_node_order: s142 #0
+ms_node_order: s141 #1
+ms_node_order: s140 #2
+ms_cstep s140: 0 0 0
+ms_cstep s141: 0 7 7
+ms_cstep s142: 0 13 13
+---------- block m847: modulo scheduled: schedule S :
+    length: 1
+    word length: 16
+    word cost: 160
+    side-effect writes: 2
+    instr_prior: 1416
+    bundles per cstep:
+        0:	b140	--> p28, 	b141	--> p30, 	b142	--> p32	 DELAYED_WRITE = 1
+    

@@ -1,0 +1,136 @@
+Release: ASIP Programmer U-2022.12-TGT-230622
+Tool: chessmk version U-2022.12#3eec2545bc#230622
+Copyright 2014-2022 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Configuration: Release_LLVM
+Linking "../Release/3_3"
+bridge -o../Release/3_3 -v -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg -g -I/usr/xilinx/Vitis/2023.2/aietools/include -I/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit -I/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/./aie -I/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128/./aie -I/home/luanxinya/SVD/FPGA_test/128/usr/xilinx/Vitis/2023.2/aietools/include -I/usr/xilinx/Vitis/2023.2/aietools/include -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 -c3_3.bcf -L/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/Release -L/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/lib/Release -L/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/softfloat/lib/Release -L/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM -lme -lc -lm -lc++lite -lsoftfloat -S -no-split-segment-on-name -export-locals -yMSMEM,SSMEM,SSMEM_tlast,WSSMEM_tlast,SSMEM_nb_sc,MSMEM_nb_sc -iconfig extra_memories.bcf ../Release/3_3.o -m -fC -fS -fH +m -T +work ../Release/chesswork -pme
+Release: ASIP Programmer  U-2022.12-TGT-230622 
+Tool: bridge version U-2022.12#3eec2545bc#230622
+Copyright 2014-2022 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading enablings from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading LIB/ISG from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_das.isb
+Reading LIB/ISG from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading configuration in file '3_3.bcf'...
+Reading relocator definitions in file '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me.rlo'...
+Creating link-memory
+Reading objectfile '../Release/3_3.o' with Dwarf info...
+Library search path: .
+Library search path: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/Release:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/lib/Release:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/softfloat/lib/Release:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM
+Reading archive '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/Release/libme.a'...
+Reading archive '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/lib/Release/libc.a'...
+Reading archive '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/lib/Release/libm.a'...
+Reading archive '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM/libc++lite.a'...
+Reading archive '/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/softfloat/lib/Release/libsoftfloat.a'...
+Collecting symbols from object files...
+Collecting absolute symbols...
+Collecting stack range symbols...
+Mapping and reserving symbols with fixed addresses...
+    'buf49' (528, DMb) at address 0x28000
+    'buf49d' (528, DMb) at address 0x2a000
+    'buf53' (528, DMb) at address 0x3c000
+    'buf53d' (528, DMb) at address 0x3e000
+    'buf65' (528, DMb) at address 0x30000
+    'buf65d' (528, DMb) at address 0x32000
+    'buf69' (528, DMb) at address 0x34000
+    'buf69d' (528, DMb) at address 0x36000
+    '_ZL11sync_buffer' (32) at address 0x30220
+    '_ZN12me_primitive3ss0E' (1, WSS_rsrc1) at address 0x0
+    '_ZN12me_primitive3ss1E' (1, WSS_rsrc2) at address 0x1
+    '_ZN12me_primitive4sst0E' (1, SSMEM_tlast) at address 0x0
+    '_ZN12me_primitive4sst1E' (1, SSMEM_tlast) at address 0x1
+    '_ZN12me_primitive4ssc0E' (1, SSMEM_nb_sc) at address 0x0
+    '_ZN12me_primitive4ssc1E' (1, SSMEM_nb_sc) at address 0x1
+    '_ZN12me_primitive5wsst0E' (1, WSSMEM_tlast) at address 0x0
+    '_ZN12me_primitive5wsst1E' (1, WSSMEM_tlast) at address 0x1
+    '_ZN12me_primitive3ms0E' (1, WMS_rsrc1) at address 0x0
+    '_ZN12me_primitive3ms1E' (1, WMS_rsrc2) at address 0x1
+    '_ZN12me_primitive4msc0E' (1, MSMEM_nb_sc) at address 0x0
+    '_ZN12me_primitive4msc1E' (1, MSMEM_nb_sc) at address 0x1
+    '_main_init' (274) at address 0x0
+Mapping _after chains...
+Mapping after chain ...
+    '_main' (792) at address 0x120
+Mapping _after chains...
+Mapping and reserving overlays...
+Overlaying pseudo-static stack-frame sections...
+Creating call-tree...
+Mapping defined and space (bss) symbols...
+Mapping read-only symbols...
+Mapping constructor and destructor sections...
+Looking for duplicate symbols...
+Creating call-tree...
+Reserving text, data and space symbols found in 0 _mapping statements ...
+Mapping and reserving global memory...
+Reserving 6 text and data symbol(s) and 1 space symbol(s)...
+    '_Z13orthogonalizeILi128EEvRN3adf9io_bufferIfNS0_9direction2inENS0_16io_buffer_configINS0_7extentsIJXplLi1ET_EEEENS0_7locking4syncENS0_10addressing6linearENS0_6marginILj0EEEEEEESF_RNS1_IfNS2_3outESD_EESI_' (2018, PM)
+    'ZERO' (32, DMb, > 0/0)
+    '_fini' (216, PM)
+    '_ZL7atexits' (32, DM_bankA)
+    '_ZL10atexit_cnt' (4, DM_bankA)
+    '__cxa_finalize' (148, PM)
+    '_Z6f32_eqjj' (96, PM)
+Applying relocators found in objectfiles...
+    '../Release/3_3.o' (6078)
+    '../Release/chesswork/.ear.work.2ZD5oYr' (6)
+    '../Release/chesswork/.ear.work.3ymdTvy' (26)
+    '../Release/chesswork/.ear.work.4GBL62V' (87)
+    '../Release/chesswork/.ear.work.9Jhz9Ex' (86)
+    '../Release/chesswork/.ear.work.28jTlEzn' (25)
+    '../Release/chesswork/.ear.work.125tJZcXm' (4)
+Creating physical data...
+Creating executable file '../Release/3_3'...
+Skipping memory 'MSMEM'
+Skipping memory 'MSMEM_nb_sc'
+Skipping memory 'SSMEM'
+Skipping memory 'SSMEM_nb_sc'
+Skipping memory 'SSMEM_tlast'
+Skipping memory 'WSSMEM_tlast'
+Creating memory-map
+
+bridge user time   =    0.83 s  /     0.14 s 	../Release/3_3
+bridge system time =    0.25 s  /     0.00 s 	../Release/3_3
+bridge real time   =    1.09 s  /     0.15 s 	../Release/3_3
+
+darts -v -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib -d -h -I/usr/xilinx/Vitis/2023.2/aietools/include -I/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit -I/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/./aie -I/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128/. -I/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128/./aie -I/home/luanxinya/SVD/FPGA_test/128/usr/xilinx/Vitis/2023.2/aietools/include -I/usr/xilinx/Vitis/2023.2/aietools/include -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 -L +Ihex +nanno +u ../Release/3_3 me
+Release: ASIP Programmer  U-2022.12-TGT-230622 
+Tool: darts version U-2022.12#3eec2545bc#230622
+Copyright 2014-2022 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Include paths: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib:/usr/xilinx/Vitis/2023.2/aietools/include:/home/luanxinya/SVD/FPGA_test/128:/home/luanxinya/SVD/FPGA_test/128/aie/ProcessUnit:/home/luanxinya/SVD/FPGA_test/128:/home/luanxinya/SVD/FPGA_test/128/aie:/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128:/home/luanxinya/SVD/FPGA_test/128/home/luanxinya/SVD/FPGA_test/128/aie:/home/luanxinya/SVD/FPGA_test/128/usr/xilinx/Vitis/2023.2/aietools/include:/usr/xilinx/Vitis/2023.2/aietools/include:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/runtime/include:.:/usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg
+Reading enablings from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading binary LIB/ISG from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_das.isb
+Parsing binary ISG
+Parsing binary NML
+Building ISG done.
+Reading chess types from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading LIB/ISG from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Loading chess_types.lib file done.
+Reading relocators from: /usr/xilinx/Vitis/2023.2/aietools/data/versal_prod/lib/isg/me.rlo
+
+Disassembling code of ``../Release/3_3''
+Writing results to ``../Release/3_3.lst''
+Writing results to ``../Release/3_3.srv''
+
+darts user time   =    0.39 s  /     0.26 s 	../Release/3_3
+darts system time =    0.03 s  /     0.01 s 	../Release/3_3
+darts real time   =    0.42 s  /     0.27 s 	../Release/3_3
+
+Compilation finished successfully (0 errors, 0 warnings) (1.61 s)
+/usr/xilinx/Vitis/2023.2/aietools/bin/unwrapped/lnx64.o/coreverify -obj 3_3 -s 1024 -pm 16384

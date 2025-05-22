@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_220_2_1'
+================================================================
+* Date:           Mon May 12 19:57:06 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  2.232 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      340|      340|  0.759 us|  0.759 us|  338|  338|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.23>
+ST_1 : Operation 6 [1/1] (0.73ns)   --->   "%conv1_channel = alloca i64 1"   --->   Operation 6 'alloca' 'conv1_channel' <Predicate = true> <Delay = 0.73> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (0.73ns)   --->   "%conv0_channel = alloca i64 1"   --->   Operation 7 'alloca' 'conv0_channel' <Predicate = true> <Delay = 0.73> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (0.73ns)   --->   "%empty = alloca i64 1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222]   --->   Operation 8 'alloca' 'empty' <Predicate = true> <Delay = 0.73> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.73ns)   --->   "%empty_92 = alloca i64 1" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222]   --->   Operation 9 'alloca' 'empty_92' <Predicate = true> <Delay = 0.73> <CoreInst = "FIFO_SRL">   --->   Core 85 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [2/2] (1.49ns)   --->   "%call_ln222 = call void @receive4AIE.1, i32 %conv0_channel, i128 %receive_fifo_0, i128 %sweep_rx0_0_V_data_V, i16 %sweep_rx0_0_V_keep_V, i16 %sweep_rx0_0_V_strb_V, i1 %sweep_rx0_0_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222]   --->   Operation 10 'call' 'call_ln222' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 11 [2/2] (1.49ns)   --->   "%call_ln223 = call void @receive4AIE, i32 %conv1_channel, i128 %receive_fifo_1, i128 %sweep_rx0_1_V_data_V, i16 %sweep_rx0_1_V_keep_V, i16 %sweep_rx0_1_V_strb_V, i1 %sweep_rx0_1_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:223]   --->   Operation 11 'call' 'call_ln223' <Predicate = true> <Delay = 1.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 1.36>
+ST_2 : Operation 12 [1/2] (1.36ns)   --->   "%call_ln222 = call void @receive4AIE.1, i32 %conv0_channel, i128 %receive_fifo_0, i128 %sweep_rx0_0_V_data_V, i16 %sweep_rx0_0_V_keep_V, i16 %sweep_rx0_0_V_strb_V, i1 %sweep_rx0_0_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222]   --->   Operation 12 'call' 'call_ln222' <Predicate = true> <Delay = 1.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [1/2] (1.36ns)   --->   "%call_ln223 = call void @receive4AIE, i32 %conv1_channel, i128 %receive_fifo_1, i128 %sweep_rx0_1_V_data_V, i16 %sweep_rx0_1_V_keep_V, i16 %sweep_rx0_1_V_strb_V, i1 %sweep_rx0_1_V_last_V" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:223]   --->   Operation 13 'call' 'call_ln223' <Predicate = true> <Delay = 1.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.83>
+ST_3 : Operation 14 [2/2] (0.83ns)   --->   "%call_ln224 = call void @Block_newFuncRoot_proc_proc, i32 %conv0_channel, i32 %empty_92" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:224]   --->   Operation 14 'call' 'call_ln224' <Predicate = true> <Delay = 0.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 15 [2/2] (0.83ns)   --->   "%call_ln225 = call void @Block_newFuncRoot_proc_proc12, i32 %conv1_channel, i32 %empty" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 15 'call' 'call_ln225' <Predicate = true> <Delay = 0.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln224 = call void @Block_newFuncRoot_proc_proc, i32 %conv0_channel, i32 %empty_92" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:224]   --->   Operation 16 'call' 'call_ln224' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln225 = call void @Block_newFuncRoot_proc_proc12, i32 %conv1_channel, i32 %empty" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 17 'call' 'call_ln225' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln222 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_26" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222]   --->   Operation 18 'specdataflowpipeline' 'specdataflowpipeline_ln222' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i128 %sweep_rx0_0_V_data_V, i16 %sweep_rx0_0_V_keep_V, i16 %sweep_rx0_0_V_strb_V, i1 0, i1 %sweep_rx0_0_V_last_V, i1 0, i1 0, void @empty_14"   --->   Operation 19 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i128 %sweep_rx0_1_V_data_V, i16 %sweep_rx0_1_V_keep_V, i16 %sweep_rx0_1_V_strb_V, i1 0, i1 %sweep_rx0_1_V_last_V, i1 0, i1 0, void @empty_15"   --->   Operation 20 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %receive_fifo_1, i64 666, i64 11, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %receive_fifo_0, i64 666, i64 11, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %sweep_rx0_0_V_data_V, i16 %sweep_rx0_0_V_keep_V, i16 %sweep_rx0_0_V_strb_V, i1 %sweep_rx0_0_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %sweep_rx0_1_V_data_V, i16 %sweep_rx0_1_V_keep_V, i16 %sweep_rx0_1_V_strb_V, i1 %sweep_rx0_1_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %convSet_0, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %convSet_1, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %receive_fifo_0, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %receive_fifo_1, void @empty_1, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%call_ln224 = call void @Block_newFuncRoot_proc_proc11, i32 %convSet_0, i32 %empty_92" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:224]   --->   Operation 29 'call' 'call_ln224' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 30 [1/1] (0.00ns)   --->   "%call_ln225 = call void @Block_newFuncRoot_proc_proc13, i32 %convSet_1, i32 %empty" [/home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:225]   --->   Operation 30 'call' 'call_ln225' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 31 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2.222ns, clock uncertainty: 0.600ns.
+
+ <State 1>: 2.232ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('conv0_channel') [14]  (0.733 ns)
+	'call' operation 0 bit ('call_ln222', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222) to 'receive4AIE.1' [28]  (1.499 ns)
+
+ <State 2>: 1.367ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln222', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:222) to 'receive4AIE.1' [28]  (1.367 ns)
+
+ <State 3>: 0.837ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln224', /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp:224) to 'Block_newFuncRoot_proc_proc' [30]  (0.837 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

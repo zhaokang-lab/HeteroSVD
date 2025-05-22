@@ -1,0 +1,9 @@
+{
+  "name": "512-4",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["pl\/TopPL.cfg"],
+    "work_dir": "toppl"
+  }
+}

@@ -1,0 +1,26 @@
+ifeq ($(XILINX_VITIS_AIETOOLS),)
+XILINX_VITIS_AIETOOLS:=${XILINX_VITIS}/aietools
+endif
+#QUESTA_HOME=
+GCC_PATH ?= ${QUESTA_HOME}/gcc-7.4.0-linux_x86_64/bin
+QUESTA_INCLUDES=-I${QUESTA_HOME}/include -I${QUESTA_HOME}/include/systemc
+
+.PHONY: all clean
+.NOTPARALLEL:
+all: clean link
+
+genwrapper_for_ps_i140: init
+	(${QUESTA_HOME}/bin/sccom -64 -cpppath ${GCC_PATH}/g++  -c -DMTI_SYSTEMC -nodebug -DBOOST_SYSTEM_NO_DEPRECATED -Wall -std=gnu++14  -Wno-reorder -Wno-sign-compare -DNDEBUG   -fPIC -fpermissive -std=c++17 -D__AIE_ARCH__=10 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -Wno-deprecated-declarations -Werror=return-type -DSC_INCLUDE_DYNAMIC_PROCESSES -D__AIESIM__ -D__PS_INIT_AIE__ -DXAIE_DEBUG -D main\(...\)=ps_main\(...\) -O3 -flto $(QUESTA_INCLUDES) -I$(XILINX_VITIS_AIETOOLS)/include -I$(XILINX_VITIS_AIETOOLS)/include/drivers/aiengine -I${XILINX_HLS}/include -I$(XILINX_VITIS_AIETOOLS)/tps/boost_1_72_0 -I. -I$(XILINX_VITIS_AIETOOLS)/include/xtlm/include -I$(XILINX_VITIS_AIETOOLS)/include/common_cpp/common_cpp_v1_0/include -I "../../../.."  -I "/usr/xilinx/Vitis/2023.2/aietools/include"  -I "/home/luanxinya/SVD/FPGA_test/128/./aie"  -I "/home/luanxinya/SVD/FPGA_test/128/./"  -work aie_crts_ps generated-source/genwrapper_for_ps_i140.cpp)
+
+link: genwrapper_for_ps_i140
+	(${QUESTA_HOME}/bin/sccom -64 -cpppath ${GCC_PATH}/g++  -nodebug -linkshared -lib aie_crts_ps  -lxaiengine -lxioutils -ladf_api -flto -L $(XILINX_VITIS_AIETOOLS)/lib/lnx64.o -work aie_crts_ps)
+
+init:
+ifneq ($(wildcard aie_crts_ps),)
+	@echo ""
+else
+	${QUESTA_HOME}/bin/vlib aie_crts_ps
+endif
+
+clean:
+	(rm -rf aie_crts_ps)

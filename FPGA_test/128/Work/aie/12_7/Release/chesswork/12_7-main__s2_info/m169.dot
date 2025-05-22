@@ -1,0 +1,16 @@
+digraph N {
+ b151[color=orange,fontcolor=black,style=filled,label="b151\nITE_NEZ r12, r12, r14, r0\ninp: R0[0] R[12] R[14]"];  {rank=same; S0;  b151;}
+ b152[color=orange,fontcolor=black,style=filled,label="b152\nST.SPIL r12, [sp, #-76]\ninp: SP[0]"];  {rank=same; S3;  b152;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S3;  end;}
+   b151 -> b152 [color=black,fontcolor=black,label="len=1\nR[12]",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1_S2 [label="steps [1,2]",shape=box];
+  S0 -> S1_S2[style=invis,weight=9000];
+  S3 [label="step 3",shape=box];
+  S1_S2 -> S3[style=invis,weight=9000];
+  S4 [label="successor",shape=box];
+  S3 -> S4[style=invis,weight=9000];
+}

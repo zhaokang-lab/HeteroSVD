@@ -1,0 +1,263 @@
+
+
+================================================================
+== Vitis HLS Report for 'SystemControl'
+================================================================
+* Date:           Mon May 12 19:57:07 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.622 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                    |                                         |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                      Instance                      |                  Module                 |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_SystemControl_Pipeline_VITIS_LOOP_295_1_fu_132  |SystemControl_Pipeline_VITIS_LOOP_295_1  |        5|        5|  11.110 ns|  11.110 ns|    5|    5|       no|
+        |grp_SystemControl_Pipeline_VITIS_LOOP_304_3_fu_142  |SystemControl_Pipeline_VITIS_LOOP_304_3  |      612|      612|   1.360 us|   1.360 us|  612|  612|       no|
+        |grp_SystemControl_Pipeline_VITIS_LOOP_321_5_fu_151  |SystemControl_Pipeline_VITIS_LOOP_321_5  |        5|        5|  11.110 ns|  11.110 ns|    5|    5|       no|
+        |grp_SystemControl_Pipeline_VITIS_LOOP_315_4_fu_161  |SystemControl_Pipeline_VITIS_LOOP_315_4  |        5|        5|  11.110 ns|  11.110 ns|    5|    5|       no|
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_301_2  |        ?|        ?|       690|          -|          -|     ?|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|     168|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|      739|    1472|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|     141|    -|
+|Register         |        -|     -|      311|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|     1050|    1781|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |                      Instance                      |                  Module                 | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |grp_SystemControl_Pipeline_VITIS_LOOP_295_1_fu_132  |SystemControl_Pipeline_VITIS_LOOP_295_1  |        0|   0|    7|    32|    0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_304_3_fu_142  |SystemControl_Pipeline_VITIS_LOOP_304_3  |        0|   0|  718|  1376|    0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_315_4_fu_161  |SystemControl_Pipeline_VITIS_LOOP_315_4  |        0|   0|    7|    32|    0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_321_5_fu_151  |SystemControl_Pipeline_VITIS_LOOP_321_5  |        0|   0|    7|    32|    0|
+    |fcmp_32ns_32ns_1_1_no_dsp_1_U20                     |fcmp_32ns_32ns_1_1_no_dsp_1              |        0|   0|    0|     0|    0|
+    |fpext_32ns_64_1_no_dsp_1_U19                        |fpext_32ns_64_1_no_dsp_1                 |        0|   0|    0|     0|    0|
+    |printdouble_U21                                     |printdouble                              |        0|   0|    0|     0|    0|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |Total                                               |                                         |        0|   0|  739|  1472|    0|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln311_fu_219_p2     |         +|   0|  0|  64|          64|          64|
+    |add_ln313_fu_201_p2     |         +|   0|  0|  31|          31|           1|
+    |and_ln314_fu_314_p2     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln314_1_fu_292_p2  |      icmp|   0|  0|  23|          23|           1|
+    |icmp_ln314_2_fu_247_p2  |      icmp|   0|  0|  32|          32|          32|
+    |icmp_ln314_fu_286_p2    |      icmp|   0|  0|   8|           8|           2|
+    |ap_block_state1         |        or|   0|  0|   2|           1|           1|
+    |or_ln314_1_fu_310_p2    |        or|   0|  0|   2|           1|           1|
+    |or_ln314_fu_324_p2      |        or|   0|  0|   2|           1|           1|
+    |xor_ln314_fu_319_p2     |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 168|         163|         106|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm           |  86|         79|    1|         79|
+    |ap_done             |   2|          2|    1|          2|
+    |convSet_0_read      |   2|          2|    1|          2|
+    |convSet_1_read      |   2|          2|    1|          2|
+    |gmem3_blk_n_AW      |   2|          2|    1|          2|
+    |gmem3_blk_n_B       |   2|          2|    1|          2|
+    |gmem3_blk_n_W       |   2|          2|    1|          2|
+    |iter_fu_96          |  29|          2|   31|         62|
+    |real_start          |   2|          2|    1|          2|
+    |syscontrol_0_din    |   2|          3|    1|          3|
+    |syscontrol_0_write  |   2|          4|    1|          4|
+    |syscontrol_1_din    |   2|          3|    1|          3|
+    |syscontrol_1_write  |   2|          4|    1|          4|
+    |syscontrol_2_din    |   2|          3|    1|          3|
+    |syscontrol_2_write  |   2|          4|    1|          4|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               | 141|        116|   45|        176|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------+----+----+-----+-----------+
+    |                               Name                              | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln313_reg_368                                                |  31|   0|   31|          0|
+    |ap_CS_fsm                                                        |  78|   0|   78|          0|
+    |ap_done_reg                                                      |   1|   0|    1|          0|
+    |bitcast_ln39_reg_404                                             |  64|   0|   64|          0|
+    |gmem3_addr_reg_375                                               |  64|   0|   64|          0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_295_1_fu_132_ap_start_reg  |   1|   0|    1|          0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_304_3_fu_142_ap_start_reg  |   1|   0|    1|          0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_315_4_fu_161_ap_start_reg  |   1|   0|    1|          0|
+    |grp_SystemControl_Pipeline_VITIS_LOOP_321_5_fu_151_ap_start_reg  |   1|   0|    1|          0|
+    |grp_fu_171_p0                                                    |  32|   0|   32|          0|
+    |icmp_ln314_1_reg_394                                             |   1|   0|    1|          0|
+    |icmp_ln314_2_reg_381                                             |   1|   0|    1|          0|
+    |icmp_ln314_reg_389                                               |   1|   0|    1|          0|
+    |iter_fu_96                                                       |  31|   0|   31|          0|
+    |or_ln314_reg_409                                                 |   1|   0|    1|          0|
+    |start_once_reg                                                   |   1|   0|    1|          0|
+    |tmp_3_reg_399                                                    |   1|   0|    1|          0|
+    +-----------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                            | 311|   0|  311|          0|
+    +-----------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+---------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  | Source Object |    C Type    |
++-----------------------------+-----+-----+------------+---------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|start_full_n                 |   in|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_continue                  |   in|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|start_out                    |  out|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|start_write                  |  out|    1|  ap_ctrl_hs|  SystemControl|  return value|
+|ITER                         |   in|   32|     ap_none|           ITER|        scalar|
+|m_axi_gmem3_AWVALID          |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWREADY          |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWADDR           |  out|   64|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWID             |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWLEN            |  out|   32|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWSIZE           |  out|    3|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWBURST          |  out|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWLOCK           |  out|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWCACHE          |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWPROT           |  out|    3|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWQOS            |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWREGION         |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_AWUSER           |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WVALID           |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WREADY           |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WDATA            |  out|   32|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WSTRB            |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WLAST            |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WID              |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_WUSER            |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARVALID          |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARREADY          |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARADDR           |  out|   64|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARID             |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARLEN            |  out|   32|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARSIZE           |  out|    3|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARBURST          |  out|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARLOCK           |  out|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARCACHE          |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARPROT           |  out|    3|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARQOS            |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARREGION         |  out|    4|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_ARUSER           |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RVALID           |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RREADY           |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RDATA            |   in|   32|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RLAST            |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RID              |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RFIFONUM         |   in|   11|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RUSER            |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_RRESP            |   in|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_BVALID           |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_BREADY           |  out|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_BRESP            |   in|    2|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_BID              |   in|    1|       m_axi|          gmem3|       pointer|
+|m_axi_gmem3_BUSER            |   in|    1|       m_axi|          gmem3|       pointer|
+|ConvArray                    |   in|   64|     ap_none|      ConvArray|        scalar|
+|syscontrol_0_din             |  out|    1|     ap_fifo|   syscontrol_0|       pointer|
+|syscontrol_0_num_data_valid  |   in|    3|     ap_fifo|   syscontrol_0|       pointer|
+|syscontrol_0_fifo_cap        |   in|    3|     ap_fifo|   syscontrol_0|       pointer|
+|syscontrol_0_full_n          |   in|    1|     ap_fifo|   syscontrol_0|       pointer|
+|syscontrol_0_write           |  out|    1|     ap_fifo|   syscontrol_0|       pointer|
+|syscontrol_1_din             |  out|    1|     ap_fifo|   syscontrol_1|       pointer|
+|syscontrol_1_num_data_valid  |   in|    3|     ap_fifo|   syscontrol_1|       pointer|
+|syscontrol_1_fifo_cap        |   in|    3|     ap_fifo|   syscontrol_1|       pointer|
+|syscontrol_1_full_n          |   in|    1|     ap_fifo|   syscontrol_1|       pointer|
+|syscontrol_1_write           |  out|    1|     ap_fifo|   syscontrol_1|       pointer|
+|syscontrol_2_din             |  out|    1|     ap_fifo|   syscontrol_2|       pointer|
+|syscontrol_2_num_data_valid  |   in|    3|     ap_fifo|   syscontrol_2|       pointer|
+|syscontrol_2_fifo_cap        |   in|    3|     ap_fifo|   syscontrol_2|       pointer|
+|syscontrol_2_full_n          |   in|    1|     ap_fifo|   syscontrol_2|       pointer|
+|syscontrol_2_write           |  out|    1|     ap_fifo|   syscontrol_2|       pointer|
+|convSet_0_dout               |   in|   32|     ap_fifo|      convSet_0|       pointer|
+|convSet_0_num_data_valid     |   in|    3|     ap_fifo|      convSet_0|       pointer|
+|convSet_0_fifo_cap           |   in|    3|     ap_fifo|      convSet_0|       pointer|
+|convSet_0_empty_n            |   in|    1|     ap_fifo|      convSet_0|       pointer|
+|convSet_0_read               |  out|    1|     ap_fifo|      convSet_0|       pointer|
+|convSet_1_dout               |   in|   32|     ap_fifo|      convSet_1|       pointer|
+|convSet_1_num_data_valid     |   in|    3|     ap_fifo|      convSet_1|       pointer|
+|convSet_1_fifo_cap           |   in|    3|     ap_fifo|      convSet_1|       pointer|
+|convSet_1_empty_n            |   in|    1|     ap_fifo|      convSet_1|       pointer|
+|convSet_1_read               |  out|    1|     ap_fifo|      convSet_1|       pointer|
++-----------------------------+-----+-----+------------+---------------+--------------+
+

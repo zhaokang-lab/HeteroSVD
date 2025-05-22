@@ -1,0 +1,157 @@
+
+
+================================================================
+== Vitis HLS Report for 'SystemControl_Pipeline_VITIS_LOOP_315_4'
+================================================================
+* Date:           Mon May 12 19:57:07 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.190 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  11.110 ns|  11.110 ns|    5|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_315_4  |        3|        3|         2|          1|          1|     3|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|      18|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      14|    -|
+|Register         |        -|     -|        7|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|        7|      32|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln315_fu_88_p2                |         +|   0|  0|   5|           2|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op33_write_state2    |       and|   0|  0|   2|           1|           1|
+    |icmp_ln315_fu_94_p2               |      icmp|   0|  0|   5|           2|           2|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  18|           8|           8|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   2|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   2|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   2|          2|    2|          4|
+    |i_7_fu_38                |   2|          2|    2|          4|
+    |syscontrol_0_blk_n       |   2|          2|    1|          2|
+    |syscontrol_1_blk_n       |   2|          2|    1|          2|
+    |syscontrol_2_blk_n       |   2|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  14|         14|    9|         18|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |i_7_fu_38                |  2|   0|    2|          0|
+    |i_reg_122                |  2|   0|    2|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    |  7|   0|    7|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++-----------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  SystemControl_Pipeline_VITIS_LOOP_315_4|  return value|
+|syscontrol_1_din             |  out|    1|     ap_fifo|                             syscontrol_1|       pointer|
+|syscontrol_1_num_data_valid  |   in|    3|     ap_fifo|                             syscontrol_1|       pointer|
+|syscontrol_1_fifo_cap        |   in|    3|     ap_fifo|                             syscontrol_1|       pointer|
+|syscontrol_1_full_n          |   in|    1|     ap_fifo|                             syscontrol_1|       pointer|
+|syscontrol_1_write           |  out|    1|     ap_fifo|                             syscontrol_1|       pointer|
+|syscontrol_0_din             |  out|    1|     ap_fifo|                             syscontrol_0|       pointer|
+|syscontrol_0_num_data_valid  |   in|    3|     ap_fifo|                             syscontrol_0|       pointer|
+|syscontrol_0_fifo_cap        |   in|    3|     ap_fifo|                             syscontrol_0|       pointer|
+|syscontrol_0_full_n          |   in|    1|     ap_fifo|                             syscontrol_0|       pointer|
+|syscontrol_0_write           |  out|    1|     ap_fifo|                             syscontrol_0|       pointer|
+|syscontrol_2_din             |  out|    1|     ap_fifo|                             syscontrol_2|       pointer|
+|syscontrol_2_num_data_valid  |   in|    3|     ap_fifo|                             syscontrol_2|       pointer|
+|syscontrol_2_fifo_cap        |   in|    3|     ap_fifo|                             syscontrol_2|       pointer|
+|syscontrol_2_full_n          |   in|    1|     ap_fifo|                             syscontrol_2|       pointer|
+|syscontrol_2_write           |  out|    1|     ap_fifo|                             syscontrol_2|       pointer|
++-----------------------------+-----+-----+------------+-----------------------------------------+--------------+
+

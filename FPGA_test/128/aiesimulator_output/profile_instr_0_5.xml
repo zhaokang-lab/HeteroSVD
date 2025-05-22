@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<profile>
+    <processor>::tl.aie_logical.aie_xtlm.math_engine.array.tile_0_6.cm.proc.iss</processor>
+    <total_cycle_count>0</total_cycle_count>
+    <total_instruction_count>0</total_instruction_count>
+    <report_cycle_count>0</report_cycle_count>
+    <report_instruction_count>0</report_instruction_count>
+    <report_command>::tl.aie_logical.aie_xtlm.math_engine.array.tile_0_6.cm.proc.iss profile save aiesimulator_output/profile_instr_0_5.xml -type function_details -user_cycle_count On -xml 1 -source_refs Off</report_command>
+</profile>
+

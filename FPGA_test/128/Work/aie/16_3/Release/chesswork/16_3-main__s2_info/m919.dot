@@ -1,0 +1,38 @@
+digraph N {
+ b1755[color=orange,fontcolor=black,style=filled,label="b1755"];  {rank=same; S0;  b1755;}
+ b1756[color=orange,fontcolor=black,style=filled,label="b1756"];  {rank=same; S1;  b1756;}
+ b1757[color=orange,fontcolor=black,style=filled,label="b1757"];  {rank=same; S2;  b1757;}
+ b1758[color=orange,fontcolor=black,style=filled,label="b1758"];  {rank=same; S3;  b1758;}
+ b1759[color=orange,fontcolor=black,style=filled,label="b1759"];  {rank=same; S4;  b1759;}
+ b1760[color=orange,fontcolor=black,style=filled,label="b1760"];  {rank=same; S5;  b1760;}
+ b1761[color=orange,fontcolor=black,style=filled,label="b1761"];  {rank=same; S6;  b1761;}
+ b1762[color=orange,fontcolor=black,style=filled,label="b1762"];  {rank=same; S7;  b1762;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S7;  end;}
+   b1755 -> b1756 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1756 -> b1757 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1757 -> b1758 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1758 -> b1759 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1759 -> b1760 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1760 -> b1761 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+   b1761 -> b1762 [color=maroon,fontcolor=maroon,penwidth=3,label="len=1",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2 [label="step 2",shape=box];
+  S1 -> S2[style=invis,weight=9000];
+  S3 [label="step 3",shape=box];
+  S2 -> S3[style=invis,weight=9000];
+  S4 [label="step 4",shape=box];
+  S3 -> S4[style=invis,weight=9000];
+  S5 [label="step 5",shape=box];
+  S4 -> S5[style=invis,weight=9000];
+  S6 [label="step 6",shape=box];
+  S5 -> S6[style=invis,weight=9000];
+  S7 [label="step 7",shape=box];
+  S6 -> S7[style=invis,weight=9000];
+  S8 [label="successor",shape=box];
+  S7 -> S8[style=invis,weight=9000];
+}

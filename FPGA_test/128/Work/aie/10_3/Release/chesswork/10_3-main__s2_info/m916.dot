@@ -1,0 +1,17 @@
+digraph N {
+ b137[color=orange,fontcolor=black,style=filled,label="b137\nJ #0"];  {rank=same; S0;  b137;}
+ b1631[color=orange,fontcolor=black,style=filled,label="b1631\nLDA.SPIL p0, [sp, #-36]\ninp: SP[0]\nout: P[0]"];  {rank=same; S1;  b1631;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S5;  end;}
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2_S4 [label="steps [2,4]",shape=box];
+  S1 -> S2_S4[style=invis,weight=9000];
+  S5 [label="step 5",shape=box];
+  S2_S4 -> S5[style=invis,weight=9000];
+  S6 [label="successor",shape=box];
+  S5 -> S6[style=invis,weight=9000];
+}

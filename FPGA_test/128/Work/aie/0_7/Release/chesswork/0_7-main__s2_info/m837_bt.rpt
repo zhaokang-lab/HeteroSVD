@@ -1,0 +1,16 @@
+Modulo scheduling backtracking report for m837: #nodes = 3
+
+NO: s142 #0 s141 #1 s140 #2
+
+     1  1  1
+     4  4  4
+     2  1  0
+SW:  +  -  -
+
+Result #0 for II 1  (required budget ratio: 1):
+SL: 13  7  0 OK MAX COMPLETE (3)
+SD:  0  0  0
+BT:  0  0  0
+
+No iterative folding schedule available for comparison.
+

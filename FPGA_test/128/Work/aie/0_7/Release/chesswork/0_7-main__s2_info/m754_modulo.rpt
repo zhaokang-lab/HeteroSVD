@@ -1,0 +1,166 @@
+Modulo scheduling report for loop #754 in "/home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp", line 16: (loop #18)
+==================================================================================================================================
+
+Initiation interval (II): 2 cycles (minimum II = 2)
+Software pipeline stages: 3 (folded over 2 iterations), minimum: 2
+Total iteration length: 6 cycles
+Aggressively scheduled: 1
+Aggressively folded: 1
+
+Min II:
+-------
+
+ * Critical cycle: b156 -[2,LC,BP1]-> b156 , delay: 2, loop degree: 1 => length critical cycle: 2
+
+    details:
+
+       b156  VFPMAC wd0, r7, wd0, ya, r2, cl0, r2, cl0, #0, cl1 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+         |
+         |
+       [2,LC]   flow dep: __tmp.2761/__tmp.2758 in WD[0] , __tmp.2761 in WD[0] , bypassed 1; loop carried
+         |
+         v
+       b156  VFPMAC wd0, r7, wd0, ya, r2, cl0, r2, cl0, #0, cl1 [/usr/xilinx/Vitis/2023.2/aietools/include/aie_api/detail/aie1/vector.hpp:384:27]
+
+    Total delay: 2, total loop degree: 1 => length critical cycle: 2
+
+ * Lower bound due to resources: 1
+
+    Critical transitories: cfgMaddmode, cfgMfloat, cfgMlconf, cfgMlxoffs, cfgMlzoffs, cfgMxstart, cfgMystart, cl_ra, cl_rb, cl_rm, fltAddOvstat, fltMulOstat, fltMulOvstat, fpaccO, fpaccR, idx_xsetw, mcRsrcFPAdd, mcRsrcFPMul, pmxAl, r_rx, r_ry, r_wb, tFpm_a, v_rf, v_wv, xa_r, y_r, __WD_w_rf_rad, __fpPaccA_w, __rsrc_RS_wr_r_wb___RS_r_wb_wad_E6, __rsrc_WD_wr_w_wv___WD_w_wv_wad_E6
+    Critical transitory groups: AcqLdaRsrc_ID,AcqLdbRsrc_ID:2
+
+ * Minimum control cycles: 0
+
+ => Lower bound for software pipelined schedule: 2 cycles
+
+Schedule:
+---------
+
+ 0:  b155 '0' @  0 (VLDA wr0, [p1], #32)                                      
+ 1:  b156 '2' @  5 (VFPMAC wd0, r7, wd0, ya, r2, cl0, r2, cl0, #0, cl1)       
+
+Register live ranges:
+---------------------
+
+Accurate access stages (aggressively scheduled)
+
+
+Register live ranges for register VH[8]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+VH[0]: span  1, min_span  1      |:.:.:.:.:.:A:.:.|.A| A: __tmp.2756 <155> L21:14
+VH[6]: span  1, min_span  1      |:.:.:.:.:.:.:.:B|.B| B: __tmp.2761 <156> L384:27
+VH[7]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VH[5]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VH[4]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VH[3]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VH[2]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VH[1]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register VL[8]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+VL[0]: span  1, min_span  1      |:.:.:.:.:.:A:.:.|.A| A: __tmp.2756 <155> L21:14
+VL[6]: span  1, min_span  1      |:.:.:.:.:.:.:.:B|.B| B: __tmp.2761 <156> L384:27
+VL[7]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VL[5]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VL[4]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VL[3]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VL[2]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+VL[1]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register R[16]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+R[ 2]: span 16, min_span 16      |AAAAAAAAAAAAAAAA|AA| A: _cst.3528 <1179> L384:27
+R[ 7]: span  1, min_span  1      |:.:.:.:.:.:.:.:b|.b| B: __seff.2762 <156> L384:27
+R[13]: span 16, min_span  0      |cccccccccccccccc|cc| C: __ct_4.3562 <1194> L384:27
+R[12]: span 16, min_span  0      |dddddddddddddddd|dd| D: _cst.3554 <1190> L303:18
+R[ 9]: span 16, min_span  0      |eeeeeeeeeeeeeeee|ee| E: _cst.3537 <1184> L175:25
+R[15]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[14]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[11]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[10]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 8]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 6]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 5]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 4]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 3]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 1]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+R[ 0]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register CL[8]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+CL[1]: span 16, min_span 16      |AAAAAAAAAAAAAAAA|AA| A: __ct_9437184.3742 <1300>
+CL[0]: span 16, min_span 16      |BBBBBBBBBBBBBBBB|BB| B: _cst.3740 <1298>
+CL[5]: span 16, min_span  0      |cccccccccccccccc|cc| C: _cst.3526 <1178> L384:27
+CL[4]: span 16, min_span  0      |dddddddddddddddd|dd| D: _cst.3530 <1316> L0:0
+CL[3]: span 16, min_span  0      |eeeeeeeeeeeeeeee|ee| E: __ct_26329088.3746 <1304>
+CL[2]: span 16, min_span  0      |ffffffffffffffff|ff| F: __ct_11534336.3744 <1302>
+CL[7]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CL[6]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register CH[8]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+CH[4]: span 16, min_span  0      |aaaaaaaaaaaaaaaa|aa| A: _cst.3531 <1315> L0:0
+CH[3]: span 16, min_span  0      |bbbbbbbbbbbbbbbb|bb| B: __ct_65536.3564 <1195> L0:0
+CH[7]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CH[6]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CH[5]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CH[2]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CH[1]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+CH[0]: span  0, min_span  0      |:.:.:.:.:.:.:.:.|..| 
+
+
+Register live ranges for register mcFPMul[1]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+mcFPMul[0]: span  1, min_span  1 |:.:.:.:.:.:.:a:.|.a| A: __seff.2763 <156> L384:27
+
+
+Register live ranges for register mcFPAdd[1]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+mcFPAdd[0]: span  1, min_span  1 |:.:.:.:.:.:.:.:a|.a| A: __seff.2764 <156> L384:27
+
+
+Register live ranges for register P[8]:
+
+                                  0000000000111111
+                                  0123456789012345 01
+P[1]: span  1, min_span  1       |:.:.:.A.:.:.:.:.|A.| A: __shv___tmp.2769 <155> L21:14
+P[2]: span 16, min_span  0       |bbbbbbbbbbbbbbbb|bb| B: inIter.4434 <1317> L384:27
+P[7]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+P[6]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+P[5]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+P[4]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+P[3]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+P[0]: span  0, min_span  0       |:.:.:.:.:.:.:.:.|..| 
+
+General info:
+-------------
+
+Tool    : mist version U-2022.12#3eec2545bc#230622 (s2)
+Cmd line: --mist2 -v -D__AIENGINE__ -D__AIE_ARCH__=10 -DDEPLOYMENT_ELF=1 -D__LOCK_FENCE_MODE__=0 -DAIE_OPTION_SCALAR_FLOAT_ON_VECTOR -D__tct_tgt__=230622 +Omodo -k110 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +Odisable-spill-instr-class=LR_short_spill +Odisaggr-record-accesses +Oslr=crUPSMode +Oslr=crSRSMode -ggraph
+Work dir: /home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork
+SFG in : 0_7-main__ra.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork/0_7-main__ra.sfg)
+SFG out: 0_7-main__s2.sfg  (/home/luanxinya/SVD/FPGA_test/128/Work/aie/0_7/Release/chesswork/0_7-main__s2.sfg)
+Src file: /home/luanxinya/SVD/FPGA_test/128/./aie/ProcessUnit/Normalize.cpp
+Function: main
+Line    : 16
+Loop    : #18
+Body    : #754
+# nodes : 2

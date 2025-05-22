@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_parent_loop_proc'
+================================================================
+* Date:           Mon May 12 19:57:08 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.505 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |    41641|    41641|  92.526 us|  92.526 us|  41641|  41641|       no|
+    +---------+---------+-----------+-----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                                      |                                   |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |               Instance               |               Module              |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |dataflow_in_loop_VITIS_LOOP_172_2_U0  |dataflow_in_loop_VITIS_LOOP_172_2  |      346|      346|  0.769 us|  0.769 us|  347|  347|  dataflow|
+        +--------------------------------------+-----------------------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_172_2  |    41640|    41640|       348|          -|          -|   120|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|       87|      38|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        8|     -|     1610|    1026|    0|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      14|    -|
+|Register         |        -|     -|       14|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        8|     0|     1711|    1078|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |       ~0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |               Instance               |               Module              | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |dataflow_in_loop_VITIS_LOOP_172_2_U0  |dataflow_in_loop_VITIS_LOOP_172_2  |        8|   0|  1610|  1026|    0|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+    |Total                                 |                                   |        8|   0|  1610|  1026|    0|
+    +--------------------------------------+-----------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+----+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF | LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+----+----+------------+------------+
+    |loop_dataflow_input_count   |         +|   0|  32|  13|           7|           1|
+    |loop_dataflow_output_count  |         +|   0|  32|  13|           7|           1|
+    |bound_minus_1               |         -|   0|  23|  12|           5|           1|
+    +----------------------------+----------+----+----+----+------------+------------+
+    |Total                       |          |   0|  87|  38|          19|           3|
+    +----------------------------+----------+----+----+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |loop_dataflow_input_count   |   7|          2|    7|         14|
+    |loop_dataflow_output_count  |   7|          2|    7|         14|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  14|          4|   14|         28|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+---+----+-----+-----------+
+    |            Name            | FF| LUT| Bits| Const Bits|
+    +----------------------------+---+----+-----+-----------+
+    |loop_dataflow_input_count   |  7|   0|    7|          0|
+    |loop_dataflow_output_count  |  7|   0|    7|          0|
+    +----------------------------+---+----+-----+-----------+
+    |Total                       | 14|   0|   14|          0|
+    +----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++---------------------+-----+-----+------------+---------------------------+--------------+
+|send_fifo_0_dout     |   in|  128|     ap_fifo|                send_fifo_0|       pointer|
+|send_fifo_0_empty_n  |   in|    1|     ap_fifo|                send_fifo_0|       pointer|
+|send_fifo_0_read     |  out|    1|     ap_fifo|                send_fifo_0|       pointer|
+|sweep_tx0_0_TDATA    |  out|  128|        axis|       sweep_tx0_0_V_data_V|       pointer|
+|sweep_tx0_0_TKEEP    |  out|   16|        axis|       sweep_tx0_0_V_keep_V|       pointer|
+|sweep_tx0_0_TSTRB    |  out|   16|        axis|       sweep_tx0_0_V_strb_V|       pointer|
+|sweep_tx0_0_TLAST    |  out|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TVALID   |  out|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TREADY   |   in|    1|        axis|       sweep_tx0_0_V_last_V|       pointer|
+|send_fifo_1_dout     |   in|  128|     ap_fifo|                send_fifo_1|       pointer|
+|send_fifo_1_empty_n  |   in|    1|     ap_fifo|                send_fifo_1|       pointer|
+|send_fifo_1_read     |  out|    1|     ap_fifo|                send_fifo_1|       pointer|
+|sweep_tx0_1_TDATA    |  out|  128|        axis|       sweep_tx0_1_V_data_V|       pointer|
+|sweep_tx0_1_TKEEP    |  out|   16|        axis|       sweep_tx0_1_V_keep_V|       pointer|
+|sweep_tx0_1_TSTRB    |  out|   16|        axis|       sweep_tx0_1_V_strb_V|       pointer|
+|sweep_tx0_1_TLAST    |  out|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TVALID   |  out|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TREADY   |   in|    1|        axis|       sweep_tx0_1_V_last_V|       pointer|
+|ap_clk               |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
+|ap_continue          |   in|    1|  ap_ctrl_hs|  dataflow_parent_loop_proc|  return value|
++---------------------+-----+-----+------------+---------------------------+--------------+
+

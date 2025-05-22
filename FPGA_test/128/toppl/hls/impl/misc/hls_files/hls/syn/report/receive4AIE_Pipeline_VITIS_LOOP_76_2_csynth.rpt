@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vitis HLS Report for 'receive4AIE_Pipeline_VITIS_LOOP_76_2'
+================================================================
+* Date:           Mon May 12 19:57:10 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  2.108 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       33|       33|  73.326 ns|  73.326 ns|   33|   33|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_76_2  |       31|       31|         2|          1|          1|    31|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|     527|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|     267|    -|
+|Register         |        -|     -|      266|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|      266|     794|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |j_8_fu_184_p2                     |         +|   0|  0|    6|           6|           1|
+    |ap_block_state1_pp0_stage0_iter0  |       and|   0|  0|    2|           1|           1|
+    |icmp_ln76_fu_178_p2               |      icmp|   0|  0|    7|           6|           7|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|    2|           1|           1|
+    |data_temp_8_fu_284_p3             |    select|   0|  0|  127|           1|         128|
+    |data_temp_9_fu_277_p3             |    select|   0|  0|  127|           1|         128|
+    |select_ln79_fu_240_p3             |    select|   0|  0|  127|           1|         128|
+    |select_ln80_fu_259_p3             |    select|   0|  0|  127|           1|         128|
+    |ap_enable_pp0                     |       xor|   0|  0|    2|           1|           2|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+    |Total                             |          |   0|  0|  527|          19|         524|
+    +----------------------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+-----+-----------+-----+-----------+
+    |           Name          | LUT | Input Size| Bits| Total Bits|
+    +-------------------------+-----+-----------+-----+-----------+
+    |ap_done_int              |    2|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |    2|          2|    1|          2|
+    |ap_sig_allocacmp_j       |    5|          2|    6|         12|
+    |data_temp_20_out_o       |  128|          3|  128|        384|
+    |data_temp_fu_88          |  121|          2|  128|        256|
+    |j_02_fu_84               |    5|          2|    6|         12|
+    |receive_fifo_1_blk_n     |    2|          2|    1|          2|
+    |sweep_rx0_1_TDATA_blk_n  |    2|          2|    1|          2|
+    +-------------------------+-----+-----------+-----+-----------+
+    |Total                    |  267|         17|  272|        672|
+    +-------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+-----+----+-----+-----------+
+    |           Name          |  FF | LUT| Bits| Const Bits|
+    +-------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                |    1|   0|    1|          0|
+    |ap_done_reg              |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |    1|   0|    1|          0|
+    |data_temp_fu_88          |  128|   0|  128|          0|
+    |j_02_fu_84               |    6|   0|    6|          0|
+    |tmp_8_reg_370            |   96|   0|   96|          0|
+    |trunc_ln76_reg_357       |    1|   0|    1|          0|
+    |trunc_ln79_reg_365       |   32|   0|   32|          0|
+    +-------------------------+-----+----+-----+-----------+
+    |Total                    |  266|   0|  266|          0|
+    +-------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  receive4AIE_Pipeline_VITIS_LOOP_76_2|  return value|
+|sweep_rx0_1_TVALID             |   in|    1|        axis|                  sweep_rx0_1_V_data_V|       pointer|
+|sweep_rx0_1_TDATA              |   in|  128|        axis|                  sweep_rx0_1_V_data_V|       pointer|
+|receive_fifo_1_din             |  out|  128|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_num_data_valid  |   in|   13|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_fifo_cap        |   in|   13|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_full_n          |   in|    1|     ap_fifo|                        receive_fifo_1|       pointer|
+|receive_fifo_1_write           |  out|    1|     ap_fifo|                        receive_fifo_1|       pointer|
+|data_temp_17                   |   in|  128|     ap_none|                          data_temp_17|        scalar|
+|data_temp_18                   |   in|  128|     ap_none|                          data_temp_18|        scalar|
+|sweep_rx0_1_TREADY             |  out|    1|        axis|                  sweep_rx0_1_V_last_V|       pointer|
+|sweep_rx0_1_TLAST              |   in|    1|        axis|                  sweep_rx0_1_V_last_V|       pointer|
+|sweep_rx0_1_TKEEP              |   in|   16|        axis|                  sweep_rx0_1_V_keep_V|       pointer|
+|sweep_rx0_1_TSTRB              |   in|   16|        axis|                  sweep_rx0_1_V_strb_V|       pointer|
+|data_temp_21_out               |  out|  128|      ap_vld|                      data_temp_21_out|       pointer|
+|data_temp_21_out_ap_vld        |  out|    1|      ap_vld|                      data_temp_21_out|       pointer|
+|data_temp_20_out_i             |   in|  128|     ap_ovld|                      data_temp_20_out|       pointer|
+|data_temp_20_out_o             |  out|  128|     ap_ovld|                      data_temp_20_out|       pointer|
+|data_temp_20_out_o_ap_vld      |  out|    1|     ap_ovld|                      data_temp_20_out|       pointer|
++-------------------------------+-----+-----+------------+--------------------------------------+--------------+
+

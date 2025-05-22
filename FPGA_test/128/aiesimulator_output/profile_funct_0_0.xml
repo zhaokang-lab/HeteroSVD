@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<profile>
+    <processor>::tl.aie_logical.aie_xtlm.math_engine.array.tile_0_1.cm.proc.iss</processor>
+    <total_cycle_count>0</total_cycle_count>
+    <total_instruction_count>0</total_instruction_count>
+    <report_cycle_count>0</report_cycle_count>
+    <report_command>::tl.aie_logical.aie_xtlm.math_engine.array.tile_0_1.cm.proc.iss profile save &quot;aiesimulator_output/profile_funct_0_0.xml&quot; -type function_profiling -xml 1 -function_details 1 -one_file 1 -call_details On -call_tree 0 -data &quot;&quot; -cycle_count 1 -instruction_count 1</report_command>
+</profile>
+

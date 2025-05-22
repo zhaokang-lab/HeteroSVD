@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May 12 19:57:24 2025
+# Process ID: 29419
+# Current directory: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/vivado.log
+# Journal file: /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/vivado.jou
+# Running On: beiyou-SYS-420GP-TNR, OS: Linux, CPU Frequency: 800.915 MHz, CPU Physical cores: 32, Host memory: 540637 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1382.344 ; gain = 83.836 ; free physical = 107141 ; free virtual = 382737
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'TopPL_fptrunc_64ns_32_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'TopPL_fptrunc_64ns_32_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/xilinx/Vivado/2023.2/data/ip'.
+Running package_xo -xo_path /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.xo -kernel_name TopPL -kernel_xml /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/../kernel/kernel.xml -kernel_files /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp -ip_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/ip_unzip_dir -design_xml /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.design.xml -debug_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.debug -hls_directory /home/luanxinya/SVD/FPGA_test/128/toppl/hls/impl/ip/hls_files -kernel_json /home/luanxinya/SVD/FPGA_test/128/toppl/hls/hls_data.json
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 19:57:37 2025...

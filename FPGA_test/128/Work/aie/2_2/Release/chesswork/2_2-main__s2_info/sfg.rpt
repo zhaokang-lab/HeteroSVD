@@ -1,0 +1,222 @@
+SFG: 2_2-main__s2.sfg
+
+Offset  Macro node                          Source ref                                                                      Cycle Instr Words    Scheduling graphs + reports
+------  ----------------------------------  ------------------------------------------------------------------------------  ----- ----- -----    ---------------------------
+        block m1                            [../src/2_2.cc:36]                                                            
+000000  .  block m684                                                                                                          16    16   160    [m684.dot]
+        .  do m3                            [../src/2_2.cc:36]                                                            
+        .  .  block m5                      [../src/2_2.cc:36]                                                            
+000160  .  .  .  block m866                                                                                                    14    14    64    [m866.dot]
+        .  .  .  if m8                      [../src/2_2.cc:48]                                                            
+        .  .  .  .  else m11                [../src/2_2.cc:48]                                                            
+        .  .  .  .  .  block m907                                                                                               0     0     0   
+        .  .  .  .  .  do m13               [../src/2_2.cc:48]                                                            
+        .  .  .  .  .  .  block m15         [../src/2_2.cc:48]                                                            
+000224  .  .  .  .  .  .  .  block m115                                                                                         4     4    36    [m115.dot]
+        .  .  .  .  .  .  .  call m46       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000260  .  .  .  .  .  .  .  block m49                                                                                          4     4    10    [m49.dot]
+        .  .  .  .  .  .  .  call m50       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000270  .  .  .  .  .  .  .  block m140                                                                                         4     4    26    [m140.dot]
+        .  .  .  .  .  .  .  call m52       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000296  .  .  .  .  .  .  .  block m55                                                                                          5     5    18    [m55.dot]
+        .  .  .  .  .  .  .  call m56       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000314  .  .  .  .  .  .  .  block m165                                                                                         4     4    26    [m165.dot]
+        .  .  .  .  .  .  .  call m58       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000340  .  .  .  .  .  .  .  block m61                                                                                          5     5    18    [m61.dot]
+        .  .  .  .  .  .  .  call m62       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000358  .  .  .  .  .  .  .  block m190                                                                                         4     4    26    [m190.dot]
+        .  .  .  .  .  .  .  call m64       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000384  .  .  .  .  .  .  .  block m67                                                                                          5     5    12    [m67.dot]
+        .  .  .  .  .  .  .  call m68       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:303]
+000396  .  .  .  .  .  .  .  block m216                                                                                        14    14    52    [m216.dot]
+        .  .  .  .  .  .  .  call m70       [../src/2_2.cc:60]                                                            
+000448  .  .  .  .  .  .  .  block m77                                                                                          7     7    72    [m77.dot]
+        .  .  .  .  .  .  .  call m78       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:317]
+000520  .  .  .  .  .  .  .  block m83                                                                                          5     5    12    [m83.dot]
+        .  .  .  .  .  .  .  call m84       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:317]
+000532  .  .  .  .  .  .  .  block m89                                                                                          4     4    10    [m89.dot]
+        .  .  .  .  .  .  .  call m90       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:317]
+000542  .  .  .  .  .  .  .  block m93                                                                                          4     4    12    [m93.dot]
+        .  .  .  .  .  .  .  call m94       [/usr/xilinx/Vitis/2023.2/aietools/include/adf/io_buffer/io_buffer_main.h:317]
+000554  .  .  .  .  .  .  .  block m882                                                                                         8     8    40    [m882.dot]
+000594  .  .  .  .  .  block m906                                                                                               6     6    30    [m906.dot]
+000624  .  .  .  .  then m10                                                                                                    1     1    16    [m10.dot]
+        .  .  .  block m96                                                                                                      0     0     0   
+        .  .  .  call m908                  [../src/2_2.cc:36]                                                            
+000640  .  .  .  block m909                                                                                                     8     8    16    [m909.dot]
+        .  .  .  call m97                   [../src/2_2.cc:72]                                                            
+000656  .  .  .  block m100                                                                                                     1     1     4    [m100.dot]
+        .  .  .  call m910                  [../src/2_2.cc:36]                                                            
+000660  .  .  .  block m911                                                                                                     5     5    10    [m911.dot]
+        .  .  .  call m101                  [../src/2_2.cc:72]                                                            
+000670  .  .  .  block m385                                                                                                    15    15    44    [m385.dot]
+000714  .  block m104                                                                                                          20    20    78    [m104.dot]
+
+Total cycles: 163, total instrs: 163, total words: 792
+
+
+Bundle schedule (instruction words shown before relocation)
+---------------
+000000  m684     00 00 11 c0 00 00 01 06 08 06 fa 9f                b1791 (MOV.s9 r1, #0)               b1796 (MOV.s12 m0, #96)             b1811 (MOV p2, p7)                 
+000012           08 90 15 c0 2f de 40 04 0a 00 00 3f                b190  (PADDA [sp], m0)              b1795 (MOV.s9 r5, #1)               b1798 (MOV.s12 m0, #-68)            b1797 (MOV.u20 p0, #0)             
+000024           7e e2 20 40 f4 00 07 f7                            b1799 (MOV.s12 m2, #-72)            b1792 (MOV.u20 r13, #0)            
+000032           5c 68 8f da 47 00 bc f7                            b191  (ST r1, [p0], #4)             b1800 (MOV.s12 m3, #-76)            b1790 (MOV r14, sp)                
+000040           5b bf cf d8 42 3f 52 f7                            b1801 (MOV.s12 m1, #-80)            b1784 (ST.SPIL p6, [sp, #-16])      b1789 (MOV p1, r14)                
+000048           08 84 40 00 0b d7 f7 00 1e 86 9b 9f                b194  (PADDA [p1], m2)              b1822 (MOV.s12 r10, #1)             b1783 (ST.SPIL r10, [sp, #-20])     b1812 (MOV p6, p1)                 
+000060           08 83 80 00 0b a7 fd 00 0d 06 9a df                b196  (PADDA [p6], m1)              b1819 (MOV.s12 r4, #0)              b1786 (ST.SPIL r4, [sp, #-8])       b1809 (MOV p3, p1)                 
+000072           08 80 c6 eb d5 f7 41 77                            b193  (PADDA [p3], m0)              b198  (ST r13, [p1])                b1810 (MOV p7, p6)                 
+000080           08 87 c0 00 15 a7 f8 04 0f 00 00 3f                b195  (PADDA [p7], m3)              b1780 (ST.SPIL p1, [sp, #-32])      b1793 (MOV.u20 r12, #0)            
+000092           ad 7f c8 40 e0 00 07 f7                            b1781 (ST.SPIL p3, [sp, #-28])      b1794 (MOV.u20 r8, #0)             
+000100           af 9a 38 40 20 00 07 f7                            b199  (ST r12, [p7])                b1802 (MOV.u20 cl0, #0)            
+000108           ab 1a 18 40 e4 00 07 f7                            b197  (ST cl0, [p3])                b1804 (MOV.u20 r9, #0)             
+000116           af 1a 30 40 fc 00 07 f7                            b200  (ST r8, [p6])                 b1805 (MOV.u20 r15, #0)            
+000124           af 7f d0 40 f8 00 07 f7                            b1782 (ST.SPIL r11, [sp, #-24])     b1806 (MOV.u20 r14, #0)            
+000132           00 00 00 00 15 ab fd 04 0d 80 00 3f                b1785 (ST.SPIL p2, [sp, #-12])      b1807 (MOV.u20 r6, #0)             
+000144           00 00 00 00 10 00 00 0c 8f ff c4 80 00 00 00 00    b1787 (ST.SPIL lr, [sp, #-4])      
+000160  m866   1 7b be 00 00 00 00 00 37                            b164  (LDA r11, [p0], #-4)         
+000168         1 00 01                                              NOP
+000170         1 00 01                                              NOP
+000172         1 00 01                                              NOP
+000174         1 00 01                                              NOP
+000176         1 00 01                                              NOP
+000178         1 00 01                                              NOP
+000180         1 00 01                                              NOP
+000182         1 80 00 00 81 60 27 07 f7                            b165  (BEQZ r11,#0)                
+000190         1 80 00 00 e8 ff dc 47 f7                            b1690 (ST.SPIL p0, [sp, #-36])     
+000198         1 80 00 00 fb ff d4 47 f7                            b1691 (ST.SPIL r11, [sp, #-44])    
+000206         1 00 01                                              .swstall "delay_slot"
+000208         1 00 00 00 03                                        .swstall "delay_slot"
+000212         1 00 00 00 00 00 00 00 00 00 00 00 1f                .swstall "delay_slot"
+000224  m115   2 00 00 1b c2 47 0b 40 04 0d c0 00 3f                b1153 (MOV.s9 r11, #18)             b160  (EQ r0, r10, r5)              b1112 (MOV.u20 r7, #0)             
+000236         2 00 00 31 3e 43 cf 2e 77                            b161  (ITE_EQZ r7, r9, r7, r0)      b1171 (MOV.s8 r9, #19)             
+000244         2 31 a5 a0 f7 ff bc 47 f7                            b159  (SUB r10, r5, r10)            b163  (ST.SPIL r7, [sp, #-68])     
+000252         2 00 00 0f 5c da f5 fb 37                            b162  (ITE_EQZ r11, r9, r11, r0)    b952  (ST.SPIL r10, [sp, #-40])    
+000260  m49    2 00 01                                              NOP
+000262         2 00 01                                              NOP
+000264         2 00 01                                              NOP
+000266         2 14 5b 30 03                                        b158  (ACQ r11, #1, r5)            
+000270  m140   2 00 00 1d c6 00 00 00 7f f7 f3 1e 9f                b1239 (MOV.s9 r13, #48)             b155  (ITE_NEZ r15, r13, r15, r0)   b1257 (MOV.s8 r10, #49)            
+000282         2 1e da d0 03                                        b156  (ITE_EQZ r13, r10, r13, r0)  
+000286         2 00 01                                              .swstall "mem_acquire0"
+000288         2 80 00 00 ff ff b8 47 f7                            b157  (ST.SPIL r15, [sp, #-72])    
+000296  m55    2 00 01                                              .swstall "mem_acquire0"
+000298         2 00 01                                              .swstall "mem_acquire0"
+000300         2 00 01                                              .swstall "mem_acquire0"
+000302         2 80 00 00 fd ff d0 47 f7                            b974  (ST.SPIL r13, [sp, #-48])    
+000310         2 14 5d 30 03                                        b154  (ACQ r13, #1, r5)            
+000314  m165   2 00 00 1c c4 00 00 00 7f b3 72 1f 9f                b1329 (MOV.s9 r12, #32)             b151  (ITE_NEZ r13, r12, r14, r0)   b1347 (MOV.s8 r14, #33)            
+000326         2 1f ec c0 03                                        b152  (ITE_NEZ r12, r12, r14, r0)  
+000330         2 00 01                                              .swstall "mem_acquire0"
+000332         2 80 00 00 fd ff b4 47 f7                            b153  (ST.SPIL r13, [sp, #-76])    
+000340  m61    2 00 01                                              .swstall "mem_acquire0"
+000342         2 00 01                                              .swstall "mem_acquire0"
+000344         2 00 01                                              .swstall "mem_acquire0"
+000346         2 80 00 00 fc ff cc 47 f7                            b1087 (ST.SPIL r12, [sp, #-52])    
+000354         2 14 4c 30 03                                        b150  (ACQ r12, #1, r4)            
+000358  m190   2 00 00 1e c4 40 00 00 7d a3 32 3f 5f                b1423 (MOV.s9 r14, #34)             b147  (ITE_NEZ r12, r8, r6, r0)     b1441 (MOV.s8 r13, #35)            
+000370         2 1f de a0 03                                        b148  (ITE_NEZ r10, r14, r13, r0)  
+000374         2 00 01                                              .swstall "mem_acquire0"
+000376         2 80 00 00 fc ff b0 47 f7                            b149  (ST.SPIL r12, [sp, #-80])    
+000384  m67    2 00 01                                              NOP
+000386         2 00 01                                              NOP
+000388         2 00 01                                              NOP
+000390         2 00 01                                              NOP
+000392         2 14 4a 30 03                                        b146  (ACQ r10, #1, r4)            
+000396  m216   2 00 01                                              .swstall "mem_acquire1"
+000398         2 00 01                                              .swstall "mem_acquire1"
+000400         2 00 01                                              .swstall "mem_acquire1"
+000402         2 80 00 00 c7 a3 fc e7 f7                            b1490 (LDA.SPIL p0, [sp, #-28])    
+000410         2 80 00 00 c7 a7 fc 67 f7                            b1523 (LDA.SPIL p1, [sp, #-32])    
+000418         2 00 01                                              NOP
+000420         2 00 01                                              NOP
+000422         2 00 01                                              NOP
+000424         2 80 00 00 a0 20 00 07 f7                            b145  (JAL #0)                     
+000432         2 00 01                                              .swstall "delay_slot"
+000434         2 00 01                                              .swstall "delay_slot"
+000436         2 00 01                                              .swstall "delay_slot"
+000438         2 be a5                                              b1813 (MOV p2, p7)                 
+000440         2 00 00 06 ea c0 00 00 77                            b1814 (MOV p3, p6)                 
+000448  m77    2 00 00 17 c0 30 00 00 04 0e 40 00 3f                b1050 (MOV.s9 r7, #1)               b1136 (MOV.u20 r9, #0)             
+000460         2 80 00 00 40 f4 00 07 f7                            b1197 (MOV.u20 r13, #0)            
+000468         2 80 00 00 40 fc 00 07 f7                            b1222 (MOV.u20 r15, #0)            
+000476         2 72 fd 00 00 10 00 00 04 0f 00 00 3f                b976  (LDA.SPIL r2, [sp, #-48])     b1285 (MOV.u20 r12, #0)            
+000488         2 71 fd 40 00 10 00 00 04 0f 80 00 3f                b1010 (LDA.SPIL r1, [sp, #-44])     b1312 (MOV.u20 r14, #0)            
+000500         2 75 fc c0 00 10 00 00 04 0e 00 00 3f                b1090 (LDA.SPIL r5, [sp, #-52])     b1377 (MOV.u20 r8, #0)             
+000512         2 16 4b 30 40 d8 00 07 f7                            b144  (REL r11, #1, r4)             b1406 (MOV.u20 r6, #0)             
+000520  m83    2 00 01                                              NOP
+000522         2 00 01                                              NOP
+000524         2 00 01                                              NOP
+000526         2 00 01                                              NOP
+000528         2 16 42 30 03                                        b143  (REL r2, #1, r4)             
+000532  m89    2 00 01                                              NOP
+000534         2 00 01                                              NOP
+000536         2 00 01                                              NOP
+000538         2 16 75 30 03                                        b142  (REL r5, #1, r7)             
+000542  m93    2 40 07 50 03                                        b1031 (MOV.s12 r5, #1)             
+000546         2 00 01                                              NOP
+000548         2 00 01                                              NOP
+000550         2 16 7a 30 03                                        b141  (REL r10, #1, r7)            
+000554  m882   2 7a fd 9d 8a 58 00 00 37                            b138  (LT r11, r4, r1)              b955  (LDA.SPIL r10, [sp, #-40])   
+000562         2 31 b1 b0 03                                        b139  (SUB r11, r1, r11)           
+000566         2 80 00 00 91 60 0e 07 f7                            b140  (BNEZ r11,#0)                
+000574         2 00 01                                              .swstall "delay_slot"
+000576         2 00 01                                              .swstall "delay_slot"
+000578         2 00 01                                              .swstall "delay_slot"
+000580         2 00 01                                              .swstall "delay_slot"
+000582         2 00 00 14 c0 10 00 00 0f bf fd 44 3f                b1075 (MOV.s9 r4, #0)               b1005 (ST.SPIL r11, [sp, #-44])    
+000594  m906   1 80 00 00 a0 00 28 07 f7                            b137  (J #0)                       
+000602         1 80 00 00 c7 a3 fb e7 f7                            b1694 (LDA.SPIL p0, [sp, #-36])    
+000610         1 00 01                                              .swstall "delay_slot"
+000612         1 00 01                                              .swstall "delay_slot"
+000614         1 00 01                                              .swstall "delay_slot"
+000616         1 00 00 00 00 00 00 00 37                            .swstall "delay_slot"
+000624  m10    1 00 00 00 00 10 00 00 0c 7a 3f be 80 00 00 00 00    b1774 (LDA.SPIL p0, [sp, #-36])    
+000640  m909   1 00 01                                              .swstall "chess_separator_scheduler"
+000642         1 00 01                                              .swstall "chess_separator_scheduler"
+000644         1 00 01                                              .swstall "chess_separator_scheduler"
+000646         1 00 01                                              .swstall "chess_separator_scheduler"
+000648         1 00 01                                              .swstall "chess_separator_scheduler"
+000650         1 00 01                                              .swstall "chess_separator_scheduler"
+000652         1 00 01                                              .swstall "chess_separator_scheduler"
+000654         1 00 01                                              .swstall "chess_separator_scheduler"
+000656  m100   1 04 00 20 03                                        b136  (EVENT #2)                   
+000660  m911   1 00 01                                              .swstall "chess_separator_scheduler"
+000662         1 00 01                                              .swstall "chess_separator_scheduler"
+000664         1 00 01                                              .swstall "chess_separator_scheduler"
+000666         1 00 01                                              .swstall "chess_separator_scheduler"
+000668         1 00 01                                              .swstall "chess_separator_scheduler"
+000670  m385   1 7b a2 00 00 00 00 00 37                            b133  (LDA r11, [p0], #4)          
+000678         1 00 01                                              NOP
+000680         1 00 01                                              NOP
+000682         1 00 01                                              NOP
+000684         1 00 01                                              NOP
+000686         1 00 01                                              NOP
+000688         1 00 01                                              NOP
+000690         1 00 01                                              NOP
+000692         1 3a b4 b0 03                                        b134  (GE r11, r4, r11)            
+000696         1 80 00 00 91 60 0a 07 f7                            b135  (BNEZ r11,#0)                
+000704         1 00 01                                              .swstall "delay_slot"
+000706         1 00 01                                              .swstall "delay_slot"
+000708         1 00 01                                              .swstall "delay_slot"
+000710         1 00 01                                              .swstall "delay_slot"
+000712         1 00 01                                              .swstall "delay_slot"
+000714  m104     7a fe f0 0c 0f d0 40 77                            b1803 (MOV.s12 m0, #-96)            b1775 (LDA.SPIL r10, [sp, #-20])    b1808 (MOV.s8 r0, #0)              
+000722           80 00 00 c7 ef fd 67 f7                            b1776 (LDA.SPIL r11, [sp, #-24])   
+000730           80 00 00 c7 d3 ff 67 f7                            b1777 (LDA.SPIL r4, [sp, #-8])     
+000738           80 00 00 c7 bf fe e7 f7                            b1778 (LDA.SPIL p7, [sp, #-12])    
+000746           80 00 00 c7 bb fe 67 f7                            b1779 (LDA.SPIL p6, [sp, #-16])    
+000754           58 ff f8 03                                        b1788 (LDB lr, [sp, #-4])          
+000758           08 90 00 00 00 00 00 37                            b131  (PADDA [sp], m0)             
+000766           00 01                                              NOP
+000768           00 01                                              NOP
+000770           00 01                                              NOP
+000772           00 01                                              NOP
+000774           00 01                                              NOP
+000776           00 01                                              NOP
+000778           00 01                                              NOP
+000780           01 01                                              b132  (RET lr)                     
+000782           00 01                                              .swstall "delay_slot"
+000784           00 01                                              .swstall "delay_slot"
+000786           00 01                                              .swstall "delay_slot"
+000788           00 01                                              .swstall "delay_slot"
+000790           00 01                                              .swstall "delay_slot"

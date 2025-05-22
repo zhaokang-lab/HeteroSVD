@@ -1,0 +1,32 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="TopPL" language="c" vlnv="xilinx.com:hls:TopPL:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="none" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="M_AXI_GMEM0" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+      <port name="M_AXI_GMEM1" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+      <port name="M_AXI_GMEM2" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+      <port name="M_AXI_GMEM3" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="32"/>
+      <port name="SWEEP_TX0_0" mode="write_only" dataWidth="128" portType="stream"/>
+      <port name="SWEEP_RX0_0" mode="read_only" dataWidth="128" portType="stream"/>
+      <port name="SWEEP_TX0_1" mode="write_only" dataWidth="128" portType="stream"/>
+      <port name="SWEEP_RX0_1" mode="read_only" dataWidth="128" portType="stream"/>
+      <port name="NORM_TX0" mode="write_only" dataWidth="128" portType="stream"/>
+      <port name="NORM_RX0" mode="read_only" dataWidth="128" portType="stream"/>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x48" dataWidth="32"/>
+    </ports>
+    <args>
+      <arg id="0" name="dataIn" addressQualifier="1" port="M_AXI_GMEM0" hostOffset="0x0" hostSize="0x8" offset="0x10" size="0x8" type="void*"/>
+      <arg id="1" name="U" addressQualifier="1" port="M_AXI_GMEM1" hostOffset="0x0" hostSize="0x8" offset="0x1C" size="0x8" type="void*"/>
+      <arg id="2" name="S" addressQualifier="1" port="M_AXI_GMEM2" hostOffset="0x0" hostSize="0x8" offset="0x28" size="0x8" type="void*"/>
+      <arg id="3" name="ConvArray" addressQualifier="1" port="M_AXI_GMEM3" hostOffset="0x0" hostSize="0x8" offset="0x34" size="0x8" type="void*"/>
+      <arg id="4" name="ITER" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x4" offset="0x40" size="0x4" type="unsigned int"/>
+      <arg id="5" name="sweep_tx0_0" addressQualifier="4" port="SWEEP_TX0_0" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="sweep_tx0_0" origUse="variable"/>
+      <arg id="6" name="sweep_rx0_0" addressQualifier="4" port="SWEEP_RX0_0" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="sweep_rx0_0" origUse="variable"/>
+      <arg id="7" name="sweep_tx0_1" addressQualifier="4" port="SWEEP_TX0_1" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="sweep_tx0_1" origUse="variable"/>
+      <arg id="8" name="sweep_rx0_1" addressQualifier="4" port="SWEEP_RX0_1" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="sweep_rx0_1" origUse="variable"/>
+      <arg id="9" name="norm_tx0" addressQualifier="4" port="NORM_TX0" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="norm_tx0" origUse="variable"/>
+      <arg id="10" name="norm_rx0" addressQualifier="4" port="NORM_RX0" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;128&gt;, 0, 0, 0, &apos;8&apos;, false&gt;, 0&gt;&amp;" memSize="0x10" origName="norm_rx0" origUse="variable"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

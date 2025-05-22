@@ -1,0 +1,135 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_parent_loop_proc'" level="0">
+<item name = "Date">Mon May 12 19:57:08 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">toppl</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">versalaicore</item>
+<item name = "Target device">xcvc1902-vsva2197-2MP-e-S</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">2.22 ns, 1.505 ns, 0.60 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">41641, 41641, 92.526 us, 92.526 us, 41641, 41641, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="dataflow_in_loop_VITIS_LOOP_172_2_U0">dataflow_in_loop_VITIS_LOOP_172_2, 346, 346, 0.769 us, 0.769 us, 347, 347, dataflow</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_172_2">41640, 41640, 348, -, -, 120, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 87, 38, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">8, -, 1610, 1026, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 14, -</column>
+<column name="Register">-, -, 14, -, -</column>
+<specialColumn name="Available">1934, 1968, 1799680, 899840, 463</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="dataflow_in_loop_VITIS_LOOP_172_2_U0">dataflow_in_loop_VITIS_LOOP_172_2, 8, 0, 1610, 1026, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="loop_dataflow_input_count">+, 0, 32, 13, 7, 1</column>
+<column name="loop_dataflow_output_count">+, 0, 32, 13, 7, 1</column>
+<column name="bound_minus_1">-, 0, 23, 12, 5, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="loop_dataflow_input_count">7, 2, 7, 14</column>
+<column name="loop_dataflow_output_count">7, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="loop_dataflow_input_count">7, 0, 7, 0</column>
+<column name="loop_dataflow_output_count">7, 0, 7, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="send_fifo_0_dout">in, 128, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_empty_n">in, 1, ap_fifo, send_fifo_0, pointer</column>
+<column name="send_fifo_0_read">out, 1, ap_fifo, send_fifo_0, pointer</column>
+<column name="sweep_tx0_0_TDATA">out, 128, axis, sweep_tx0_0_V_data_V, pointer</column>
+<column name="sweep_tx0_0_TKEEP">out, 16, axis, sweep_tx0_0_V_keep_V, pointer</column>
+<column name="sweep_tx0_0_TSTRB">out, 16, axis, sweep_tx0_0_V_strb_V, pointer</column>
+<column name="sweep_tx0_0_TLAST">out, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="sweep_tx0_0_TVALID">out, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="sweep_tx0_0_TREADY">in, 1, axis, sweep_tx0_0_V_last_V, pointer</column>
+<column name="send_fifo_1_dout">in, 128, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_empty_n">in, 1, ap_fifo, send_fifo_1, pointer</column>
+<column name="send_fifo_1_read">out, 1, ap_fifo, send_fifo_1, pointer</column>
+<column name="sweep_tx0_1_TDATA">out, 128, axis, sweep_tx0_1_V_data_V, pointer</column>
+<column name="sweep_tx0_1_TKEEP">out, 16, axis, sweep_tx0_1_V_keep_V, pointer</column>
+<column name="sweep_tx0_1_TSTRB">out, 16, axis, sweep_tx0_1_V_strb_V, pointer</column>
+<column name="sweep_tx0_1_TLAST">out, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="sweep_tx0_1_TVALID">out, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="sweep_tx0_1_TREADY">in, 1, axis, sweep_tx0_1_V_last_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dataflow_parent_loop_proc, return value</column>
+</table>
+</item>
+</section>
+</profile>

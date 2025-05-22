@@ -1,0 +1,159 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_220_2_1'" level="0">
+<item name = "Date">Mon May 12 19:57:11 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">toppl</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">versalaicore</item>
+<item name = "Target device">xcvc1902-vsva2197-2MP-e-S</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">2.22 ns, 2.232 ns, 0.60 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">340, 340, 0.759 us, 0.759 us, 338, 338, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="receive4AIE_1_U0">receive4AIE_1, 337, 337, 0.749 us, 0.749 us, 337, 337, no</column>
+<column name="receive4AIE_U0">receive4AIE, 337, 337, 0.749 us, 0.749 us, 337, 337, no</column>
+<column name="Block_newFuncRoot_proc_proc_U0">Block_newFuncRoot_proc_proc, 1, 1, 2.222 ns, 2.222 ns, 1, 1, no</column>
+<column name="Block_newFuncRoot_proc_proc12_U0">Block_newFuncRoot_proc_proc12, 1, 1, 2.222 ns, 2.222 ns, 1, 1, no</column>
+<column name="Block_newFuncRoot_proc_proc11_U0">Block_newFuncRoot_proc_proc11, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="Block_newFuncRoot_proc_proc13_U0">Block_newFuncRoot_proc_proc13, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 16, -</column>
+<column name="FIFO">-, -, 272, 96, -</column>
+<column name="Instance">-, -, 2362, 3766, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 4, -</column>
+<column name="Register">-, -, 2, -, -</column>
+<specialColumn name="Available">1934, 1968, 1799680, 899840, 463</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="Block_newFuncRoot_proc_proc_U0">Block_newFuncRoot_proc_proc, 0, 0, 67, 38, 0</column>
+<column name="Block_newFuncRoot_proc_proc11_U0">Block_newFuncRoot_proc_proc11, 0, 0, 2, 6, 0</column>
+<column name="Block_newFuncRoot_proc_proc12_U0">Block_newFuncRoot_proc_proc12, 0, 0, 67, 38, 0</column>
+<column name="Block_newFuncRoot_proc_proc13_U0">Block_newFuncRoot_proc_proc13, 0, 0, 2, 6, 0</column>
+<column name="receive4AIE_U0">receive4AIE, 0, 0, 1112, 1839, 0</column>
+<column name="receive4AIE_1_U0">receive4AIE_1, 0, 0, 1112, 1839, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="conv0_channel_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="conv1_channel_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="empty_92_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="empty_U">0, 68, 0, -, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="receive4AIE_1_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="receive4AIE_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_receive4AIE_1_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_receive4AIE_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_receive4AIE_1_U0_ap_ready">2, 2, 1, 2</column>
+<column name="ap_sync_reg_receive4AIE_U0_ap_ready">2, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_receive4AIE_1_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_receive4AIE_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="receive_fifo_0_din">out, 128, ap_fifo, receive_fifo_0, pointer</column>
+<column name="receive_fifo_0_full_n">in, 1, ap_fifo, receive_fifo_0, pointer</column>
+<column name="receive_fifo_0_write">out, 1, ap_fifo, receive_fifo_0, pointer</column>
+<column name="sweep_rx0_0_TDATA">in, 128, axis, sweep_rx0_0_V_data_V, pointer</column>
+<column name="sweep_rx0_0_TKEEP">in, 16, axis, sweep_rx0_0_V_keep_V, pointer</column>
+<column name="sweep_rx0_0_TSTRB">in, 16, axis, sweep_rx0_0_V_strb_V, pointer</column>
+<column name="sweep_rx0_0_TLAST">in, 1, axis, sweep_rx0_0_V_last_V, pointer</column>
+<column name="sweep_rx0_0_TVALID">in, 1, axis, sweep_rx0_0_V_last_V, pointer</column>
+<column name="sweep_rx0_0_TREADY">out, 1, axis, sweep_rx0_0_V_last_V, pointer</column>
+<column name="receive_fifo_1_din">out, 128, ap_fifo, receive_fifo_1, pointer</column>
+<column name="receive_fifo_1_full_n">in, 1, ap_fifo, receive_fifo_1, pointer</column>
+<column name="receive_fifo_1_write">out, 1, ap_fifo, receive_fifo_1, pointer</column>
+<column name="sweep_rx0_1_TDATA">in, 128, axis, sweep_rx0_1_V_data_V, pointer</column>
+<column name="sweep_rx0_1_TKEEP">in, 16, axis, sweep_rx0_1_V_keep_V, pointer</column>
+<column name="sweep_rx0_1_TSTRB">in, 16, axis, sweep_rx0_1_V_strb_V, pointer</column>
+<column name="sweep_rx0_1_TLAST">in, 1, axis, sweep_rx0_1_V_last_V, pointer</column>
+<column name="sweep_rx0_1_TVALID">in, 1, axis, sweep_rx0_1_V_last_V, pointer</column>
+<column name="sweep_rx0_1_TREADY">out, 1, axis, sweep_rx0_1_V_last_V, pointer</column>
+<column name="convSet_0_din">out, 32, ap_fifo, convSet_0, pointer</column>
+<column name="convSet_0_full_n">in, 1, ap_fifo, convSet_0, pointer</column>
+<column name="convSet_0_write">out, 1, ap_fifo, convSet_0, pointer</column>
+<column name="convSet_1_din">out, 32, ap_fifo, convSet_1, pointer</column>
+<column name="convSet_1_full_n">in, 1, ap_fifo, convSet_1, pointer</column>
+<column name="convSet_1_write">out, 1, ap_fifo, convSet_1, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dataflow_in_loop_VITIS_LOOP_220_2.1, return value</column>
+</table>
+</item>
+</section>
+</profile>

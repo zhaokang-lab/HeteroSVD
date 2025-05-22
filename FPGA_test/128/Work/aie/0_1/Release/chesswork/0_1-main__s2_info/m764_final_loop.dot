@@ -1,0 +1,17 @@
+digraph N {
+ b155[color=orange,fontcolor=black,style=filled,label="b155\nVLDA wr0, [p1], #32\ninp: P[1]\nout: WR0[0] P[1]"];  {rank=same; S0;  b155;}
+ b156[color=chartreuse,fontcolor=black,style=filled,label="b156  (fi=2) \nVFPMAC wd0, r1, wd0, ya, r2, cl0, r2, cl0, #0, cl1\ninp: WR0[0] WD[0] RS[2] RS[2] CL[0] CL[0] CL[1]\nout: WD[0]"];  {rank=same; S1;  b156;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S1;  end;}
+   b155 -> b156 [color=maroon,fontcolor=maroon,label="len=-6\nWR0[0]",weight=1000,dir=back];
+   b155 -> b156 [color=black,fontcolor=black,penwidth=3,style=dashed,label="len=7\nWR0[0]"];
+   b155 -> b155 [color=black,fontcolor=black,style=dashed,label="len=1\nP[1]"];
+   b156 -> b156 [color=black,fontcolor=black,penwidth=3,style=dashed,label="len=2\nWD[0]"];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2 [label="successor",shape=box];
+  S1 -> S2[style=invis,weight=9000];
+}

@@ -1,0 +1,3 @@
+AIE_PKG_DIR=/home/luanxinya/SVD/FPGA_test/128/./Work
+AIE_PROFILE=All
+AIE_DUMP_VCD_PIPE=/tmp/vcd_fifo_35cc5ef4-33d7-4781-a0ac-43dfd98e76fa

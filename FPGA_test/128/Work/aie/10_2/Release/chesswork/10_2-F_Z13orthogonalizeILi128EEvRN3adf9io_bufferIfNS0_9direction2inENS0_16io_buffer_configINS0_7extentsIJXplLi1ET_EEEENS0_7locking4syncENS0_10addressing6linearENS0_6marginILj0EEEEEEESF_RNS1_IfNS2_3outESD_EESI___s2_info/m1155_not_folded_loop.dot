@@ -1,0 +1,28 @@
+digraph N {
+ b224[color=orange,fontcolor=black,style=filled,label="b224\nVLDB wr2, [p7], #32\ninp: P[7]\nout: P[7]"];  {rank=same; S0;  b224;}
+ b225[color=orange,fontcolor=black,style=filled,label="b225\nVST wr2, [p1], #32\ninp: P[1]\nout: P[1]"];  {rank=same; S7;  b225;}
+ b226[color=orange,fontcolor=black,style=filled,label="b226\nVLDA wc0, [p6], #32\ninp: P[6]\nout: P[6]"];  {rank=same; S0;  b226;}
+ b227[color=orange,fontcolor=black,style=filled,label="b227\nVST wc0, [p2], #32\ninp: P[2]\nout: P[2]"];  {rank=same; S8;  b227;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S8;  end;}
+   b224 -> b225 [color=black,fontcolor=black,penwidth=3,label="len=7\nWR[2]",weight=1000];
+   b226 -> b227 [color=black,fontcolor=black,label="len=7\nWC[0]",weight=1000];
+   start -> end [color=maroon,fontcolor=maroon,label="min len=1",weight=1000];
+   b224 -> b224 [color=black,fontcolor=black,style=dashed,label="len=1\nP[7]"];
+   b224 -> b225 [color=maroon,fontcolor=maroon,style=dashed,dir=back,label="len=-6\nWR[2]"];
+   b225 -> b225 [color=black,fontcolor=black,style=dashed,label="len=1\nDMb"];
+   b226 -> b226 [color=black,fontcolor=black,style=dashed,label="len=1\nP[6]"];
+   b226 -> b227 [color=maroon,fontcolor=maroon,style=dashed,dir=back,label="len=-6\nWC[0]"];
+   b227 -> b227 [color=black,fontcolor=black,style=dashed,label="len=1\nDMb"];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1_S6 [label="steps [1,6]",shape=box];
+  S0 -> S1_S6[style=invis,weight=9000];
+  S7 [label="step 7",shape=box];
+  S1_S6 -> S7[style=invis,weight=9000];
+  S8 [label="step 8",shape=box];
+  S7 -> S8[style=invis,weight=9000];
+  S9 [label="successor",shape=box];
+  S8 -> S9[style=invis,weight=9000];
+}

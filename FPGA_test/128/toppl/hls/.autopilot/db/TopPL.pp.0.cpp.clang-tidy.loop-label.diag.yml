@@ -1,0 +1,320 @@
+---
+MainSourceFile:  /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          248741
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          476093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          476557
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          477022
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /usr/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          760339
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_32_1:  '
+    FileOffset:      32
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1215006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_32_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_2:  '
+    FileOffset:      39
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1215267
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_1:  '
+    FileOffset:      69
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1216211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_76_2:  '
+    FileOffset:      76
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1216472
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_76_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_1:  '
+    FileOffset:      102
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1217326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_112_2:  '
+    FileOffset:      112
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1217683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_112_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_1:  '
+    FileOffset:      140
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1218443
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_2:  '
+    FileOffset:      142
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1218499
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_150_3:  '
+    FileOffset:      150
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1218684
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_150_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      163
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_1:  '
+    FileOffset:      169
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_2:  '
+    FileOffset:      172
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219301
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_179_3:  '
+    FileOffset:      179
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_179_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_1:  '
+    FileOffset:      188
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219658
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_197_1:  '
+    FileOffset:      197
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_197_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_198_2:  '
+    FileOffset:      198
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1219922
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_198_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      211
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_216_1:  '
+    FileOffset:      216
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1220513
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_216_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_220_2:  '
+    FileOffset:      220
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1220604
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_220_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_250_1:  '
+    FileOffset:      250
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221197
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_250_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_2:  '
+    FileOffset:      254
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_256_3:  '
+    FileOffset:      256
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_256_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_261_4:  '
+    FileOffset:      261
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_261_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_267_5:  '
+    FileOffset:      267
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221683
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_267_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_6:  '
+    FileOffset:      275
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1221963
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_280_7:  '
+    FileOffset:      280
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1222136
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_1:  '
+    FileOffset:      295
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1222503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1222644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_304_3:  '
+    FileOffset:      304
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1222711
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_304_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_4:  '
+    FileOffset:      315
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1223132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_5:  '
+    FileOffset:      321
+    FilePath:        /home/luanxinya/SVD/FPGA_test/128/pl/TopPL.cpp
+    Replacements:    
+      - FilePath:        /home/luanxinya/SVD/FPGA_test/128/toppl/hls/.autopilot/db/TopPL.pp.0.cpp
+        Offset:          1223244
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_5: '
+...

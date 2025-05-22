@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_172_2'
+================================================================
+* Date:           Mon May 12 19:57:08 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        toppl
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: versalaicore
+* Target device:  xcvc1902-vsva2197-2MP-e-S
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  2.22 ns|  1.505 ns|     0.60 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      346|      346|  0.769 us|  0.769 us|  347|  347|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------+------------+---------+---------+----------+----------+-----+-----+---------+
+        |               |            |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |    Instance   |   Module   |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------+------------+---------+---------+----------+----------+-----+-----+---------+
+        |send2AIE_U0    |send2AIE    |      346|      346|  0.769 us|  0.769 us|  346|  346|       no|
+        |send2AIE_2_U0  |send2AIE_2  |      346|      346|  0.769 us|  0.769 us|  346|  346|       no|
+        +---------------+------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|      16|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        8|     -|     1608|    1006|    0|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|       4|    -|
+|Register         |        -|     -|        2|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        8|     0|     1610|    1026|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1934|  1968|  1799680|  899840|  463|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |       ~0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------+------------+---------+----+-----+-----+-----+
+    |    Instance   |   Module   | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------+------------+---------+----+-----+-----+-----+
+    |send2AIE_U0    |send2AIE    |        4|   0|  804|  503|    0|
+    |send2AIE_2_U0  |send2AIE_2  |        4|   0|  804|  503|    0|
+    +---------------+------------+---------+----+-----+-----+-----+
+    |Total          |            |        8|   0| 1608| 1006|    0|
+    +---------------+------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                         |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue                |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                    |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                   |       and|   0|  0|   2|           1|           1|
+    |send2AIE_2_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |send2AIE_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_send2AIE_2_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_send2AIE_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0|  16|           8|           8|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------+----+-----------+-----+-----------+
+    |                Name                | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_send2AIE_2_U0_ap_ready  |   2|          2|    1|          2|
+    |ap_sync_reg_send2AIE_U0_ap_ready    |   2|          2|    1|          2|
+    +------------------------------------+----+-----------+-----+-----------+
+    |Total                               |   4|          4|    2|          4|
+    +------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+---+----+-----+-----------+
+    |                Name                | FF| LUT| Bits| Const Bits|
+    +------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_send2AIE_2_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_send2AIE_U0_ap_ready    |  1|   0|    1|          0|
+    +------------------------------------+---+----+-----+-----------+
+    |Total                               |  2|   0|    2|          0|
+    +------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+|send_fifo_0_dout     |   in|  128|     ap_fifo|                        send_fifo_0|       pointer|
+|send_fifo_0_empty_n  |   in|    1|     ap_fifo|                        send_fifo_0|       pointer|
+|send_fifo_0_read     |  out|    1|     ap_fifo|                        send_fifo_0|       pointer|
+|sweep_tx0_0_TDATA    |  out|  128|        axis|               sweep_tx0_0_V_data_V|       pointer|
+|sweep_tx0_0_TKEEP    |  out|   16|        axis|               sweep_tx0_0_V_keep_V|       pointer|
+|sweep_tx0_0_TSTRB    |  out|   16|        axis|               sweep_tx0_0_V_strb_V|       pointer|
+|sweep_tx0_0_TLAST    |  out|    1|        axis|               sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TVALID   |  out|    1|        axis|               sweep_tx0_0_V_last_V|       pointer|
+|sweep_tx0_0_TREADY   |   in|    1|        axis|               sweep_tx0_0_V_last_V|       pointer|
+|send_fifo_1_dout     |   in|  128|     ap_fifo|                        send_fifo_1|       pointer|
+|send_fifo_1_empty_n  |   in|    1|     ap_fifo|                        send_fifo_1|       pointer|
+|send_fifo_1_read     |  out|    1|     ap_fifo|                        send_fifo_1|       pointer|
+|sweep_tx0_1_TDATA    |  out|  128|        axis|               sweep_tx0_1_V_data_V|       pointer|
+|sweep_tx0_1_TKEEP    |  out|   16|        axis|               sweep_tx0_1_V_keep_V|       pointer|
+|sweep_tx0_1_TSTRB    |  out|   16|        axis|               sweep_tx0_1_V_strb_V|       pointer|
+|sweep_tx0_1_TLAST    |  out|    1|        axis|               sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TVALID   |  out|    1|        axis|               sweep_tx0_1_V_last_V|       pointer|
+|sweep_tx0_1_TREADY   |   in|    1|        axis|               sweep_tx0_1_V_last_V|       pointer|
+|ap_clk               |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
+|ap_continue          |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_172_2|  return value|
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+

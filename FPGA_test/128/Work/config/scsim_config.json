@@ -1,0 +1,217 @@
+{
+    "SimulationConfig": {
+        "device_json": {
+            "directory": "data/devices",
+            "file": "VC1902.json"
+        },
+        "phy_device_file": "xcvc1902-vsva2197-2MP-e-S",
+        "aiearch": "aie",
+        "aie_freq": 1250000000.0,
+        "use_real_noc": 1,
+        "evaluate_fifo_depth": 0,
+        "shim_sol": "arch/aieshim_solution.aiesol",
+        "xpe_report": "reports/TopGraph.xpe",
+        "pl_ip_block": [
+            {
+                "name": "1_sweep_in_0",
+                "arguments": [
+                    "aie/data/1_sweep_in_0.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_sender_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "do0",
+                        "column": 6,
+                        "stream_id": 0,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "do1",
+                        "column": 6,
+                        "stream_id": 1,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "1_sweep_out_0",
+                "arguments": [
+                    "aie/data/1_sweep_out_0.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_receiver_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "di0",
+                        "column": 22,
+                        "stream_id": 2,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "di1",
+                        "column": 22,
+                        "stream_id": 3,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "1_sweep_in_1",
+                "arguments": [
+                    "aie/data/1_sweep_in_1.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_sender_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "do0",
+                        "column": 7,
+                        "stream_id": 0,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "do1",
+                        "column": 7,
+                        "stream_id": 1,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "1_sweep_out_1",
+                "arguments": [
+                    "aie/data/1_sweep_out_1.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_receiver_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "di0",
+                        "column": 22,
+                        "stream_id": 4,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "di1",
+                        "column": 22,
+                        "stream_id": 5,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "1_norm_in_0",
+                "arguments": [
+                    "aie/data/1_norm_in_0.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_sender_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "do0",
+                        "column": 6,
+                        "stream_id": 4,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "do1",
+                        "column": 6,
+                        "stream_id": 5,
+                        "direction": "pl_to_me",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "1_norm_out_0",
+                "arguments": [
+                    "aie/data/1_norm_out_0.txt",
+                    "32",
+                    "128",
+                    "0",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_receiver_128bit.so",
+                "pl_freq": 450000000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "di0",
+                        "column": 6,
+                        "stream_id": 0,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    },
+                    {
+                        "port_name": "di1",
+                        "column": 6,
+                        "stream_id": 1,
+                        "direction": "me_to_pl",
+                        "bus_width": 128
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "ps_i140_ps_main",
+                "ip": "ps",
+                "lib_path": "ps/c_rts/systemC/generated-objects/ps_i140.so",
+                "pl_freq": 450000000.0,
+                "axi_mm": [
+                    {
+                        "port_name": "ps_axi",
+                        "direction": "ps_to_gm",
+                        "bus_width": 0
+                    }
+                ],
+                "event_bus": []
+            }
+        ]
+    }
+}

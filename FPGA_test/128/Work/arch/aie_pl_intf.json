@@ -1,0 +1,164 @@
+{
+  "partition": {
+    "startColumn": 0,
+    "numColumns": 50,
+    "aieshimPorts": {
+      "AIE_PL_X5Y0_AIE_PL_S_AXIS_1": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_S_AXIS_0",
+            "column": 6,
+            "channel": 0
+          },
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_S_AXIS_1",
+            "column": 6,
+            "channel": 1
+          }
+        ],
+        "type": "stream",
+        "direction": "slave",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_sweep_in_0.txt",
+        "annotation": [
+          "1_sweep_in_0"
+        ],
+        "sdfioName": [
+          "i120_po0"
+        ]
+      },
+      "AIE_PL_X21Y0_AIE_PL_M_AXIS_3": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X21Y0_AIE_PL_M_AXIS_2",
+            "column": 22,
+            "channel": 2
+          },
+          {
+            "name": "AIE_PL_X21Y0_AIE_PL_M_AXIS_3",
+            "column": 22,
+            "channel": 3
+          }
+        ],
+        "type": "stream",
+        "direction": "master",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_sweep_out_0.txt",
+        "annotation": [
+          "1_sweep_out_0"
+        ],
+        "sdfioName": [
+          "i121_pi0"
+        ]
+      },
+      "AIE_PL_X6Y0_AIE_PL_S_AXIS_1": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X6Y0_AIE_PL_S_AXIS_0",
+            "column": 7,
+            "channel": 0
+          },
+          {
+            "name": "AIE_PL_X6Y0_AIE_PL_S_AXIS_1",
+            "column": 7,
+            "channel": 1
+          }
+        ],
+        "type": "stream",
+        "direction": "slave",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_sweep_in_1.txt",
+        "annotation": [
+          "1_sweep_in_1"
+        ],
+        "sdfioName": [
+          "i124_po0"
+        ]
+      },
+      "AIE_PL_X21Y0_AIE_PL_M_AXIS_5": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X21Y0_AIE_PL_M_AXIS_4",
+            "column": 22,
+            "channel": 4
+          },
+          {
+            "name": "AIE_PL_X21Y0_AIE_PL_M_AXIS_5",
+            "column": 22,
+            "channel": 5
+          }
+        ],
+        "type": "stream",
+        "direction": "master",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_sweep_out_1.txt",
+        "annotation": [
+          "1_sweep_out_1"
+        ],
+        "sdfioName": [
+          "i125_pi0"
+        ]
+      },
+      "AIE_PL_X5Y0_AIE_PL_S_AXIS_5": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_S_AXIS_4",
+            "column": 6,
+            "channel": 4
+          },
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_S_AXIS_5",
+            "column": 6,
+            "channel": 5
+          }
+        ],
+        "type": "stream",
+        "direction": "slave",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_norm_in_0.txt",
+        "annotation": [
+          "1_norm_in_0"
+        ],
+        "sdfioName": [
+          "i136_po0"
+        ]
+      },
+      "AIE_PL_X5Y0_AIE_PL_M_AXIS_1": {
+        "PhysicalInstance": [
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_M_AXIS_0",
+            "column": 6,
+            "channel": 0
+          },
+          {
+            "name": "AIE_PL_X5Y0_AIE_PL_M_AXIS_1",
+            "column": 6,
+            "channel": 1
+          }
+        ],
+        "type": "stream",
+        "direction": "master",
+        "dataWidth": 32,
+        "parameterIndex": 0,
+        "registeredInterface": true,
+        "traceFile": "aie/data/1_norm_out_0.txt",
+        "annotation": [
+          "1_norm_out_0"
+        ],
+        "sdfioName": [
+          "i137_pi0"
+        ]
+      }
+    }
+  }
+}

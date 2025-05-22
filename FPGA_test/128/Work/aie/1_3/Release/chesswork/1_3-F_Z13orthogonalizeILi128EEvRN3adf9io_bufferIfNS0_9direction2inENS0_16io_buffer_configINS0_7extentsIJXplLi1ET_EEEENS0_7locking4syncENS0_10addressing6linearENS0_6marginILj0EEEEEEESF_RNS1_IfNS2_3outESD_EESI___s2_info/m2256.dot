@@ -1,0 +1,26 @@
+digraph N {
+ b197[color=orange,fontcolor=black,style=filled,label="b197\nBNEZ r4,#0\ninp: R[4]"];  {rank=same; S0;  b197;}
+ b1523[color=orange,fontcolor=black,style=filled,label="b1523\nMOVT.s12 r13, #1016\nout: R[13]"];  {rank=same; S3;  b1523;}
+ b1524[color=orange,fontcolor=black,style=filled,label="b1524\nMOV.u20 r13, #0"];  {rank=same; S2;  b1524;}
+ b1202[color=orange,fontcolor=black,style=filled,label="b1202\nMOV ch1, r0\ninp: R[0]\nout: CH[1]"];  {rank=same; S1;  b1202;}
+ b1576[color=orange,fontcolor=black,style=filled,label="b1576\nMOV r14, r13\nout: R[14]"];  {rank=same; S4;  b1576;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S5;  end;}
+   b1523 -> b1576 [color=black,fontcolor=black,penwidth=3,label="len=1\nR[13]",weight=1000];
+   b1524 -> b1523 [color=black,fontcolor=black,penwidth=3,label="len=1\nR[13]",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2 [label="step 2",shape=box];
+  S1 -> S2[style=invis,weight=9000];
+  S3 [label="step 3",shape=box];
+  S2 -> S3[style=invis,weight=9000];
+  S4 [label="step 4",shape=box];
+  S3 -> S4[style=invis,weight=9000];
+  S5 [label="step 5",shape=box];
+  S4 -> S5[style=invis,weight=9000];
+  S6 [label="successor",shape=box];
+  S5 -> S6[style=invis,weight=9000];
+}

@@ -1,0 +1,46 @@
+{
+    "Placement": [
+        {
+            "LogicalInstance": "1_sweep_in_0",
+            "PhysicalInstance": [
+                "AIE_PL_X5Y0_AIE_PL_S_AXIS_0"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "1_sweep_out_0",
+            "PhysicalInstance": [
+                "AIE_PL_X21Y0_AIE_PL_M_AXIS_2"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "1_sweep_in_1",
+            "PhysicalInstance": [
+                "AIE_PL_X6Y0_AIE_PL_S_AXIS_0"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "1_sweep_out_1",
+            "PhysicalInstance": [
+                "AIE_PL_X21Y0_AIE_PL_M_AXIS_4"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "1_norm_in_0",
+            "PhysicalInstance": [
+                "AIE_PL_X5Y0_AIE_PL_S_AXIS_4"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "1_norm_out_0",
+            "PhysicalInstance": [
+                "AIE_PL_X5Y0_AIE_PL_M_AXIS_0"
+            ],
+            "IsSoft": false
+        }
+    ]
+}

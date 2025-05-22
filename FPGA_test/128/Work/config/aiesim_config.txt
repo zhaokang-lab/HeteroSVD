@@ -1,0 +1,4 @@
+DIRECTORY=data/devices
+JSON_DEVICE=VC1902.json
+AIE_SHIM_SOL=./aie.shim.solution.aiesol
+USED_TILES=./aie.xpe

@@ -1,0 +1,185 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "13 8 3 6",
+    "file": "TopPL.cpp",
+    "fileloc": 331,
+    "instructions": 107,
+    "name": "TopPL",
+    "total_instructions": 2011
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "7 5",
+    "file": "TopPL.cpp",
+    "fileloc": 0,
+    "instructions": 13,
+    "name": "_Z7ReceiveRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IfLi4EEEPNS0_IS1_ILi128EELi4096EEERNS0_INS_4axisIS7_Lm0ELm0ELm0ELh56ELb0EEELi0EEESD_SD__for.inc",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 281
+  },
+  "10": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 94,
+    "instructions": 261,
+    "loads": {
+      "L": 4
+    },
+    "name": "send2AIE",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 261
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "2 4",
+    "file": "TopPL.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "name": "_Z4SendRN3hls6streamI7ap_uintILi1EELi4EEEPNS0_IS1_ILi128EELi512EEERNS0_INS_4axisIS5_Lm0ELm0ELm0ELh56ELb0EEELi0EEESB_SB__for.inc",
+    "total_instructions": 527
+  },
+  "12": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 47,
+    "name": "generic_fmax<double>",
+    "total_instructions": 47
+  },
+  "13": {
+    "basicblocks": 28,
+    "calls": "12 12",
+    "file": "TopPL.cpp",
+    "fileloc": 293,
+    "instructions": 123,
+    "loads": {
+      "L": 2
+    },
+    "name": "SystemControl",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 217
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 94,
+    "instructions": 261,
+    "loads": {
+      "L": 4
+    },
+    "name": "send2AIE",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 261
+  },
+  "3": {
+    "basicblocks": 48,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 239,
+    "instructions": 216,
+    "loads": {
+      "L": 9
+    },
+    "name": "RoundRobin",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 216
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 94,
+    "instructions": 261,
+    "loads": {
+      "L": 4
+    },
+    "name": "send2AIE",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 261
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "12",
+    "file": "TopPL.cpp",
+    "fileloc": 59,
+    "instructions": 87,
+    "loads": {
+      "L": 3
+    },
+    "name": "receive4AIE",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 134
+  },
+  "6": {
+    "basicblocks": 10,
+    "calls": "1 9",
+    "file": "TopPL.cpp",
+    "fileloc": 207,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "Receive",
+    "total_instructions": 392
+  },
+  "7": {
+    "basicblocks": 9,
+    "calls": "12",
+    "file": "TopPL.cpp",
+    "fileloc": 59,
+    "instructions": 87,
+    "loads": {
+      "L": 3
+    },
+    "name": "receive4AIE",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 134
+  },
+  "8": {
+    "basicblocks": 10,
+    "calls": "11 10 10",
+    "file": "TopPL.cpp",
+    "fileloc": 159,
+    "instructions": 30,
+    "loads": {
+      "L": 1
+    },
+    "name": "Send",
+    "total_instructions": 1079
+  },
+  "9": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "TopPL.cpp",
+    "fileloc": 26,
+    "instructions": 82,
+    "loads": {
+      "L": 3
+    },
+    "name": "receive4DDR",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 82
+  }
+}

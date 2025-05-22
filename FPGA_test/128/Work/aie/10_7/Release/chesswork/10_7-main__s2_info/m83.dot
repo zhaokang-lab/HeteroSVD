@@ -1,0 +1,15 @@
+digraph N {
+ b143[color=orange,fontcolor=black,style=filled,label="b143\nREL r2, #1, r4\ninp: R[2] R[4]"];  {rank=same; S4;  b143;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S4;  end;}
+   start -> b143 [color=black,fontcolor=black,penwidth=3,label="min len=4",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1_S3 [label="steps [1,3]",shape=box];
+  S0 -> S1_S3[style=invis,weight=9000];
+  S4 [label="step 4",shape=box];
+  S1_S3 -> S4[style=invis,weight=9000];
+  S5 [label="successor",shape=box];
+  S4 -> S5[style=invis,weight=9000];
+}
