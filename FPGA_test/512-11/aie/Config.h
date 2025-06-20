@@ -1,1 +1,0 @@
-const int w = 8;
